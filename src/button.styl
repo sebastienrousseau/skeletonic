@@ -1,0 +1,39 @@
+/*=============================
+  Button
+=============================*/
+
+button, .button, [type=submit]
+  height: 45px
+
+  margin-bottom: 10px
+  padding: 10px 30px
+
+  outline: none
+  text-decoration: none
+
+  color: color-white
+  font-size: typography-size-base
+
+  background: color-black
+
+  border-round(color-black)
+
+  transition: transition
+
+  &:hover, &:focus
+    opacity: .9
+
+  &:active
+    opacity: .7
+
+  &[disabled]
+    opacity: 0.8
+    cursor: not-allowed
+
+  &.outline
+    color: color-black
+    background: none
+
+    &:hover, &:focus
+      color: color-white
+      background: color-black

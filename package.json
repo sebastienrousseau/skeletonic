@@ -1,0 +1,49 @@
+{
+  "name": "skeletonic",
+  "version": "0.0.1",
+  "description": "A a dead on, lightweight, responsive and modern CSS framework.",
+  "filename": "skeletonic.min.css",
+  "main": "./dist/skeletonic.min.css",
+  "scripts": {
+    "test": "",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reedia/skeletonic.git"
+  },
+  "author": "Reedia Limited <hello@reedia.com> (https://github.com/reedia)",
+  "license": "MIT",
+  "keywords": [
+    "skeletonic",
+    "yeoman-generator",
+    "skeletonic",
+    "gulp"
+  ],
+  "bugs": {
+    "url": "https://github.com/reedia/skeletonic/issues"
+  },
+  "homepage": "https://skeletonic.io",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/reedia/skeletonic.git",
+    "basePath": "dist",
+    "files": [
+      "skeletonic.min.css",
+      "skeletonic.css"
+    ]
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-cli": "^1.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-git": "^2.4.2",
+    "gulp-header": "^1.8.9",
+    "gulp-size": "^2.1.0",
+    "gulp-csslint": "^1.0.0",
+    "gulp-stylus": "^2.6.0"
+  },
+  "dependencies": {}
+}
