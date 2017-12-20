@@ -18,7 +18,23 @@ const comment = `/**
  */\r\n`;
 
 gulp.task("build", function () {
-  return gulp.src(["./src/config.styl", "./src/base.styl", "./src/grid.styl", "./src/typography.styl", "./src/form.styl", "./src/button.styl", "./src/link.styl", "./src/list.styl", "./src/image.styl", "./src/box.styl", "./src/nav.styl", "./src/card.styl", "./src/code.styl", "./src/divider.styl", "./src/util.styl"])
+  return gulp.src([
+      "./src/config.styl",
+      "./src/base.styl",
+      "./src/grid.styl",
+      "./src/typography.styl",
+      // "./src/form.styl",
+      // "./src/button.styl",
+      "./src/link.styl",
+      "./src/list.styl",
+      "./src/image.styl",
+      // "./src/box.styl",
+      // "./src/nav.styl",
+      // "./src/card.styl",
+      // "./src/code.styl",
+      "./src/divider.styl",
+      "./src/util.styl"
+    ])
     .pipe(concat("skeletonic.styl"))
     .pipe(stylus())
     .pipe(header(comment + "\r\n"))
@@ -30,7 +46,6 @@ gulp.task("csslint", ["build"], function() {
   return gulp.src(["./dist/skeletonic.css"])
     .pipe(csslint())
     .pipe(csslint.formatter())
-    .pipe(header(comment))
     .pipe(size())
     .pipe(gulp.dest("./dist/"));
 });
@@ -46,7 +61,6 @@ gulp.task('csscomb', function() {
 gulp.task("minify", ["build"], function() {
   return gulp.src(["./dist/skeletonic.css"])
     .pipe(minifyCSS())
-    .pipe(header(comment))
     .pipe(size())
     .pipe(size({
       gzip: true

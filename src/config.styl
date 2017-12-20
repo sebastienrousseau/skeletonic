@@ -1,14 +1,23 @@
-// Colors
-color-black = #111111
-color-gray = #A7A7A7
-color-white = #F5F5F5
-color-blue = #0062FF
-color-red = #ff1500
-color-yellow = #ffbf00
-color-green = #00b30f
+/* @group Config */
+
+/* Table Of Content
+==================================================
+	# Config
+	# Grid
+	# Reset
+	# Links
+	# Lists
+	# Typography
+	# Utilities
+==================================================
+*/
+
+// Colours
+color-dark-grey = #212121
+color-light-grey = #878787
 
 // Fonts
-font = -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+font = 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', sans-serif
 
 // Typography Scale
 // let s = size, b = base (1rem), r = ratio, and l = level -> s = b * (r ^ l)
@@ -30,19 +39,4 @@ typography-size-small-4 = round(typography-size-base * (typography-size-small-ra
 typography-size-small-5 = round(typography-size-base * (typography-size-small-ratio ** 2), 3)
 typography-size-small-6 = round(typography-size-base * typography-size-small-ratio, 3)
 
-// Grid
-columns = 12
-
-// Transition
-transition = all .2s ease
-
-// Border
-border(color)
-  border: 1px solid color
-
-border-radius()
-  border-radius: 2px
-
-border-round(color)
-  border(color)
-  border-radius()
+/* @end */

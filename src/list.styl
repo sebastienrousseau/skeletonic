@@ -1,18 +1,37 @@
-/*=============================
-  List
-=============================*/
-
+/* @group Lists */
 ul, ol
-  margin-top: 0
-  margin-bottom: 10px
-  padding-left: 0
-  list-style-position: inside
+  margin: typography-size-base 0
 
-  li
-    margin-bottom: 10px
+ul
+  list-style: none outside
 
-    &:last-child
-      margin-bottom: 0
+ol
+  list-style: decimal
 
-  ul, ol
-    margin-left: 10px
+li
+  line-height: typography-size-base
+  margin-bottom: typography-size-base
+
+ol,
+ul.square,
+ul.circle,
+ul.disc
+    margin-left: typography-size-base
+
+ul.square
+    list-style: square outside
+
+ul.circle
+    list-style: circle outside
+
+ul.disc
+    list-style: disc outside
+
+ul ul,
+ul ol,
+ol ol,
+ol ul
+    font-size: 90%
+    margin: 4px 0 5px 30px
+
+/* @end */
