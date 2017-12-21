@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const pkg = require("./package.json");
 
-const minifyCSS = require("gulp-clean-css");
+const clean = require("gulp-clean-css");
 const concat = require("gulp-concat");
 const header = require("gulp-header");
 const size = require("gulp-size");
@@ -10,9 +10,10 @@ const csslint = require("gulp-csslint");
 const csscomb = require('gulp-csscomb');
 
 const comment = `/**
- * Skeletonic v${pkg.version}
+ * ${pkg.name} v${pkg.version}
+ * ${pkg.description}
  * Copyright © Reedia Limited 2015-2018. All rights reserved.
- * https://skeletonic.io/
+ * ${pkg.homepage}
  * Released under the MIT License
  * http://www.opensource.org/licenses/mit-license.php
  */\r\n`;
@@ -58,10 +59,9 @@ gulp.task('csscomb', function() {
     .pipe(gulp.dest("./dist/"));
 });
 
-gulp.task("minify", ["build"], function() {
+gulp.task("clean", ["build"], function() {
   return gulp.src(["./dist/skeletonic.css"])
-    .pipe(minifyCSS())
-    .pipe(size())
+    .pipe(clean())
     .pipe(size({
       gzip: true
     }))
@@ -75,4 +75,4 @@ gulp.task("watch", function() {
 });
 
 
-gulp.task("default", ["build","csscomb","csslint","minify"]);
+gulp.task("default", ["build","csscomb","csslint","clean"]);

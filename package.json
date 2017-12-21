@@ -1,7 +1,7 @@
 {
-  "name": "skeletonic",
+  "name": "Skeletonic",
   "version": "0.0.1",
-  "description": "A a dead on, lightweight, responsive and modern CSS framework.",
+  "description": "A dead on, lightweight, responsive and modern CSS framework.",
   "filename": "skeletonic.min.css",
   "main": "./dist/skeletonic.min.css",
   "scripts": {
