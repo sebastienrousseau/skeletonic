@@ -1,9 +1,5 @@
 /* @group Base */
-html
-  font-family: sans-serif
-  -ms-text-size-adjust: 100%
-  -webkit-text-size-adjust: 100%
-
+/*csslint universal-selector:false */
 *
   color: color-black
   font-family: font
@@ -12,6 +8,14 @@ html
   margin: 0.25em 0
   padding: 0
   word-wrap: break-word
+
+html
+  font-family: sans-serif
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+
+body
+  margin 0
 
 article,
 aside,
@@ -27,5 +31,33 @@ nav,
 section,
 summary
   display: block
+
+audio,
+canvas,
+progress,
+video
+  display inline-block
+
+audio:not([controls])
+  display none
+  height 0
+
+progress
+  vertical-align baseline
+
+b,
+strong
+  font-weight inherit
+  font-weight bolder
+
+code,
+kbd,
+pre,
+samp
+  font-family monospace, monospace
+  font-size 1em
+
+
+
 
 /* @end */

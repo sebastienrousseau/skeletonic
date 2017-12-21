@@ -1,10 +1,7 @@
 /* @group Grid */
-
-/*csslint box-sizing: false*/
-
 .container
-  -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
   box-sizing: border-box
   margin: 0 auto
   max-width: 940px
@@ -12,9 +9,27 @@
   position: relative
   width: 100%
 
+@media (min-width: 576px)
+  .container
+    max-width: 540px
+
+@media (min-width: 768px)
+  .container
+    max-width: 720px
+
+@media (min-width: 992px)
+  .container
+    max-width: 960px
+
+@media (min-width: 1200px)
+  .container
+    max-width: 1140px
+
 .grid-flex
     display: -webkit-box
     display: flex
+    flex-wrap: wrap
+    -ms-flex-wrap: wrap
 
 .row:after
     clear: both
