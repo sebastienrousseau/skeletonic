@@ -1,4 +1,4 @@
-<p align="center"><a href="https://skeletonic.io" target="_blank"><img width="125"src="https://github.com/reedia/skeletonic/raw/gh-pages/images/logo.png"></a></p>
+<p align="center"><a href="https://skeletonic.io" target="_blank"><img width="125"src="https://github.com/reedia/generator-avionic/raw/master/Masthead.png"></a></p>
 
 <h1 align="center">Skeletonic</h1>
 
