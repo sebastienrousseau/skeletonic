@@ -20,6 +20,20 @@
 ==================================================
 */
 /* @group Base */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+* {
+  color: #000;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0.25em 0;
+  padding: 0;
+  word-wrap: break-word;
+}
 article,
 aside,
 details,
@@ -34,20 +48,6 @@ nav,
 section,
 summary {
   display: block;
-}
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-* {
-  color: #000;
-  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 0.25em 0;
-  padding: 0;
-  word-wrap: break-word;
 }
 /* @end */
 /* @group Grid */
@@ -167,10 +167,6 @@ h6 {
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.6;
-}
-p {
-  font-size: 1rem;
-  margin: 0.5em 0 0.5em 0;
 }
 /* csslint ignore:start */
 @media (max-width: 768px) {
