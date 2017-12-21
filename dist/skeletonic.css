@@ -41,7 +41,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  color: #212121;
+  color: #000;
   font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -203,11 +203,11 @@ p {
 /* @group Links */
 a {
   background-color: transparent;
-  color: #1eaedb;
+  color: #34d;
 }
 a:active,
 a:hover {
-  color: #212121;
+  color: #000;
 }
 /* @end */
 /* @group Lists */
@@ -316,10 +316,10 @@ hr {
   flex-direction: column;
   justify-content: center;
 }
-.color-dark-grey {
-  color: #212121;
+.color-black {
+  color: #000;
 }
-.color-light-grey {
-  color: #878787;
+.color-grey {
+  color: #696969;
 }
 /* @end */
