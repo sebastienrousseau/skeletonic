@@ -50,6 +50,8 @@ gulp.task("build-pattern", function () {
     .pipe(stylus())
     .pipe(header(comment + "\r\n"))
     .pipe(size())
+    .pipe(gulp.dest("./dist/"))
+    .pipe(concat("skeletonic-pattern.css"))
     .pipe(csscomb('./csscomb.json'))
     .pipe(header(comment + "\r\n"))
     .pipe(size())
@@ -59,7 +61,6 @@ gulp.task("build-pattern", function () {
     }))
     .pipe(concat("skeletonic-pattern.min.css"))
     .pipe(gulp.dest("./dist/"));
-
 });
 
 
