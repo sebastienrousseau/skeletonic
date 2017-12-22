@@ -25,14 +25,12 @@ gulp.task("build", function () {
       "./src/grid.styl",
       "./src/typography.styl",
       // "./src/form.styl",
-      // "./src/button.styl",
+      "./src/button.styl",
       "./src/link.styl",
       "./src/list.styl",
       "./src/image.styl",
-      // "./src/box.styl",
       // "./src/nav.styl",
-      // "./src/card.styl",
-      // "./src/code.styl",
+      "./src/code.styl",
       "./src/divider.styl",
       "./src/util.styl"
     ])
