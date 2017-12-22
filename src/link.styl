@@ -1,16 +1,16 @@
 /* @group Links */
 a
-  background-color: transparent
-  color: color-blue
-  text-decoration: none
-
+  &:link
+    color: color-blue
+    text-decoration: none
+  &:visited
+    color: color-purple
+  &:hover,&:active
+    color: color-red
+    text-decoration: underline
   &:focus
+    color: color-red
     outline: thin dotted
     outline: 1px auto -webkit-focus-ring-color
     outline-offset: -2px
-
-  &:active,
-  &:hover
-    color: color-black
-
 /* @end */

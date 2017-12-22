@@ -12,6 +12,8 @@
 	# Base
 	# Grid
 	# Typography
+	# Table
+	# Form
 	# Button
 	# Links
 	# Lists
@@ -22,7 +24,6 @@
 ==================================================
 */
 /* @group Base */
-/*csslint universal-selector:false */
 * {
   color: #000;
   font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', sans-serif;
@@ -39,6 +40,7 @@ html {
 }
 textarea {
   border-color: #e1e2e2;
+  min-height: 70px;
 }
 input {
   padding: 0.25em;
@@ -206,6 +208,62 @@ h6 {
 }
 /* csslint ignore:end */
 /* @end */
+/* @group Lists */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding-bottom: 25px;
+}
+td,
+th {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 5px;
+  vertical-align: bottom;
+}
+/* @end */
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=search],
+input[type=number],
+input[type=file],
+input[type=tel],
+input[type=url],
+select,
+textarea {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  background: #fff;
+  transition: transition;
+}
+input[type=text]:hover,
+input[type=password]:hover,
+input[type=email]:hover,
+input[type=search]:hover,
+input[type=number]:hover,
+input[type=file]:hover,
+input[type=tel]:hover,
+input[type=url]:hover,
+select:hover,
+textarea:hover {
+  border-color: #000;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=file]:focus,
+input[type=tel]:focus,
+input[type=url]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #e1e2e2;
+}
 /* @group Button */
 button,
 .button,
@@ -240,19 +298,23 @@ button:focus,
 }
 /* @end */
 /* @group Links */
-a {
-  background-color: transparent;
+a:link {
   color: #34d;
   text-decoration: none;
 }
+a:visited {
+  color: #804180;
+}
+a:hover,
+a:active {
+  color: #b50010;
+  text-decoration: underline;
+}
 a:focus {
+  color: #b50010;
   outline: thin dotted;
   outline: 1px auto -webkit-focus-ring-color;
   outline-offset: -2px;
-}
-a:active,
-a:hover {
-  color: #000;
 }
 /* @end */
 /* @group Lists */
