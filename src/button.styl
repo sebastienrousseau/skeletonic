@@ -1,20 +1,20 @@
 /* @group Button */
 button, .button, [type=submit]
   background: #color-grey;
-  background: color-white
-  color: color-black
-  font-size: typography-size-base
   padding: 9px 20px;
   text-decoration: none
   transition: transition
-&:hover, &:focus
-  opacity: 0.9
 &:active
+  opacity: 0.75
+  transition: all 150ms linear
+&:hover
+  background: color-lighter-grey
+  opacity: 0.85
+  transition: all 150ms linear
+&:focus
+  background: color-lighter-grey
   opacity: 0.7
+  outline: 1px dotted color-grey;
 &.outline
   background: none
-  color: color-white
-&:hover, &:focus
-  background: color-white
-  color: color-black
 /* @end */
