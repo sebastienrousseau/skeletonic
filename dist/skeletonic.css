@@ -246,28 +246,26 @@ button,
 .button,
 [type=submit] {
   background: #ccc olor-grey;
-  background: #fff;
-  color: #000;
-  font-size: 1rem;
   padding: 9px 20px;
   text-decoration: none;
   transition: transition;
 }
-:hover,
-:focus {
-  opacity: 0.9;
-}
 :active {
+  opacity: 0.75;
+  transition: all 150ms linear;
+}
+:hover {
+  background: #f2f2f2;
+  opacity: 0.85;
+  transition: all 150ms linear;
+}
+:focus {
+  background: #f2f2f2;
   opacity: 0.7;
+  outline: 1px dotted #e1e2e2;
 }
 .outline {
   background: none;
-  color: #fff;
-}
-:hover,
-:focus {
-  background: #fff;
-  color: #000;
 }
 /* @end */
 /* @group Links */
@@ -415,6 +413,6 @@ hr {
   color: #000;
 }
 .color-grey {
-  color: #696969;
+  color: #e1e2e2;
 }
 /* @end */
