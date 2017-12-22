@@ -2,6 +2,7 @@
 button, .button, [type=submit]
   background: color-grey
   border:0
+  color: color-black
   cursor: pointer
   padding: 9px 20px
   text-align: center
@@ -11,16 +12,19 @@ button, .button, [type=submit]
   vertical-align: middle
   white-space: nowrap
   &:active
+    color: color-black
     opacity: 0.75
     transition: all 150ms linear
     text-decoration: none
   &:hover
     background: color-lighter-grey
+    color: color-black
     opacity: 0.85
     transition: all 150ms linear
     text-decoration: none
   &:focus
     background: color-lighter-grey
+    color: color-black
     opacity: 0.7
     transition: all 150ms linear
     text-decoration: none
