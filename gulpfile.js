@@ -18,7 +18,7 @@ const comment = `/**
  * http://www.opensource.org/licenses/mit-license.php
  */\r\n`;
 
-gulp.task("build", function () {
+gulp.task("build-skeletonic", function () {
   return gulp.src([
       "./src/config.styl",
       "./src/base.styl",
@@ -42,7 +42,28 @@ gulp.task("build", function () {
     .pipe(gulp.dest("./dist/"));
 });
 
-gulp.task("csslint", ["build"], function() {
+gulp.task("build-pattern", function () {
+  return gulp.src([
+      "./src/pattern.styl"
+    ])
+    .pipe(concat("skeletonic-pattern.styl"))
+    .pipe(stylus())
+    .pipe(header(comment + "\r\n"))
+    .pipe(size())
+    .pipe(csscomb('./csscomb.json'))
+    .pipe(header(comment + "\r\n"))
+    .pipe(size())
+    .pipe(clean())
+    .pipe(size({
+      gzip: true
+    }))
+    .pipe(concat("skeletonic-pattern.min.css"))
+    .pipe(gulp.dest("./dist/"));
+
+});
+
+
+gulp.task("csslint", ["build-skeletonic"], function() {
   return gulp.src(["./dist/skeletonic.css"])
     .pipe(csslint())
     .pipe(csslint.formatter())
@@ -58,7 +79,7 @@ gulp.task('csscomb', function() {
     .pipe(gulp.dest("./dist/"));
 });
 
-gulp.task("clean", ["build"], function() {
+gulp.task("clean", ["build-skeletonic"], function() {
   return gulp.src(["./dist/skeletonic.css"])
     .pipe(clean())
     .pipe(size({
@@ -74,4 +95,5 @@ gulp.task("watch", function() {
 });
 
 
-gulp.task("default", ["build","csscomb","csslint","clean"]);
+gulp.task("default", ["build-skeletonic","csscomb","csslint","clean"]);
+gulp.task("pattern", ["build-pattern"]);
