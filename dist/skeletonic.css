@@ -245,10 +245,11 @@ h6 {
 button,
 .button,
 [type=submit] {
+  background: #ccc olor-grey;
   background: #fff;
   color: #000;
   font-size: 1rem;
-  padding: 20px;
+  padding: 9px 20px;
   text-decoration: none;
   transition: transition;
 }
