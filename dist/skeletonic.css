@@ -247,10 +247,10 @@ h6 {
 button,
 .button,
 [type=submit] {
-  background: #ccc olor-grey;
+  background: #e1e2e2;
+  border: 0;
   cursor: pointer;
-  margin: 10px;
-  padding: 12px 12px;
+  padding: 9px 20px;
   text-decoration: none;
   text-align: center;
   transition: all 150ms linear;
