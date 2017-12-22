@@ -1,9 +1,12 @@
 /* @group Button */
 button, .button, [type=submit]
-  background: #color-grey;
-  padding: 9px 20px;
+  background: #color-grey
+  cursor: pointer
+  margin: 10px
+  padding: 12px 12px
   text-decoration: none
-  transition: transition
+  text-align: center
+  transition: all 150ms linear
   &:active
     opacity: 0.75
     transition: all 150ms linear
@@ -14,5 +17,5 @@ button, .button, [type=submit]
   &:focus
     background: color-lighter-grey
     opacity: 0.7
-    outline: 1px dotted color-grey;
+    transition: all 150ms linear  
 /* @end */

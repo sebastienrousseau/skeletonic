@@ -248,9 +248,12 @@ button,
 .button,
 [type=submit] {
   background: #ccc olor-grey;
-  padding: 9px 20px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 12px 12px;
   text-decoration: none;
-  transition: transition;
+  text-align: center;
+  transition: all 150ms linear;
 }
 button:active,
 .button:active,
@@ -270,7 +273,7 @@ button:focus,
 [type=submit]:focus {
   background: #f2f2f2;
   opacity: 0.7;
-  outline: 1px dotted #e1e2e2;
+  transition: all 150ms linear;
 }
 /* @end */
 /* @group Links */
