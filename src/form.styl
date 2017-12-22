@@ -1,20 +1,16 @@
+/* @group Input */
 input[type=text], input[type=password], input[type=email], input[type=search], input[type=number], input[type=file], input[type=tel], input[type=url], select, textarea
-  height: 45px
-  width: 100%
-
+  background: color-white
+  border-round(color-black)
+  font-size: typography-size-base
   margin-bottom: 10px
   padding: 10px
-
-  font-size: typography-size-base
-  background: color-white
-
-  border-round(color-black)
-
-  transition: transition
+  transition: all 150ms linear
 
   &:hover
     border-color: color-black
 
   &:focus
-    outline: none
     border-color: color-grey
+    outline: none
+/* @end */

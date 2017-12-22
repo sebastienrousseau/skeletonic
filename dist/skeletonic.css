@@ -39,7 +39,10 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 textarea {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   border-color: #e1e2e2;
+  box-sizing: border-box;
   min-height: 70px;
 }
 input {
@@ -53,7 +56,7 @@ input {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 940px;
-  padding: 0 20px;
+  padding: 0 30px;
   position: relative;
   width: 100%;
 }
@@ -221,6 +224,7 @@ th {
   vertical-align: bottom;
 }
 /* @end */
+/* @group Input */
 input[type=text],
 input[type=password],
 input[type=email],
@@ -229,15 +233,12 @@ input[type=number],
 input[type=file],
 input[type=tel],
 input[type=url],
-select,
-textarea {
-  height: 45px;
-  width: 100%;
+select {
+  background: #fff;
+  font-size: 1rem;
   margin-bottom: 10px;
   padding: 10px;
-  font-size: 1rem;
-  background: #fff;
-  transition: transition;
+  transition: all 150ms linear;
 }
 input[type=text]:hover,
 input[type=password]:hover,
@@ -247,8 +248,7 @@ input[type=number]:hover,
 input[type=file]:hover,
 input[type=tel]:hover,
 input[type=url]:hover,
-select:hover,
-textarea:hover {
+select:hover {
   border-color: #000;
 }
 input[type=text]:focus,
@@ -259,11 +259,11 @@ input[type=number]:focus,
 input[type=file]:focus,
 input[type=tel]:focus,
 input[type=url]:focus,
-select:focus,
-textarea:focus {
-  outline: none;
+select:focus {
   border-color: #e1e2e2;
+  outline: none;
 }
+/* @end */
 /* @group Button */
 button,
 .button,
@@ -272,8 +272,8 @@ button,
   border: 0;
   cursor: pointer;
   padding: 9px 20px;
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
   transition: all 150ms linear;
 }
 button:active,
