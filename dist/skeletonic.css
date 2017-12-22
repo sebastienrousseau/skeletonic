@@ -215,10 +215,10 @@ h6 {
 /* @end */
 /* @group Lists */
 table {
+  border: 1px solid #e1e2e2;
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
-  border: 1px solid #e1e2e2;
   padding-bottom: 25px;
 }
 thead {
@@ -393,7 +393,6 @@ code {
 /* @group Divider */
 hr {
   border-top: 1px solid #000;
-  border-width: 0;
   margin-bottom: 0.25em;
   margin-top: 0.25em;
 }
