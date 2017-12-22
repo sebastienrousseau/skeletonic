@@ -75,7 +75,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: monospace;
   font-size: 1em;
 }
 /* @end */
@@ -241,6 +241,34 @@ h6 {
 }
 /* csslint ignore:end */
 /* @end */
+/* @group Button */
+button,
+.button,
+[type=submit] {
+  background: #fff;
+  color: #000;
+  font-size: 1rem;
+  padding: 20px;
+  text-decoration: none;
+  transition: transition;
+}
+:hover,
+:focus {
+  opacity: 0.9;
+}
+:active {
+  opacity: 0.7;
+}
+.outline {
+  background: none;
+  color: #fff;
+}
+:hover,
+:focus {
+  background: #fff;
+  color: #000;
+}
+/* @end */
 /* @group Links */
 a {
   background-color: transparent;
@@ -301,11 +329,30 @@ img {
   max-width: 100%;
 }
 /* @end */
+/* @group Code */
+pre {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+pre code {
+  display: block;
+  padding: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+code {
+  background: #e7e7e7;
+  font-family: "Consolas", "Monaco", "Menlo", monospace;
+  padding: 2px;
+  white-space: nowrap;
+}
+/* @end */
 /* @group Divider */
 hr {
-  border-width: 1px;
-  margin: 0;
-  padding: 0;
+  border-top: 1px solid #000;
+  border-width: 0;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
 }
 /* @end */
 /* @group Utilities */
