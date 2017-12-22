@@ -44,6 +44,8 @@ textarea {
   border-color: #e1e2e2;
   box-sizing: border-box;
   min-height: 70px;
+  padding: 10px;
+  width: 100%;
 }
 input {
   padding: 0.25em;
@@ -215,12 +217,25 @@ h6 {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #e1e2e2;
   padding-bottom: 25px;
+}
+thead {
+  background-color: #f2f2f2;
+  color: #000;
+  text-align: left;
+  vertical-align: bottom;
 }
 td,
 th {
-  border-bottom: 1px solid #f2f2f2;
-  padding: 5px;
+  background-color: transparent;
+  border-left: 1px solid #e1e2e2;
+  border-width: 0 0 0 1px;
+  font-size: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 6px 12px;
   vertical-align: bottom;
 }
 /* @end */
@@ -233,7 +248,8 @@ input[type=number],
 input[type=file],
 input[type=tel],
 input[type=url],
-select {
+select,
+textarea {
   background: #fff;
   font-size: 1rem;
   margin-bottom: 10px;
@@ -248,7 +264,8 @@ input[type=number]:hover,
 input[type=file]:hover,
 input[type=tel]:hover,
 input[type=url]:hover,
-select:hover {
+select:hover,
+textarea:hover {
   border-color: #000;
 }
 input[type=text]:focus,
@@ -259,7 +276,8 @@ input[type=number]:focus,
 input[type=file]:focus,
 input[type=tel]:focus,
 input[type=url]:focus,
-select:focus {
+select:focus,
+textarea:focus {
   border-color: #e1e2e2;
   outline: none;
 }
