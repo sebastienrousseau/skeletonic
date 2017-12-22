@@ -288,6 +288,7 @@ button,
 [type=submit] {
   background: #e1e2e2;
   border: 0;
+  color: #000;
   cursor: pointer;
   padding: 9px 20px;
   text-align: center;
@@ -297,9 +298,18 @@ button,
   vertical-align: middle;
   white-space: nowrap;
 }
+button:link,
+.button:link,
+[type=submit]:link,
+button:visited,
+.button:visited,
+[type=submit]:visited {
+  color: #000;
+}
 button:active,
 .button:active,
 [type=submit]:active {
+  color: #000;
   opacity: 0.75;
   transition: all 150ms linear;
   text-decoration: none;
@@ -308,6 +318,7 @@ button:hover,
 .button:hover,
 [type=submit]:hover {
   background: #f2f2f2;
+  color: #000;
   opacity: 0.85;
   transition: all 150ms linear;
   text-decoration: none;
@@ -316,6 +327,7 @@ button:focus,
 .button:focus,
 [type=submit]:focus {
   background: #f2f2f2;
+  color: #000;
   opacity: 0.7;
   transition: all 150ms linear;
   text-decoration: none;
