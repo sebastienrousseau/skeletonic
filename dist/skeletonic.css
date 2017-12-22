@@ -37,48 +37,11 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-body {
-  margin: 0;
+textarea {
+  border-color: #e1e2e2;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-}
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-progress {
-  vertical-align: baseline;
-}
-b,
-strong {
-  font-weight: inherit;
-  font-weight: bolder;
-}
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace;
-  font-size: 1em;
+input {
+  padding: 0.25em;
 }
 /* @end */
 /* @group Grid */
@@ -337,21 +300,14 @@ img {
 }
 /* @end */
 /* @group Code */
-pre {
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-pre code {
+pre,
+code {
+  background: #f2f2f2;
   display: block;
+  font-family: "Consolas", "Monaco", "Menlo", monospace;
   padding: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
-}
-code {
-  background: #e7e7e7;
-  font-family: "Consolas", "Monaco", "Menlo", monospace;
-  padding: 2px;
-  white-space: nowrap;
 }
 /* @end */
 /* @group Divider */
