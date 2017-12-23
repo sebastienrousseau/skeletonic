@@ -2,6 +2,13 @@
   "name": "Skeletonic",
   "version": "0.0.1",
   "description": "A dead on, lightweight, responsive and modern CSS framework.",
+  "keywords": [
+    "skeletonic",
+    "css",
+    "lightweight",
+    "responsive",
+    "framework"
+  ],
   "filename": "skeletonic.min.css",
   "main": "./dist/skeletonic.min.css",
   "scripts": {
