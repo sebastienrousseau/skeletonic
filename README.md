@@ -32,13 +32,20 @@ A few options are available:
 
 ## What's in the box
 
-Within the release you'll find the following directories and files:
+Within the release you'll find the following directory and external style sheets with both compiled and minified CSS variations:
 
 ```
-README.md
 Skeletonic/
 ├── skeletonic.css
 ├── skeletonic.min.css
+```
+
+You simply then need to link one of these in your HTML document.
+
+The link consists of just a simple line of HTML code that you will need to put in the ```<head>```  section of your HTML document:
+
+```
+<link rel="stylesheet" type="text/css" href="skeletonic.min.css" />
 ```
 
 ## Built With
