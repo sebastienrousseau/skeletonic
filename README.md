@@ -14,7 +14,7 @@
 ## Table of contents
 
 -   [Quick start](#quick-start)
--   [What's in the box](#whats-included)
+-   [What's in the box](#whats-in-the-box)
 -   [Contributing](#contributing)
 -   [License](#license)
 
