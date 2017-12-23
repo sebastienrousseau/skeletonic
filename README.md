@@ -4,30 +4,35 @@
 	</a>  
 </p>
 
-<h3 align="center">Skeletonic</h3>
+<h3 align="center">Introducing Skeletonic</h3>
 
-<p align="center">A sleek, lightweight, intuitive and ultra-responsive CSS framework.<br />Designed to fit your web life.</p>
+<p align="center">Skeletonic is a lightweight, intuitive and ultra-responsive CSS framework to speed up your Digital and Mobile Web development needs.</p>
+<p align="center">Simply designed to fit your web life.</p>
+<p align="center">
+<button name="button"><a href="https://github.com/reedia/skeletonic/archive/v0.0.1.zip">Download Skeletonic CSS</a></button></p>
 
 [![Build Status](https://travis-ci.org/reedia/skeletonic.svg?branch=master)](https://travis-ci.org/reedia/skeletonic)
 [![Packagist](https://img.shields.io/badge/license-MIT-blue.svg)](https://skeletonic.github.io/license)
 
 ## Table of contents
 
--   [Quick start](#quick-start)
+-   [Getting Started](#getting-started)
 -   [What's in the box](#whats-in-the-box)
+-   [Built With](#built-with)
 -   [Contributing](#contributing)
 -   [License](#license)
+-   [Acknowledgments](#acknowledgments)
 
-## Quick start
+## Getting Started
 
-Several quick start options are available:
+A few options are available:
 
--   [Download the latest release.](https://github.com/reedia/skeletonic/archive/v0.0.1.zip)
--   Clone the repo: `git clone https://github.com/reedia/skeletonic.git`
+-   Download the latest [release](https://github.com/reedia/skeletonic/archive/v0.0.1.zip)
+-   Or simply clone the main repo: `git clone https://github.com/reedia/skeletonic.git`
 
 ## What's in the box
 
-Within the download you'll find the following directory and files, logically grouping common assets and providing both compiled and minified variations.
+Within the release you'll find the following directories and files:
 
 ```
 README.md
@@ -36,10 +41,19 @@ Skeletonic/
 ├── skeletonic.min.css
 ```
 
+## Built With
+-   [Gulp](https://gulpjs.com/) - The streaming build system
+-   [Stylus](http://stylus-lang.com/) - Expressive, robust, feature-rich CSS language built for nodejs
+-   [CSScomb](http://csscomb.com/) - CSS coding style formatter
+
 ## Contributing
 
-Please read through our [contributing guidelines](https://github.com/reedia/skeletonic/blob/master/CONTRIBUTING.md).
+Please read carefully through our [Contributing Guidelines](https://github.com/reedia/skeletonic/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## License
 
-Licensed under the [MIT License](http://skeletonic.github.io/license)
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/reedia/skeletonic/blob/master/LICENSE) file for details
+
+## Acknowledgments
+-   [Normalize.css](http://necolas.github.io/normalize.css/) - A modern, HTML5-ready alternative to CSS resets to fix cross-browser compatibility issues.
+-   [Skeleton](http://www.getskeleton.com) - A Dead Simple, Responsive Boilerplate
