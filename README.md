@@ -10,8 +10,10 @@
 <p align="center">Simply designed to fit your web life.</p>
 <p align="center"><a href="https://github.com/reedia/skeletonic/archive/v1.0.28.zip">Download Skeletonic CSS</a></p>
 
+[![npm version](https://badge.fury.io/js/skeletonic.svg)](https://badge.fury.io/js/skeletonic)
 [![Build Status](https://travis-ci.org/reedia/skeletonic.svg?branch=master)](https://travis-ci.org/reedia/skeletonic)
 [![Packagist](https://img.shields.io/badge/license-MIT-blue.svg)](https://skeletonic.github.io/license)
+[![Github Releases](https://img.shields.io/github/downloads/atom/atom/latest/total.svg)](https://github.com/reedia/skeletonic)
 
 ## Table of contents
 
@@ -20,6 +22,8 @@
 -   [Built With](#built-with)
 -   [Contributing](#contributing)
 -   [Code of Conduct](#code-of-conduct)
+-   [Our Values](#our-values)
+-   [History](#history)
 -   [License](#license)
 -   [Acknowledgments](#acknowledgments)
 
@@ -63,11 +67,29 @@ Please read carefully through our [Contributing Guidelines](https://github.com/r
 ## Code of Conduct
 We are committed to preserving and fostering a diverse, welcoming community. Please read our [Code of Conduct](https://github.com/reedia/skeletonic/blob/master/CODE_OF_CONDUCT.md).
 
+## Our Values
+1. We believe perfection must consider everything.
+2. We take our passion beyond Code into our daily practices.
+3. We are just obsessed about creating and delivering exceptional solutions.
+
+## History
+
+* See [Skeletonic Release](https://github.com/reedia/skeletonic/releases) list.
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/reedia/skeletonic/blob/master/LICENSE) file for details
 
 ## Acknowledgments
+
+[Skeletonic](http://skeletonic.io) is beautifully crafted by these people and a bunch of awesome [contributors](https://github.com/reedia/skeletonic/graphs/contributors)
+
+[![Sebastien Rousseau](https://avatars0.githubusercontent.com/u/1394998?s=117)](http://sebastienrousseau.com) |
+|:---:
+[Sebastien Rousseau](https://github.com/sebastienrousseau) |
+
+Credit also goes to the following source code libraries:
 -   [Normalize.css](http://necolas.github.io/normalize.css/) - A modern, HTML5-ready alternative to CSS resets to fix cross-browser compatibility issues.
 -   [Skeleton](http://www.getskeleton.com) - A Dead Simple, Responsive Boilerplate
 -   [Wing](http://usewing.ml/) - A beautiful CSS framework designed for minimalists.
