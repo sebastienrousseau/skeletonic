@@ -1,5 +1,5 @@
 <p align="center">
-	<a href="https://skeletonic.io">
+	<a href="http://skeletonic.io">
 		<img src="https://github.com/reedia/skeletonic/raw/master/images/skeletonic.png" alt="Skeletonic Logo"  />
 	</a>  
 </p>
