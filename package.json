@@ -26,10 +26,7 @@
     "test": "",
     "build": "gulp"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/reedia/skeletonic.git"
-  },
+  "repository": "git+https://github.com/reedia/skeletonic.git",
   "author": "Reedia Limited <hello@reedia.com> (https://github.com/reedia)",
   "license": "MIT",
   "bugs": {
