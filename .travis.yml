@@ -4,9 +4,3 @@ node_js:
 before_script:
   - npm install -g gulp
 script: gulp
-
-deploy:
-  provider: releases
-  api_key: "af:e3:44:44:ca:84:0c:7e:ac:f7:d3:b7:46:59:ff:b4"
-  file: "dist/skeletonic.min.css"
-  skip_cleanup: true
