@@ -19,7 +19,7 @@
 -   [What's in the box](#whats-in-the-box)
 -   [Built With](#built-with)
 -   [Contributing](#contributing)
--   [Code of Conduct](#code_of_conduct)
+-   [Code of Conduct](#code-of-conduct)
 -   [License](#license)
 -   [Acknowledgments](#acknowledgments)
 
