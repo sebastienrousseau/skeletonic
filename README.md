@@ -55,7 +55,7 @@ The link consists of just a simple line of HTML code that you will need to put i
 
 ## Contributing
 
-Please read carefully through our [Contributing Guidelines](https://github.com/reedia/skeletonic/blob/master/CONTRIBUTING.md) for details on the process for submitting pull requests to us.
+Please read carefully through our [Contributing Guidelines](https://github.com/reedia/skeletonic/blob/master/CONTRIBUTING.md) for further details on the process for submitting pull requests to us.
 
 ## Code of Conduct
 We are committed to preserving and fostering a diverse, welcoming community. Please read our [Code of Conduct](https://github.com/reedia/skeletonic/blob/master/CODE_OF_CONDUCT.md).
