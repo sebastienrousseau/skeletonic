@@ -6,8 +6,6 @@ before_script:
 script: gulp
 deploy:
   provider: releases
-  api_key:
-    secure: gzaVAf02TqLC8HYOP17NkCXZxJ/nAS0sYUZgKIESUvuxPLZ5aRTNq/h+gIeuVfJvaSOch2Q87sD1EV9UEoqvfrn40Ld06GOMhIVu2rFnKFZyhGHiZ/+R7cUq81mVkZC6isC+KOi7j/379Qd9FAQHLA+E68NDGG+zl+5FLvS65dJ4GVXlWFEhwpRO/ta9GqLEruhZ0b0pePgaZR6SwWcfn75nfsLVNWiIL5kgkwkFXVCONrSNH/IpAH1KQxxRkiBWwDdTzjpiJRpTnjbccBOHS0QFA1Ype7HIPd1E2+8IB27nuXHbF1ebPV9bkAisWtwQ/ADnXd3uWKd+18uesQcMTywoj4YqiexueCk6FTQv+bkPGw+AlFjnfdCYIVgHORbdn1NcpmqH7r02MI5l52sbqwV3HdGQu84CThDLhoFKKOmaxRDneslXhCV+XygjqjS3lagfthvLJkLDOoaM5ABlkiNrBMAHfHrrWpTd2G/DJpIFs2BzRwOIPGUfJ09iQPtrSuiVnv7VgXJUYVpELRS0MQKINRtCq8NZDNqTjm6xnE5r09Dfo0RU9rPWnuhyXGMNgFSszE+td/OVILZBaW0gVsOlnUytN8oZDJNkmPODSdeLOwasqC/B9WESLgDJ50ChRpURzZMLQN7mB7bBZHUWAOuTzzG7/I7i1h+oJYtRFys=
   file: dist/skeletonic.min.css
   on:
     repo: reedia/skeletonic
