@@ -4,6 +4,7 @@ node_js:
 before_script:
 - npm install -g gulp
 script: gulp
+
 deploy:
   provider: releases
   description: Skeletonic Release v$TRAVIS_BUILD_NUMBER
@@ -12,10 +13,10 @@ deploy:
   file: dist/*
   skip_cleanup: true
   file_glob: true
-  #tag_name: $TRAVIS_TAG
+  tag_name: $TRAVIS_TAG
   on:
     repo: reedia/skeletonic
-    #tags: true
+    tags: true
 env:
   global:
     secure: YFrLQXgisc/xmu0L3x2XvRsFzHtaJLfBiCOmO0fhMG02GutVTFelNaVjnl+5H8Wmgijm9qMCWvXMlVjK/NwyY7P+Wbop7/jkXKgl1uYiSH5zXUlEMzTgTS2F/JChegDhiO98MKDmSwY41S1wsLm4rCvWsr3QBHiLN533G4+UAsrX8Rr9JYNkEUwxbjjlT0oYhMkjkDT8JtuUEUAYhW394qNR607Sub0dKRSUdyRU3iyXvUpaaaNSDYQP+NcCIqGnG+g8ftYuz0H23ESwPP3hgCwV0aN48yIPUN1yyOFmiz+LCv9KP4/eYY7ghlnXJPUyqDjqPN4hYmDZQhplvlUBHX5OtX+7EqWF79IJHmOqD/0D5/BjHgLEhMYJH32Txze4EWpsAKB0wBjqhSR7jAdH9UckeYMyiM7OdwSr+Mh4r1pmDLlfQnqwH6qt3pGoeZl2QSZkiLoJBXN/faCN+jQ/dR/JPRGQ6CuaVy1kugxqBunsi3RlRKM4xAcp+WGEF4kIxG9O+0OGJf+FHVSCbpkp7JlGsovaUDxF2CdClNEB1WKIslvJk8w4aYCQ9+AGJAQfiIfVmuIhRzKrFmAzzPGkDt0I6tEQa/fdsIOzof0ES1nA4/xWcc/+npMzpycINs1xx+YKROPoUj/05ENhClmKAU1/aDaX50wiE6s/h2X4YNA=
