@@ -1,6 +1,6 @@
 {
   "name": "skeletonic",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "description": "A dead on, lightweight, responsive and modern CSS framework.",
   "keywords": [
     "skeletonic",
@@ -27,8 +27,9 @@
     "build": "gulp"
   },
   "repository": "git+https://github.com/reedia/skeletonic.git",
-  "author": "Reedia Limited <hello@reedia.com> (https://github.com/reedia)",
+  "author": "Reedia Limited (https://github.com/reedia)",
   "license": "MIT",
+  "license_URI": "http://www.opensource.org/licenses/mit-license.php",
   "bugs": {
     "url": "https://github.com/reedia/skeletonic/issues"
   },
@@ -54,7 +55,14 @@
     "gulp-git": "^2.5.0",
     "gulp-header": "^1.8.9",
     "gulp-size": "^3.0.0",
+    "gulp-version-filename": "^1.0.2",
+    "gulp-sourcemaps": "^2.6.2",
+    "csslint-stylish": "^0.0.6",
+    "del": "^3.0.0",
+    "vinyl-paths": "^2.1.0",
     "gulp-stylus": "^2.7.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "del": "^3.0.0"
+  }
 }
