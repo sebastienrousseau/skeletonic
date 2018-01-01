@@ -10,7 +10,7 @@
 
 <p align="center">Simply designed to fit your web life.</p>
 
-<p align="center"><a href="https://github.com/reedia/skeletonic/archive/v1.0.29.zip">Download Skeletonic CSS v1.029</a></p>
+<p align="center"><a href="https://github.com/reedia/skeletonic/archive/v1.0.30.zip">Download Skeletonic CSS v1.029</a></p>
 
 [![npm version](https://badge.fury.io/js/skeletonic.svg)](https://badge.fury.io/js/skeletonic)
 [![Build Status](https://travis-ci.org/reedia/skeletonic.svg?branch=master)](https://travis-ci.org/reedia/skeletonic)
@@ -33,7 +33,7 @@
 
 A few options are available:
 
--   Download the latest [release](https://github.com/reedia/skeletonic/archive/v1.0.29.zip)
+-   Download the latest [release](https://github.com/reedia/skeletonic/archive/v1.0.30.zip)
 -   Or simply clone the main repo: `git clone https://github.com/reedia/skeletonic.git`
 
 ## What's in the box
@@ -42,10 +42,10 @@ Within the release you'll find the following directory and external style sheets
 
 ```
 Skeletonic/
-├── skeletonic-1.0.29.css
-├── skeletonic.min-1.0.29.css
-├── skeletonic-pattern-1.0.29.css
-├── skeletonic-pattern.min-1.0.29.css
+├── skeletonic-1.0.30.css
+├── skeletonic.min-1.0.30.css
+├── skeletonic-pattern-1.0.30.css
+├── skeletonic-pattern.min-1.0.30.css
 ```
 
 You simply then need to link one of these in your HTML document.
@@ -53,8 +53,8 @@ You simply then need to link one of these in your HTML document.
 The link consists of just a simple line of HTML code that you will need to put in the ```<head>```  section of your HTML document:
 
 ```
-<link rel="stylesheet" type="text/css" href="skeletonic-pattern.min-1.0.29.css" />
-<link rel="stylesheet" type="text/css" href="skeletonic.min-1.0.29.css" />
+<link rel="stylesheet" type="text/css" href="skeletonic-pattern.min-1.0.30.css" />
+<link rel="stylesheet" type="text/css" href="skeletonic.min-1.0.30.css" />
 ```
 
 ## Built With
