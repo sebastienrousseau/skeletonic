@@ -10,7 +10,7 @@
 
 <p align="center">Simply designed to fit your web life.</p>
 
-<p align="center"><a href="https://github.com/reedia/skeletonic/archive/v1.0.30.zip">Download Skeletonic CSS v1.029</a></p>
+<p align="center"><a href="https://github.com/reedia/skeletonic/archive/v1.0.30.zip">Download Skeletonic CSS</a></p>
 
 [![npm version](https://badge.fury.io/js/skeletonic.svg)](https://badge.fury.io/js/skeletonic)
 [![Build Status](https://travis-ci.org/reedia/skeletonic.svg?branch=master)](https://travis-ci.org/reedia/skeletonic)
