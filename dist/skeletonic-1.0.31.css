@@ -1,7 +1,7 @@
 /**
- * Name: skeletonic v1.0.30
+ * Name: skeletonic v1.0.31
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.0.30
+ * @version 1.0.31
  * Author: Reedia Limited (https://github.com/reedia)
  * Copyright © Reedia Limited 2015-2018. All rights reserved.
  * http://skeletonic.io
@@ -56,7 +56,7 @@ textarea
     min-height: 70px;
     padding: 10px;
 
-    border-color: #e1e2e2;
+    border-color: #333;
 }
 input,
 textarea,
@@ -73,6 +73,18 @@ ol,
 form
 {
     margin-bottom: 1.5rem;
+}
+strong,
+b
+{
+    font-weight: bold;
+
+    color: #000;
+}
+em,
+i
+{
+    font-style: italic;
 }
 /* @end */
 /* @group Grid */
@@ -288,7 +300,7 @@ table
     border-spacing: 0;
     border-collapse: collapse;
 
-    border: 1px solid #e1e2e2;
+    border: 1px solid #333;
 }
 thead
 {
@@ -311,7 +323,7 @@ th
     vertical-align: bottom;
 
     border-width: 0 0 0 1px;
-    border-left: 1px solid #e1e2e2;
+    border-left: 1px solid #333;
     background-color: transparent;
 }
 /* @end */
@@ -360,7 +372,7 @@ input[type=url]:focus,
 select:focus,
 textarea:focus
 {
-    border-color: #e1e2e2;
+    border-color: #333;
     outline: none;
 }
 /* @end */
@@ -381,7 +393,7 @@ button,
 
     color: #000;
     border: 0;
-    background: #e1e2e2;
+    background: #333;
 }
 button:link,
 .button:link,
@@ -626,6 +638,6 @@ hr
 }
 .color-grey
 {
-    color: #e1e2e2;
+    color: #333;
 }
 /* @end */
