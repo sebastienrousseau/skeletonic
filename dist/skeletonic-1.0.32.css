@@ -1,7 +1,7 @@
 /**
- * Name: skeletonic v1.0.31
+ * Name: skeletonic v1.0.32
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.0.31
+ * @version 1.0.32
  * Author: Reedia Limited (https://github.com/reedia)
  * Copyright © Reedia Limited 2015-2018. All rights reserved.
  * http://skeletonic.io
@@ -391,7 +391,7 @@ button,
     white-space: nowrap;
     text-decoration: none;
 
-    color: #000;
+    color: #fff;
     border: 0;
     background: #333;
 }
@@ -402,7 +402,7 @@ button:visited,
 .button:visited,
 [type=submit]:visited
 {
-    color: #000;
+    color: #fff;
 }
 button:active,
 .button:active,
@@ -412,7 +412,7 @@ button:active,
     text-decoration: none;
 
     opacity: .75;
-    color: #000;
+    color: #fff;
 }
 button:hover,
 .button:hover,
