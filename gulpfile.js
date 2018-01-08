@@ -54,7 +54,7 @@ gulp.task("build-skeletonic-css", function () {
 
 gulp.task("build-skeletonic-css-grid-pattern", function () {
   return gulp.src([
-      "./src/components/pattern.styl"
+      "./src/patterns/pattern.styl"
     ])
     .pipe(concat("skeletonic-pattern.styl"))
     .pipe(stylus())
