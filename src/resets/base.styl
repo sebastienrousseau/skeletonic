@@ -1,6 +1,6 @@
 /* @group Base */
 *
-  color: color-black
+  color: $black
   font-family: font
   font-size: typography-size-base
   font-weight: 400
@@ -16,11 +16,18 @@ html
 textarea
   -moz-box-sizing:border-box
   -webkit-box-sizing:border-box
-  border-color:#333333
+  border-round($grey-900)
   box-sizing:border-box
   min-height:70px
   padding:10px;
   width:100%
+  
+  &:hover
+    border-color: $grey-900
+
+  &:focus
+    border-color: $grey-200
+    outline: none
 
 input,
 textarea,
@@ -39,7 +46,7 @@ form
 
 strong, b
   font-weight: bold
-  color: color-black
+  color: $black
 
 em, i
   font-style: italic

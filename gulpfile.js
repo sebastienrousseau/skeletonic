@@ -18,7 +18,7 @@ const comment = `/**
  * Description: ${pkg.description}
  * @version ${pkg.version}
  * Author: ${pkg.author}
- * Copyright © Reedia Limited 2015-2018. All rights reserved.
+ * Copyright © Reedia Limited 2018. All rights reserved.
  * ${pkg.homepage}
  * Repository: ${pkg.repository}
  * License: ${pkg.license}
@@ -27,20 +27,11 @@ const comment = `/**
 
 gulp.task("build-skeletonic-css", function () {
   return gulp.src([
-      "./src/config.styl",
-      "./src/base.styl",
-      "./src/grid.styl",
-      "./src/typography.styl",
-      "./src/table.styl",
-      "./src/form.styl",
-      "./src/button.styl",
-      "./src/link.styl",
-      "./src/list.styl",
-      "./src/image.styl",
-      // "./src/nav.styl",
-      "./src/code.styl",
-      "./src/divider.styl",
-      "./src/util.styl"
+    './src/configurations/*.styl',
+    './src/resets/*.styl',
+    './src/core/*.styl',
+    './src/components/*.styl',
+    './src/mixins/*.styl'
     ])
     .pipe(concat("skeletonic.styl"))
     .pipe(stylus())
@@ -63,7 +54,7 @@ gulp.task("build-skeletonic-css", function () {
 
 gulp.task("build-skeletonic-css-grid-pattern", function () {
   return gulp.src([
-      "./src/pattern.styl"
+      "./src/components/pattern.styl"
     ])
     .pipe(concat("skeletonic-pattern.styl"))
     .pipe(stylus())
