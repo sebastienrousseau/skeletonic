@@ -44,6 +44,8 @@ Within the release you'll find the following directory and external style sheets
 Skeletonic/
 ├── skeletonic-1.0.35.css
 ├── skeletonic.min-1.0.35.css
+├── skeletonic-colours-1.0.35.css
+├── skeletonic-colours.min-1.0.35.css
 ├── skeletonic-pattern-1.0.35.css
 ├── skeletonic-pattern.min-1.0.35.css
 ```
@@ -52,9 +54,20 @@ You simply then need to link one of these in your HTML document.
 
 The link consists of just a simple line of HTML code that you will need to put in the ```<head>```  section of your HTML document:
 
+#### Default CSS
+
+```
+<link rel="stylesheet" type="text/css" href="skeletonic.min-1.0.35.css" />
+```
+
+#### CSS Responsive Grid-View
 ```
 <link rel="stylesheet" type="text/css" href="skeletonic-pattern.min-1.0.35.css" />
-<link rel="stylesheet" type="text/css" href="skeletonic.min-1.0.35.css" />
+```
+
+#### CSS Colours
+```
+<link rel="stylesheet" type="text/css" href="skeletonic-colours.min-1.0.35.css" />
 ```
 
 We offer production-ready versions and use unpkg as our CDN to link to the latest production version
