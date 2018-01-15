@@ -2,7 +2,6 @@
 ==================================================
 
 	#	Configurations
-		#	Colours
 		# Variables
 
 	#	Resets
@@ -26,20 +25,32 @@
 ==================================================
 /* @group Media Queries */
 
+@media (min-width: 320px)
+  .container
+    max-width: 302px
+
+@media (min-width: 480px)
+  .container
+    max-width: 458px
+
 @media (min-width: 576px)
   .container
-    max-width: 540px
+    max-width: 549px
 
 @media (min-width: 768px)
   .container
-    max-width: 750px
+    max-width: 724px
 
-@media (min-width: 992px)
+@media (min-width: 1024px)
   .container
-    max-width: 970px
+    max-width: 940px
 
-@media (min-width: 1200px)
+@media (min-width: 1280px)
   .container
-    max-width: 1170px
+    max-width: 1180px
+
+@media (min-width: 1440px)
+  .container
+    max-width: 1300px
 
 /* @end */

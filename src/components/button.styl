@@ -1,7 +1,11 @@
 /* @group Button */
+-highlight($strength = .3)
+  box-shadow: s("inset 0 1px 0 %s", rgba(255,255,255,$strength))
+
 button, .button, [type=submit]
-  background: $grey-200
+  -highlight()
   border:0
+  background: $grey-200
   color: $black
   cursor: pointer
   padding: 9px 20px
@@ -11,18 +15,17 @@ button, .button, [type=submit]
   user-select: none
   vertical-align: middle
   white-space: nowrap
-  &:link, &:visited {
+  &:link, &:visited
     color: $black
-  }
-  &:active
+  &:active,
+  &.active
+    background: $grey-500
     color: $black
-    opacity: 0.75
+    opacity: 0.85
     transition: all 150ms linear
     text-decoration: none
   &:hover
-    background: $grey-50
-    color: $black
-    opacity: 0.85
+    opacity: 0.5
     transition: all 150ms linear
     text-decoration: none
   &:focus
@@ -31,10 +34,61 @@ button, .button, [type=submit]
     opacity: 0.7
     transition: all 150ms linear
     text-decoration: none
-  &[disabled],
-  &:disabled,
-  &.disabled
+  &:disabled
     cursor: default
     opacity: .5
     pointer-events: none
+    transition: all 150ms linear
+  &.primary
+    background: $blue-A700
+    color: $white
+    cursor: pointer
+    transition: all 150ms linear
+    &:hover
+      opacity: 0.5
+      transition: all 150ms linear
+      text-decoration: none
+  &.secondary, &.info
+    background: $light-blue-A700
+    color: $white
+    cursor: pointer
+    transition: all 150ms linear
+    &:hover
+      opacity: 0.5
+      transition: all 150ms linear
+      text-decoration: none
+  &.success
+    background: $green-A700
+    color: $white
+    cursor: pointer
+    transition: all 150ms linear
+    &:hover
+      opacity: 0.5
+      transition: all 150ms linear
+      text-decoration: none
+  &.error
+    background: $red-A700
+    color: $white
+    cursor: pointer
+    transition: all 150ms linear
+    &:hover
+      opacity: 0.5
+      transition: all 150ms linear
+      text-decoration: none
+  &.warning
+    background: $yellow-A700
+    color: $white
+    cursor: pointer
+    transition: all 150ms linear
+    &:hover
+      opacity: 0.5
+      transition: all 150ms linear
+      text-decoration: none
+
+.button-group
+  *letter-spacing: normal
+  *word-spacing: -0.43em
+  letter-spacing: -0.31em
+  text-rendering: optimizespeed
+
 /* @end */

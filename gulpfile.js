@@ -25,7 +25,7 @@ const comment = `/**
  * License URI: ${pkg.license_URI}
  */\r\n`;
 
-gulp.task("build-skeletonic-css", function () {
+gulp.task("build-css", function () {
   return gulp.src([
     './src/configurations/*.styl',
     './src/resets/*.styl',
@@ -52,7 +52,7 @@ gulp.task("build-skeletonic-css", function () {
     .pipe(gulp.dest("./dist/"));
 });
 
-gulp.task("build-skeletonic-css-grid-pattern", function () {
+gulp.task("build-pattern", function () {
   return gulp.src([
       "./src/patterns/pattern.styl"
     ])
@@ -72,6 +72,29 @@ gulp.task("build-skeletonic-css-grid-pattern", function () {
       gzip: true
     }))
     .pipe(concat("./tmp/skeletonic-pattern.min.css"))
+    .pipe(gulp.dest("./dist/"));
+});
+
+gulp.task("build-colours", function () {
+  return gulp.src([
+      './src/colours/*.styl'      
+    ])
+    .pipe(concat("skeletonic-colours.styl"))
+    .pipe(stylus())
+    .pipe(concat("skeletonic-colours.css", {rebaseUrls:false}))
+    .pipe(size())
+    .pipe(header(comment + "\r\n"))
+    .pipe(size())
+    .pipe(filever())
+    .pipe(csscomb('./csscomb.json'))
+    .pipe(gulp.dest("./dist/"))
+    .pipe(csslint.formatter('stylish'))
+    .pipe(size())
+    .pipe(clean())
+    .pipe(size({
+      gzip: true
+    }))
+    .pipe(concat("./tmp/skeletonic-colours.min.css"))
     .pipe(gulp.dest("./dist/"));
 });
 
@@ -126,7 +149,8 @@ gulp.task("watch", function() {
 });
 
 
-gulp.task("default", ["build-skeletonic-css"]);
-gulp.task("pattern", ["build-skeletonic-css-grid-pattern"]);
+gulp.task("default", ["build-css"]);
+gulp.task("pattern", ["build-pattern"]);
+gulp.task("colours", ["build-colours"]);
 
 // "rename","csscomb","csslint","clean"

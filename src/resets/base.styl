@@ -1,33 +1,18 @@
 /* @group Base */
 *
+  box-sizing: border-box;
   color: $black
   font-family: font
   font-size: typography-size-base
   font-weight: 400
   margin: 0.25em 0
   padding: 0
-  word-wrap: break-word
+  word-wrap: break-word;
 
 html
   font-family: sans-serif
   -ms-text-size-adjust: 100%
   -webkit-text-size-adjust: 100%
-
-textarea
-  -moz-box-sizing:border-box
-  -webkit-box-sizing:border-box
-  border-round($grey-900)
-  box-sizing:border-box
-  min-height:70px
-  padding:10px;
-  width:100%
-  
-  &:hover
-    border-color: $grey-900
-
-  &:focus
-    border-color: $grey-200
-    outline: none
 
 input,
 textarea,
@@ -45,10 +30,28 @@ form
   margin-bottom: 1.5rem
 
 strong, b
-  font-weight: bold
+  font-weight: 700;
   color: $black
 
 em, i
   font-style: italic
+
+small
+  font-size: 0.8rem
+
+sup
+  font-size: 0.8rem
+  top: 0.8em
+
+sub
+  font-size: 0.8rem
+  bottom: -0.8em
+
+.color-blue
+  color: #3344dd
+.color-red
+  color: #b50010
+.color-purple
+  color: #804180
 
 /* @end */
