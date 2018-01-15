@@ -33,7 +33,7 @@
   "bugs": {
     "url": "https://github.com/reedia/skeletonic/issues"
   },
-  "homepage": "http://skeletonic.io",
+  "homepage": "https://skeletonic.io",
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/reedia/skeletonic.git",

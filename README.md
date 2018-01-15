@@ -1,5 +1,5 @@
 <p align="center">
-	<a href="http://skeletonic.io">
+	<a href="https://skeletonic.io">
 		<img src="https://github.com/reedia/skeletonic/raw/master/images/skeletonic.png" alt="Skeletonic Logo"  />
 	</a>  
 </p>
@@ -102,7 +102,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## Acknowledgments
 
-[Skeletonic](http://skeletonic.io) is beautifully crafted by these people and a bunch of awesome [contributors](https://github.com/reedia/skeletonic/graphs/contributors)
+[Skeletonic](https://skeletonic.io) is beautifully crafted by these people and a bunch of awesome [contributors](https://github.com/reedia/skeletonic/graphs/contributors)
 
 [![Sebastien Rousseau](https://avatars0.githubusercontent.com/u/1394998?s=117)](http://sebastienrousseau.com) |
 |:---:
