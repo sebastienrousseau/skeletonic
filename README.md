@@ -83,7 +83,7 @@ The following table lists alternate CDNs where Skeletonic is hosted.
 |---|---|---|---|
 | [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.0.35/dist/skeletonic.min-1.0.35.css | Yes | No |
 |  [jsDelivr](https://www.jsdelivr.com/) | https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min-1.0.35.css  | Yes | Yes |
-| [RawGit](http://rawgit.com/) | https://cdn.rawgit.com/reedia/skeletonic/81bc5d5a/dist/skeletonic.min-1.0.35.css | Yes | No |
+| [RawGit](http://rawgit.com/) | https://cdn.rawgit.com/reedia/skeletonic/cd0aca0e/dist/skeletonic.min-1.0.35.css | Yes | No |
 
 
 
