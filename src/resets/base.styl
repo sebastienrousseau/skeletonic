@@ -1,33 +1,89 @@
 /* @group Base */
-*
-  box-sizing: border-box;
+html
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  font-family: sans-serif
+  font-size: 62.5%
+
+body
   color: $black
   font-family: font
-  font-size: typography-size-base
-  font-weight: 400
-  margin: 0.25em 0
-  padding: 0
-  word-wrap: break-word;
+  font-weight: 400;
+  font-size: golden-font-size-base rem
+  line-height: golden-ratio
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word
 
-html
-  font-family: sans-serif
-  -ms-text-size-adjust: 100%
-  -webkit-text-size-adjust: 100%
 
-input,
-textarea,
+html,
+body,
+button,
+span,
+object,
+iframe,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
 select,
 fieldset,
-pre,
-blockquote,
-dl,
-figure,
+form,
+label,
+legend,
 table,
-p,
-ul,
-ol,
-form
-  margin-bottom: 1.5rem
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+a
+  margin-bottom: golden-font-size-base rem
 
 strong, b
   font-weight: 700;
@@ -37,14 +93,14 @@ em, i
   font-style: italic
 
 small
-  font-size: 0.8rem
+  font-size: golden-font-size-small rem
 
 sup
-  font-size: 0.8rem
+  font-size: golden-font-size-small rem
   top: 0.8em
 
 sub
-  font-size: 0.8rem
+  font-size: golden-font-size-small rem
   bottom: -0.8em
 
 .color-blue

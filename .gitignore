@@ -27,6 +27,8 @@ $RECYCLE.BIN/
 .node_repl_history
 .npm
 .nyc_output
+.sonarlint
+.vscode
 Desktop.ini
 Icon
 Network Trash Folder

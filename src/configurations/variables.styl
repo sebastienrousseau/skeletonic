@@ -1,22 +1,32 @@
-// Fonts
-font = 'Roboto', sans-serif
+/* @group Variables */
 
-// Typography Scale
-// let s = size, b = base (1rem), r = ratio, and l = level -> s = b * (r ^ l)
-typography-size-base = 1rem
+  // Font Family
+  font = 'Open Sans', sans-serif
 
-typography-size-ratio = 1.2
-typography-size-1 = round(typography-size-base * (typography-size-ratio ** 6), 3)
-typography-size-2 = round(typography-size-base * (typography-size-ratio ** 5), 3)
-typography-size-3 = round(typography-size-base * (typography-size-ratio ** 4), 3)
-typography-size-4 = round(typography-size-base * (typography-size-ratio ** 3), 3)
-typography-size-5 = round(typography-size-base * (typography-size-ratio ** 2), 3)
-typography-size-6 = round(typography-size-base * typography-size-ratio, 3)
+  // Golden Ratio Variables
+  golden-ratio = 1.6180339887498948482
+  golden-large = round((1 / golden-ratio), 3)
+  golden-small = round((1 - golden-large), 3)
 
-typography-size-small-ratio = 1.125
-typography-size-small-1 = round(typography-size-base * (typography-size-small-ratio ** 6), 3)
-typography-size-small-2 = round(typography-size-base * (typography-size-small-ratio ** 5), 3)
-typography-size-small-3 = round(typography-size-base * (typography-size-small-ratio ** 4), 3)
-typography-size-small-4 = round(typography-size-base * (typography-size-small-ratio ** 3), 3)
-typography-size-small-5 = round(typography-size-base * (typography-size-small-ratio ** 2), 3)
-typography-size-small-6 = round(typography-size-base * typography-size-small-ratio, 3)
+  // Golden Ratio Font Sizes
+  golden-font-size-base= golden-ratio
+  golden-font-size-large= round(2 * golden-font-size-base * golden-large, 3)
+  golden-font-size-small= round(2 * golden-font-size-base * golden-small, 3)
+
+  // Golden Ratio Headers
+  golden-h1 = round(golden-font-size-base * (golden-ratio ** 6), 3)
+  golden-h2 = round(golden-font-size-base * (golden-ratio ** 5), 3)
+  golden-h3 = round(golden-font-size-base * (golden-ratio ** 4), 3)
+  golden-h4 = round(golden-font-size-base * (golden-ratio ** 3), 3)
+  golden-h5 = round(golden-font-size-base * (golden-ratio ** 2), 3)
+  golden-h6 = round(golden-font-size-base * (golden-ratio), 3)
+
+  // Golden Ratio Line Height
+  golden-line-height-h1 = round(golden-font-size-base * (golden-ratio), 3)
+  golden-line-height-h2 = round(golden-font-size-base * (golden-ratio ** 2), 3)
+  golden-line-height-h3 = round(golden-font-size-base * (golden-ratio ** 3), 3)
+  golden-line-height-h4 = round(golden-font-size-base * (golden-ratio ** 4), 3)
+  golden-line-height-h5 = round(golden-font-size-base * (golden-ratio ** 5), 3)
+  golden-line-height-h6 = round(golden-font-size-base * (golden-ratio ** 6), 3)
+
+/* @end */

@@ -5,21 +5,25 @@
 button, .button, [type=submit]
   -highlight()
   border:0
+  border-radius: 0.25rem
   background: $grey-200
   color: $black
   cursor: pointer
-  padding: 9px 20px
+  font-size: golden-font-size-base rem
+  padding: (5 * golden-ratio)px (10 * golden-ratio)px
   text-align: center
   text-decoration: none
+  text-transform: uppercase
   transition: all 150ms linear
   user-select: none
   vertical-align: middle
   white-space: nowrap
   &:link, &:visited
+    background: $grey-200
     color: $black
   &:active,
   &.active
-    background: $grey-500
+    background: $grey-400
     color: $black
     opacity: 0.85
     transition: all 150ms linear
@@ -29,7 +33,7 @@ button, .button, [type=submit]
     transition: all 150ms linear
     text-decoration: none
   &:focus
-    background: $grey-50
+    background: $grey-100
     color: $black
     opacity: 0.7
     transition: all 150ms linear
@@ -88,6 +92,8 @@ button, .button, [type=submit]
 .button-group
   *letter-spacing: normal
   *word-spacing: -0.43em
+  border: 0
+  border-radius: 0
   letter-spacing: -0.31em
   text-rendering: optimizespeed
 

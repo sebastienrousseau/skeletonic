@@ -1,21 +1,18 @@
+/* @group Cards */
 .card
-	background: $white
-	margin-bottom: 2rem
+	background: $grey-100
+	border: 1px solid $grey-300
+	margin-bottom: golden-ratio rem
 
 .card a
 	color: $black
 	text-decoration: none
 
 .card a:hover
-	box-shadow: 3px 3px 8px hsl(0, 0%, 80%)
 	text-decoration: none
 
 .card-content
-	padding: 1.4rem
-
-.card-content h3
-	margin-top: 0
-	margin-bottom: .5rem
+	padding: golden-ratio rem
 
 .cards
    display: flex
@@ -23,4 +20,6 @@
    justify-content: space-between
 
 .card
-	flex: 0 1 calc(25% - 1rem)
+	flex: 0 1 (25% - golden-ratio) rem
+
+/* @end */

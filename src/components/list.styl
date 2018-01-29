@@ -1,6 +1,6 @@
 /* @group Lists */
 ul, ol
-  margin: typography-size-base 0
+  margin: (golden-ratio) 0 rem
 
 ul
   list-style: none outside
@@ -9,14 +9,15 @@ ol
   list-style: decimal
 
 li
-  line-height: typography-size-base
-  margin-bottom: typography-size-base
+  line-height: golden-font-size-base
+  margin-bottom: golden-font-size-base
 
 ol,
 ul.square,
 ul.circle,
 ul.disc
-    margin: 1em 2.5em
+
+    margin: (golden-ratio) 0 rem (1.5*golden-ratio)rem
 
 ul.square
     list-style: square outside
@@ -31,7 +32,7 @@ ul ul,
 ul ol,
 ol ol,
 ol ul
-    font-size: 90%
-    margin: 4px 0 5px 30px
+    font-size: 100%
+    margin: (2 * golden-ratio) 0 (3 * golden-ratio) (20 * golden-ratio)
 
 /* @end */

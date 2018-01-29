@@ -1,7 +1,7 @@
 /**
- * Name: skeletonic v1.0.35
+ * Name: skeletonic v1.0.36
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.0.35
+ * @version 1.0.36
  * Author: Reedia Limited (https://github.com/reedia)
  * Copyright © Reedia Limited 2018. All rights reserved.
  * https://skeletonic.io
@@ -10,120 +10,267 @@
  * License URI: http://www.opensource.org/licenses/mit-license.php
  */
 
-/* @group Colours */
-/* Table Of Content
-==================================================
+/**
+ * Table Of Content
 
-	#	Configurations
-		# Variables
+    # Configurations
+      # Media Queries
+      # Variables
 
-	#	Resets
-		# Base
-		# Divider
-		# Typography
+    # Resets
+      # Colour Variables
+      # Base
+      # Divider
+      # Typography
 
-	#	Core
-		# Grid
+    # Core
+      # Grid
 
-	#	Components
-		# Button
-		# Code
-		# Form
-		# Image
-		# Links
-		# Lists
-		# Table
-		# Util
+    # Components
+      # Button
+      # Code
+      # Form
+      # Image
+      # Links
+      # Lists
+      # Table
+      # Util
+ */
 
-==================================================
 /* @group Media Queries */
 @media (min-width: 320px)
 {
     .container
     {
-        max-width: 302px;
+        max-width: 301.99999999999983rem;
+        margin: 0 auto;
     }
 }
 @media (min-width: 480px)
 {
     .container
     {
-        max-width: 458px;
+        max-width: 452.9999999999998rem;
+        margin: 0 auto;
     }
 }
 @media (min-width: 576px)
 {
     .container
     {
-        max-width: 549px;
+        max-width: 543.5999999999997rem;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 640px)
+{
+    .container
+    {
+        max-width: 603.9999999999997rem;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 720px)
+{
+    .container
+    {
+        max-width: 679.4999999999997rem;
+        margin: 0 auto;
     }
 }
 @media (min-width: 768px)
 {
     .container
     {
-        max-width: 724px;
+        max-width: 724.7999999999996rem;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 800px)
+{
+    .container
+    {
+        max-width: 754.9999999999997rem;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 960px)
+{
+    .container
+    {
+        max-width: 905.9999999999995rem;
+        margin: 0 auto;
     }
 }
 @media (min-width: 1024px)
 {
     .container
     {
-        max-width: 940px;
+        max-width: 966.3999999999995rem;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1200px)
+{
+    .container
+    {
+        max-width: 1132.4999999999995rem;
+        margin: 0 auto;
     }
 }
 @media (min-width: 1280px)
 {
     .container
     {
-        max-width: 1180px;
+        max-width: 1207.9999999999993rem;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1366px)
+{
+    .container
+    {
+        max-width: 1289.1624999999995rem;
+        margin: 0 auto;
     }
 }
 @media (min-width: 1440px)
 {
     .container
     {
-        max-width: 1300px;
+        max-width: 1358.9999999999993rem;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1536px)
+{
+    .container
+    {
+        max-width: 1449.5999999999992rem;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1600px)
+{
+    .container
+    {
+        max-width: 1509.9999999999993rem;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1600px)
+{
+    .container
+    {
+        max-width: 1509.9999999999993rem;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1920px)
+{
+    .container
+    {
+        max-width: 1811.999999999999rem;
+        margin: 0 auto;
     }
 }
 /* @end */
+/* @group Variables */
+/* @end */
+/* @group Colour Variables */
+/* @end */
 /* @group Base */
-*
+html
 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 62.5%;
 
-    box-sizing: border-box;
-    margin: .25em 0;
+    -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+}
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.618033988749895rem;
+    font-weight: 400;
+    line-height: 1.618033988749895;
+
+    margin: 0;
     padding: 0;
 
     word-wrap: break-word;
 
     color: #000;
 }
-html
-{
-    font-family: sans-serif;
-
-        -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-input,
-textarea,
+html,
+body,
+button,
+span,
+object,
+iframe,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
 select,
 fieldset,
-pre,
-blockquote,
-dl,
-figure,
+form,
+label,
+legend,
 table,
-p,
-ul,
-ol,
-form
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+a
 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.618033988749895rem;
 }
 strong,
 b
@@ -139,17 +286,17 @@ i
 }
 small
 {
-    font-size: .8rem;
+    font-size: 1.236rem;
 }
 sup
 {
-    font-size: .8rem;
+    font-size: 1.236rem;
 
     top: .8em;
 }
 sub
 {
-    font-size: .8rem;
+    font-size: 1.236rem;
 
     bottom: -.8em;
 }
@@ -169,9 +316,7 @@ sub
 /* @group Divider */
 hr
 {
-    width: 100%;
-    margin-top: .25em;
-    margin-bottom: .25em;
+    width: 98.3819660112501%;
 
     border-top: 1px solid #000;
     background-color: #f5f5f5;
@@ -180,79 +325,52 @@ hr
 /* @group Typography */
 h1
 {
-    font-size: 2.986rem;
+    font-size: 4.794399882936444rem;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.19356;
 
     margin-top: 0;
 }
 h2
 {
-    font-size: 2.488rem;
+    font-size: 4.109000189412811rem;
     font-weight: 500;
-    line-height: 1.25;
+    line-height: 1.119626666666667;
 
     margin-top: 0;
 }
 h3
 {
-    font-size: 2.074rem;
+    font-size: 3.685399693523634rem;
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.073933333333333;
 
     margin-top: 0;
 }
 h4
 {
-    font-size: 1.728rem;
+    font-size: 3.423600495889178rem;
     font-weight: 500;
-    line-height: 1.35;
+    line-height: 1.045693333333333;
 
     margin-top: 0;
 }
 h5
 {
-    font-size: 1.44rem;
+    font-size: 3.261799197634455rem;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.02824;
 
     margin-top: 0;
 }
 h6
 {
-    font-size: 1.2rem;
+    font-size: 3.161801298254722rem;
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.017453333333333;
+
+    margin-top: 0;
 }
-/* csslint ignore:start */
-@media (max-width: 768px)
-{
-    h1
-    {
-        font-size: 2.027rem;
-    }
-    h2
-    {
-        font-size: 1.802rem;
-    }
-    h3
-    {
-        font-size: 1.602rem;
-    }
-    h4
-    {
-        font-size: 1.424rem;
-    }
-    h5
-    {
-        font-size: 1.266rem;
-    }
-    h6
-    {
-        font-size: 1.125rem;
-    }
-}
-/* csslint ignore:end */
 /* @end */
 /* @group Grid */
 .container
@@ -262,16 +380,16 @@ h6
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    width: 100%;
-    max-width: 940px;
+    width: 96%;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 24.270509831248425 rem;
 }
 .grid-flex
 {
     display: -webkit-box;
     display: flex;
 
+    align-items: top;
         flex-wrap: wrap;
     -ms-flex-wrap: wrap;
 }
@@ -284,6 +402,8 @@ h6
 }
 .flex-1
 {
+    margin: 0 1.618033988749895rem;
+
     -webkit-box-flex: 1;
        -moz-box-flex: 1;
         -ms-box-flex: 1;
@@ -291,6 +411,8 @@ h6
 }
 .flex-2
 {
+    margin: 0 1.618033988749895rem;
+
     -webkit-box-flex: 2;
        -moz-box-flex: 2;
         -ms-box-flex: 2;
@@ -298,6 +420,8 @@ h6
 }
 .flex-3
 {
+    margin: 0 1.618033988749895rem;
+
     -webkit-box-flex: 3;
        -moz-box-flex: 3;
         -ms-box-flex: 3;
@@ -305,6 +429,8 @@ h6
 }
 .flex-4
 {
+    margin: 0 1.618033988749895rem;
+
     -webkit-box-flex: 4;
        -moz-box-flex: 4;
         -ms-box-flex: 4;
@@ -312,6 +438,8 @@ h6
 }
 .flex-5
 {
+    margin: 0 1.618033988749895rem;
+
     -webkit-box-flex: 5;
        -moz-box-flex: 5;
         -ms-box-flex: 5;
@@ -319,6 +447,8 @@ h6
 }
 .flex-6
 {
+    margin: 0 1.618033988749895rem;
+
     -webkit-box-flex: 6;
        -moz-box-flex: 6;
         -ms-box-flex: 6;
@@ -326,6 +456,8 @@ h6
 }
 .flex-7
 {
+    margin: 0 1.618033988749895rem;
+
     -webkit-box-flex: 7;
        -moz-box-flex: 7;
         -ms-box-flex: 7;
@@ -333,6 +465,8 @@ h6
 }
 .flex-8
 {
+    margin: 0 1.618033988749895rem;
+
     -webkit-box-flex: 8;
        -moz-box-flex: 8;
         -ms-box-flex: 8;
@@ -340,6 +474,8 @@ h6
 }
 .flex-9
 {
+    margin: 0 1.618033988749895rem;
+
     -webkit-box-flex: 9;
        -moz-box-flex: 9;
         -ms-box-flex: 9;
@@ -347,6 +483,8 @@ h6
 }
 .flex-10
 {
+    margin: 0 1.618033988749895rem;
+
     -webkit-box-flex: 10;
        -moz-box-flex: 10;
         -ms-box-flex: 10;
@@ -358,7 +496,9 @@ button,
 .button,
 [type=submit]
 {
-    padding: 9px 20px;
+    font-size: 1.618033988749895rem;
+
+    padding: 8.090169943749475px 16.18033988749895px;
 
     cursor: pointer;
     user-select: none;
@@ -367,9 +507,11 @@ button,
     vertical-align: middle;
     white-space: nowrap;
     text-decoration: none;
+    text-transform: uppercase;
 
     color: #000;
     border: 0;
+    border-radius: .25rem;
     background: #eee;
     box-shadow: inset 0 1px 0 rgba(255,255,255,.3);
 }
@@ -381,6 +523,7 @@ button:visited,
 [type=submit]:visited
 {
     color: #000;
+    background: #eee;
 }
 button:active,
 .button:active,
@@ -394,7 +537,7 @@ button.active,
 
     opacity: .85;
     color: #000;
-    background: #9e9e9e;
+    background: #bdbdbd;
 }
 button:hover,
 .button:hover,
@@ -414,7 +557,7 @@ button:focus,
 
     opacity: .7;
     color: #000;
-    background: #fafafa;
+    background: #f5f5f5;
 }
 button:disabled,
 .button:disabled,
@@ -531,16 +674,21 @@ button.warning:hover,
 {
     letter-spacing: -.31em;
 
+    border: 0;
+    border-radius: 0;
+
     *letter-spacing: normal;
     *word-spacing: -.43em;
     text-rendering: optimizespeed;
 }
 /* @end */
+/* @group Cards */
 .card
 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.618033988749895rem;
 
-    background: #fff;
+    border: 1px solid #e0e0e0;
+    background: #f5f5f5;
 }
 .card a
 {
@@ -551,17 +699,10 @@ button.warning:hover,
 .card a:hover
 {
     text-decoration: none;
-
-    box-shadow: 3px 3px 8px #ccc;
 }
 .card-content
 {
-    padding: 1.4rem;
-}
-.card-content h3
-{
-    margin-top: 0;
-    margin-bottom: .5rem;
+    padding: 1.618033988749895rem;
 }
 .cards
 {
@@ -572,17 +713,19 @@ button.warning:hover,
 }
 .card
 {
-    flex: 0 1 calc(25% - 1rem);
+    flex: 0 1 23.381966011250107% rem;
 }
+/* @end */
 /* @group Code */
 pre,
 code
 {
     font-family: 'Consolas', 'Monaco', 'Menlo', monospace;
+    font-size: 1.618033988749895rem;
 
     display: block;
 
-    padding: 1rem;
+    padding: 1.236rem;
 
     text-align: left;
     white-space: pre-wrap;
@@ -605,13 +748,13 @@ input[type=url],
 select,
 textarea
 {
-    font-size: 1rem;
+    font-size: 2rem;
 
     display: block;
 
     width: 100%;
-    margin-bottom: 5px 0;
-    padding: 5px;
+    margin: 0 8.090169943749475 rem;
+    padding: 0 8.090169943749475 rem;
 
     transition: all 150ms linear;
 
@@ -687,7 +830,7 @@ a:focus
 ul,
 ol
 {
-    margin: 1rem 0;
+    margin: 1.618033988749895 0 rem;
 }
 ul
 {
@@ -699,16 +842,16 @@ ol
 }
 li
 {
-    line-height: 1rem;
+    line-height: 1.618033988749895;
 
-    margin-bottom: 1rem;
+    margin-bottom: 1.618033988749895;
 }
 ol,
 ul.square,
 ul.circle,
 ul.disc
 {
-    margin: 1em 2.5em;
+    margin: 1.618033988749895 0 rem 2.427050983124842rem;
 }
 ul.square
 {
@@ -727,14 +870,12 @@ ul ol,
 ol ol,
 ol ul
 {
-    font-size: 90%;
+    font-size: 100%;
 
-    margin: 4px 0 5px 30px;
+    margin: 3.23606797749979 0 4.854101966249685 32.3606797749979;
 }
 /* @end */
-/*=============================
-  Navigation
-=============================*/
+/* @group Navigation */
 .nav
 {
     position: relative;
@@ -756,6 +897,7 @@ ol ul
 {
     margin-right: 0;
 }
+/* @end */
 /* @group Lists */
 table
 {
@@ -778,8 +920,6 @@ thead
 td,
 th
 {
-    font-size: inherit;
-
     overflow: visible;
 
     margin: 0;

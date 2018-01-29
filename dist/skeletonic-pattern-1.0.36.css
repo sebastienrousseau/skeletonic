@@ -1,13 +1,40 @@
 /**
- * Name: skeletonic v1.0.35
+ * Name: skeletonic v1.0.36
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.0.35
+ * @version 1.0.36
  * Author: Reedia Limited (https://github.com/reedia)
  * Copyright © Reedia Limited 2018. All rights reserved.
  * https://skeletonic.io
  * Repository: git+https://github.com/reedia/skeletonic.git
  * License: MIT
  * License URI: http://www.opensource.org/licenses/mit-license.php
+ */
+
+/**
+ * Table Of Content
+
+    # Configurations
+      # Media Queries
+      # Variables
+
+    # Resets
+      # Colour Variables
+      # Base
+      # Divider
+      # Typography
+
+    # Core
+      # Grid
+
+    # Components
+      # Button
+      # Code
+      # Form
+      # Image
+      # Links
+      # Lists
+      # Table
+      # Util
  */
 
 /* @group Pattern */
