@@ -1,10 +1,10 @@
 {
     "name": "skeletonic",
-    "version": "1.0.36",
+    "version": "1.0.37",
     "description": "A dead on, lightweight, responsive and modern CSS framework.",
     "keywords": [
         "skeletonic",
-        "skeletonic.min-1.0.36.css",
+        "skeletonic.min-1.0.37.css",
         "CSS",
         "lightweight",
         "dead on",
@@ -19,9 +19,9 @@
         "grid system",
         "typography"
     ],
-    "style": "dist/skeletonic.min-1.0.36.css",
-    "main": "dist/skeletonic.min-1.0.36.css",
-    "filename": "skeletonic.min-1.0.36.css",
+    "style": "dist/skeletonic.min-1.0.37.css",
+    "main": "dist/skeletonic.min-1.0.37.css",
+    "filename": "skeletonic.min-1.0.37.css",
     "scripts": {
         "test": "",
         "build": "gulp"
@@ -39,12 +39,12 @@
         "target": "git://github.com/reedia/skeletonic.git",
         "basePath": "dist",
         "files": [
-            "dist/skeletonic.min-1.0.36.css",
-            "dist/skeletonic-1.0.36.css",
-            "dist/skeletonic-colours.min-1.0.36.css",
-            "dist/skeletonic-colours-1.0.36.css",
-            "dist/skeletonic-pattern.min-1.0.36.css",
-            "dist/skeletonic-pattern-1.0.36.css"
+            "dist/skeletonic.min-1.0.37.css",
+            "dist/skeletonic-1.0.37.css",
+            "dist/skeletonic-colours.min-1.0.37.css",
+            "dist/skeletonic-colours-1.0.37.css",
+            "dist/skeletonic-pattern.min-1.0.37.css",
+            "dist/skeletonic-pattern-1.0.37.css"
         ]
     },
     "devDependencies": {
@@ -58,6 +58,7 @@
         "gulp-csslint": "^1.0.0",
         "gulp-git": "^2.5.1",
         "gulp-header": "^2.0.1",
+        "gulp-rename": "^1.2.2",
         "gulp-size": "^3.0.0",
         "gulp-sourcemaps": "^2.6.4",
         "gulp-stylus": "^2.7.0",
