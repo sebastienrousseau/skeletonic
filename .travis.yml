@@ -8,33 +8,32 @@ script: gulp
 notifications:
   email: false
 after_success:
-  # Preparing automated tag
-  - export GIT_TAG=build-$TRAVIS_BRANCH-$(date -u "+%Y-%m-%d")-$TRAVIS_BUILD_NUMBER
-  - echo -n $GIT_TAG > v0.1.$TRAVIS_BUILD_NUMBER
-  - git commit -m "Set build VERSION number to v1.0."$TRAVIS_BUILD_NUMBER
-  - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-  - git push --quiet https://$GITHUBKEY@github.com/reedia/skeletonic $GIT_TAG > /dev/null 2>&1
-  # Help Debugging
-  - echo "${TRAVIS_BRANCH}"
-  - echo "${TRAVIS_PULL_REQUEST}"
-  - echo "${TRAVIS_SECURE_ENV_VARS}"
-  - echo "${TRAVIS_COMMIT}"  
-  - echo ${TRAVIS_BUILD_NUMBER}
-  - echo ${TRAVIS_REPO_SLUG}
-  - echo ${GIT_TAG}
-before_deploy: 
-  - echo 'Ready to deploy Skeletonic v1.0.$TRAVIS_BUILD_NUMBER'
+- export GIT_TAG=build-$TRAVIS_BRANCH-$(date -u "+%Y-%m-%d")-$TRAVIS_BUILD_NUMBER
+- echo -n $GIT_TAG > v0.1.$TRAVIS_BUILD_NUMBER
+- git commit -m "Set build VERSION number to v1.0."$TRAVIS_BUILD_NUMBER
+- git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
+- git push --quiet https://$GITHUBKEY@github.com/reedia/skeletonic $GIT_TAG > /dev/null
+  2>&1
+- echo "${TRAVIS_BRANCH}"
+- echo "${TRAVIS_PULL_REQUEST}"
+- echo "${TRAVIS_SECURE_ENV_VARS}"
+- echo "${TRAVIS_COMMIT}"
+- echo ${TRAVIS_BUILD_NUMBER}
+- echo ${TRAVIS_REPO_SLUG}
+- echo ${GIT_TAG}
+before_deploy:
+- echo 'Ready to deploy Skeletonic v1.0.$TRAVIS_BUILD_NUMBER'
 deploy:
   provider: releases
-  file_glob: true    
+  file_glob: true
   skip-cleanup: true
   keep-history: true
   file: dist/*
   name: Skeletonic v1.0.$TRAVIS_BUILD_NUMBER
   body: "<strong>Change Log:</strong><br />Release created on $(date +'%d/%m/%Y')
-    at $(date +'%T')<br />A sleek, lightweight, intuitive and ultra-responsive CSS framework. Designed to
-    fit your web life."    
-  api_key:
-    secure: ZVrYsGOfa2vrCPnuQUm4Oww1K8s8wUwIROMOf9xDIhBqlwXLLIY4yhQHrSydHJzsO5cgd6ll0b5EGwD286xtk3kKi0WrTMpXnEk3c0o+tro4QsRNdJfosthjgda4qDKpXEdYp9Czv7M31ioncYpRAGEBYx+qVIXhrmvlwAIHPp7tEkuUsOC+Fg0uB36GxG9INJswYDriVJnw+ackfDXftKYw2KrOigNQ2FePXkfV9BiZxxalYfjScHvEYz5vuy6VM1XN3CYgXqjCo6f83wtL17Tw0Jvrxivr2C8heUPiPHty3mymQdKm2j2m9ob/yUPrBG/x/KK43TqNqeafNDCj1ipNlbmtk/Ou/kk8QN0rm7fMG7HDxSTitmmsj84ByC4KO+bywJxXUtvyMHXouSoQfQX/ApgCyr3LakNTK2lucy/hjtbQ6E51mqCHLKaSc3O9qPnn2M2UlvzKq0aDCHmmXhj6kOUdekTEWZKHKPKgHAUYlnL0JRvtsnekW3qILyyfroFGxfihCy2nuKOMezWS/NVfOttJCzumr9cMJJuArW7S2lYlEmQSVOscVVNtYf1C/bHz29+zu5ibGlS3QwKNESaSSAyG+ALmq6d+4KrQ8XyQ3Ne/j7u+FqmSEmCFOa2adyCyzSfxsw9RJpqjd0skTOR7X/u+i+ZALVjCO8afPp0=
+    at $(date +'%T')<br />A sleek, lightweight, intuitive and ultra-responsive CSS
+    framework. Designed to fit your web life."
   on:
     repo: reedia/skeletonic
+  api-key:
+    secure: S8w7Lo5eScTPQAzObBIsuHd7rFJT+k1MHrIlE2or7gDpk+X5wd/eBtwFY1avfuJdGF2E+qOfe6uATBYKXERRgwJ8wkmp+zIDhooeuwgj0I8V8TZgwr9j9oFZFOV8lQyHl8N8cR7Vjyn3ScDxiu3ucGgqdLuWPFvzFV7NpLIGlDxzORos6u0HIMlydiVcimO3JRX7gkKwCsTrh5R6byN37bf7AUwwabN1qtoiAqEx9vGswkIXxuZLIOxh8zGO84lq51PV8otkPk5WsBWfvQ4jqufXOCxfBZP39V42jKkER+JMIhtjXxSMAVFTAEMo7sUY9mFs8LCd/0Avyu7z/U8PVjStowwSN1+XRo1vUtXZBe4OmuZTqp+1v8xDOIDlbJZwHIP+NZHH/S6ixNLFN7w40xPmB0svpnQ/wW1R7i3EHBKkU/qpdJ5G96m4Dzv1lYghMA+QK15YU8Fx0noYNce2pF0M2jNCdZ0vlUgBGV/3+rczGIhmluQGBRYPpyVUF0XwgjnUxDlK7/cAvXM6x1CyKdkjfgF1jtQQ0gxsKm27PudgeXY0BtD687BucT5z6I0XxgHiuB9UHcPtZy4dapZx2jjymwxHTfoWIyQfBV7S2VFWXoz4y+ntriMUY64mF89zY34wy4WtBuanRG7tingpfwGCa+4OY4pvAPvk2jZLkSw=
