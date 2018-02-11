@@ -17,14 +17,13 @@ after_success:
   # Help Debugging
   - echo ${TRAVIS_BRANCH}
   - echo ${TRAVIS_BUILD_NUMBER}
-  - echo ${TRAVIS_DIR}
   - echo ${TRAVIS_REPO_SLUG}
   - echo ${GIT_TAG}
 deploy:
   provider: releases
   skip-cleanup: true
   keep-history: true
-  file: $TRAVIS_DIR/dist/*
+  file: "dist/*"
   name: Skeletonic v1.0.$TRAVIS_BUILD_NUMBER
   body: "<strong>Change Log:</strong><br />Release created on $(date +'%d/%m/%Y')
     at $(date +'%T')<br />A sleek, lightweight, intuitive and ultra-responsive CSS framework. Designed to
@@ -33,3 +32,4 @@ deploy:
     secure: ZVrYsGOfa2vrCPnuQUm4Oww1K8s8wUwIROMOf9xDIhBqlwXLLIY4yhQHrSydHJzsO5cgd6ll0b5EGwD286xtk3kKi0WrTMpXnEk3c0o+tro4QsRNdJfosthjgda4qDKpXEdYp9Czv7M31ioncYpRAGEBYx+qVIXhrmvlwAIHPp7tEkuUsOC+Fg0uB36GxG9INJswYDriVJnw+ackfDXftKYw2KrOigNQ2FePXkfV9BiZxxalYfjScHvEYz5vuy6VM1XN3CYgXqjCo6f83wtL17Tw0Jvrxivr2C8heUPiPHty3mymQdKm2j2m9ob/yUPrBG/x/KK43TqNqeafNDCj1ipNlbmtk/Ou/kk8QN0rm7fMG7HDxSTitmmsj84ByC4KO+bywJxXUtvyMHXouSoQfQX/ApgCyr3LakNTK2lucy/hjtbQ6E51mqCHLKaSc3O9qPnn2M2UlvzKq0aDCHmmXhj6kOUdekTEWZKHKPKgHAUYlnL0JRvtsnekW3qILyyfroFGxfihCy2nuKOMezWS/NVfOttJCzumr9cMJJuArW7S2lYlEmQSVOscVVNtYf1C/bHz29+zu5ibGlS3QwKNESaSSAyG+ALmq6d+4KrQ8XyQ3Ne/j7u+FqmSEmCFOa2adyCyzSfxsw9RJpqjd0skTOR7X/u+i+ZALVjCO8afPp0=
   on:
     repo: reedia/skeletonic
+    tags: true
