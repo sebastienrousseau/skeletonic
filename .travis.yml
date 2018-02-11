@@ -15,10 +15,16 @@ after_success:
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
   - git push --quiet https://$GITHUBKEY@github.com/reedia/skeletonic $GIT_TAG > /dev/null 2>&1
   # Help Debugging
-  - echo ${TRAVIS_BRANCH}
+  - echo "${TRAVIS_BRANCH}"
+  - echo "${TRAVIS_PULL_REQUEST}"
+  - echo "${TRAVIS_SECURE_ENV_VARS}"
+  - echo "${TRAVIS_COMMIT}"  
   - echo ${TRAVIS_BUILD_NUMBER}
   - echo ${TRAVIS_REPO_SLUG}
   - echo ${GIT_TAG}
+before_deploy: 
+  - git fetch
+  - git fetch --tags
 deploy:
   provider: releases
   skip-cleanup: true
