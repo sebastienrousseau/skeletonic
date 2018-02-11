@@ -8,16 +8,23 @@ script: gulp
 notifications:
   email: false
 after_success:
+  # Preparing automated tag
   - export GIT_TAG=build-$TRAVIS_BRANCH-$(date -u "+%Y-%m-%d")-$TRAVIS_BUILD_NUMBER
   - echo -n $GIT_TAG > v0.1.$TRAVIS_BUILD_NUMBER
   - git commit -m "Set build VERSION number to v1.0."$TRAVIS_BUILD_NUMBER
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-  - git push --quiet https://$GITHUBKEY@github.com/reedia/skeletonic $GIT_TAG > /dev/null 2>&1    
+  - git push --quiet https://$GITHUBKEY@github.com/reedia/skeletonic $GIT_TAG > /dev/null 2>&1
+  # Help Debugging
+  - echo ${TRAVIS_BRANCH}
+  - echo ${TRAVIS_BUILD_NUMBER}
+  - echo ${TRAVIS_DIR}
+  - echo ${TRAVIS_REPO_SLUG}
+  - echo ${GIT_TAG}
 deploy:
   provider: releases
   skip-cleanup: true
   keep-history: true
-  file: dist/*
+  file: $TRAVIS_DIR/dist/*
   name: Skeletonic v1.0.$TRAVIS_BUILD_NUMBER
   body: "<strong>Change Log:</strong><br />Release created on $(date +'%d/%m/%Y')
     at $(date +'%T')<br />A sleek, lightweight, intuitive and ultra-responsive CSS framework. Designed to
