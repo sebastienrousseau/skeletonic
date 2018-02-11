@@ -12,7 +12,7 @@ after_success:
   - echo -n $GIT_TAG > v0.1.$TRAVIS_BUILD_NUMBER
   - git commit -m "Set build VERSION number to v1.0."$TRAVIS_BUILD_NUMBER
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-  - git push --quiet https://$GITHUBKEY@github.com/reedia/dotfiles $GIT_TAG > /dev/null 2>&1    
+  - git push --quiet https://$GITHUBKEY@github.com/reedia/skeletonic $GIT_TAG > /dev/null 2>&1    
 deploy:
   provider: releases
   skip-cleanup: true
