@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 const gulp = require("gulp");
 const rename = require('gulp-rename');
 const pkg = require("./package.json");
