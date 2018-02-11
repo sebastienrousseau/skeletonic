@@ -17,6 +17,7 @@ deploy:
   provider: releases
   skip-cleanup: true
   keep-history: true
+  file: dist/*
   name: Skeletonic v1.0.$TRAVIS_BUILD_NUMBER
   body: "<strong>Change Log:</strong><br />Release created on $(date +'%d/%m/%Y')
     at $(date +'%T')<br />A sleek, lightweight, intuitive and ultra-responsive CSS framework. Designed to
