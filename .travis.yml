@@ -25,15 +25,12 @@ before_deploy:
 - echo 'Ready to deploy Skeletonic v1.0.$TRAVIS_BUILD_NUMBER'
 deploy:
   provider: releases
-  file_glob: true
-  skip-cleanup: true
-  keep-history: true
+  api_key:
+    secure: cpUkxouSnQCXtLyFlrPKg1EDRCcI9VoTeVvNK6NlWUS+KOQcdXOc4sWy032ZUK4XbBV2k4AVczHoz1k7UaOJKxOLy6RqeYwiIabJBzck+kWD+6u4tD6ynEfxwSKXBJbIZBn0QCHhHPSsQ5vHSPJTdRw4EqUI3ufe1RPPuTnJMnG/afKQhXRgaXNS6lhqudzXZrMHRonnA2wkF7Yyx0ha+G3c5Eh7WnFduOW+3nPuog4S+641pqCIawal7W4QU+Y60KCKDjKgaAMhs0E0hEr/lmejNlLvCELMIxWashxD7670uqnC6sAJTMfCjnnNv3/2Qx/kaOWNkuIItpkzlVtR+0q3yCYDnd1uKC32xicalt6rPEET5rzLeV8Tc69HOUuVarPnRvSmRPA7gsXBJq629x5P4X8lPXS0WFUitTzEJt+Os1fmEX60ieyGcV6wHhRTFFxg4yzN5IHxDI15FYpY4JMfbq9TNAZ9OzvFvIaprPg8T+WHWEBr0AChL1LVEo99k+6rcYqbdAEncESgXJ13k+IZqZkXnj+iwcoiRoSV8YaAY9VZ1DOLpfsJex3rG3Mqh1sxFNFPMlGGj8J67U0MmOGtS4O5oRPTmoseUkpUvRpBxVbMSkowvSs/JhMd0SMmPrDD2SXZPp/5ShsasJR0nOJnW9+LnrHuJNFPPBWhG5o=
   file: dist/*
   name: Skeletonic v1.0.$TRAVIS_BUILD_NUMBER
   body: "<strong>Change Log:</strong><br />Release created on $(date +'%d/%m/%Y')
     at $(date +'%T')<br />A sleek, lightweight, intuitive and ultra-responsive CSS
-    framework. Designed to fit your web life."
+    framework. Designed to fit your web life."  
   on:
     repo: reedia/skeletonic
-  api-key:
-    secure: S8w7Lo5eScTPQAzObBIsuHd7rFJT+k1MHrIlE2or7gDpk+X5wd/eBtwFY1avfuJdGF2E+qOfe6uATBYKXERRgwJ8wkmp+zIDhooeuwgj0I8V8TZgwr9j9oFZFOV8lQyHl8N8cR7Vjyn3ScDxiu3ucGgqdLuWPFvzFV7NpLIGlDxzORos6u0HIMlydiVcimO3JRX7gkKwCsTrh5R6byN37bf7AUwwabN1qtoiAqEx9vGswkIXxuZLIOxh8zGO84lq51PV8otkPk5WsBWfvQ4jqufXOCxfBZP39V42jKkER+JMIhtjXxSMAVFTAEMo7sUY9mFs8LCd/0Avyu7z/U8PVjStowwSN1+XRo1vUtXZBe4OmuZTqp+1v8xDOIDlbJZwHIP+NZHH/S6ixNLFN7w40xPmB0svpnQ/wW1R7i3EHBKkU/qpdJ5G96m4Dzv1lYghMA+QK15YU8Fx0noYNce2pF0M2jNCdZ0vlUgBGV/3+rczGIhmluQGBRYPpyVUF0XwgjnUxDlK7/cAvXM6x1CyKdkjfgF1jtQQ0gxsKm27PudgeXY0BtD687BucT5z6I0XxgHiuB9UHcPtZy4dapZx2jjymwxHTfoWIyQfBV7S2VFWXoz4y+ntriMUY64mF89zY34wy4WtBuanRG7tingpfwGCa+4OY4pvAPvk2jZLkSw=
