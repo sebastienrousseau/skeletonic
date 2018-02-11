@@ -1,26 +1,27 @@
+sudo: false
 language: node_js
 node_js:
 - 6
 before_script:
 - npm install -g gulp
-cache:
-  directories:
-    -node_modules
-sudo: false
 script: gulp
+notifications:
+  email: false
+after_success:
+  - export GIT_TAG=build-$TRAVIS_BRANCH-$(date -u "+%Y-%m-%d")-$TRAVIS_BUILD_NUMBER
+  - echo -n $GIT_TAG > v0.1.$TRAVIS_BUILD_NUMBER
+  - git commit -m "Set build VERSION number to v1.0."$TRAVIS_BUILD_NUMBER
+  - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
+  - git push --quiet https://$GITHUBKEY@github.com/reedia/dotfiles $GIT_TAG > /dev/null 2>&1    
 deploy:
   provider: releases
-  api_key:
-    secure: COroxSGtJLNO3IG9HSGrQIeGb5TBBemK9SO10pCAulFPLcDbQgtmQMOcXOvmOKqqQg9fwhjfw562Nd2B1Qg0/G3A5lYpKXXukCe6T7c3FOWHp5ZoVm1AKQA0cYf4748z1kXh7r+AevXVnr2lTAP99vahCdd9PzUy7hcv2Hru/nn8t6wmQJj4dWlv9w+YfuNBxUYTfNl/TlRPnQjEYHsiPCl4UJdpsmekqB7HTOT+FhZ7KQQdMjxEbe6ayMVxnthGmowOfd5gvr9wZsWFPtv3zBd21b20RqJtWIzCJY/tBFJuV8CjczrBqYop5wTzbREEfW4N34P5FeZvpRYU0P2/3ojmtPFKScPMT+a/gafCsK67sRZNROBj3rIAJV26tJKcfQMJ7LZVAU+r4FzzZQRJyjn1N3DgqX5wyxFS/lnJ7al+6s3FPB2dOcTAssR040eCWjkdbp/4Aflz77JzDSnbel7bcq2vLAptn0qqaYe0BgAGsvKr9DqhWEigpncn26tXL2blUgmdGLnKxPugSavOFDyU0BnWpm2A28WjQxqak+8SuHkQ/0qOi5mEvEioDIgjMXLFwy56ZNlcQRhp59HOa8AjJqowqe7XCiRIAMdybl4amgPSKacNTV5e3uOFEUyqSLE3Hff71LUgDOLLicZ3LTFH6R1Ag3S9lWHDd4sZuvY=
-  file: dist/*
+  skip-cleanup: true
+  keep-history: true
   name: Skeletonic v1.0.$TRAVIS_BUILD_NUMBER
-  body: <strong>Change Log:</strong><br /><br />Release created on $(date +'%d/%m/%Y') at $(date +'%T')<br /><br />A sleek, lightweight, intuitive and ultra-responsive CSS framework. Designed to fit your web life.
-  skip_cleanup: true
-  file_glob: true
+  body: "<strong>Change Log:</strong><br />Release created on $(date +'%d/%m/%Y')
+    at $(date +'%T')<br />A sleek, lightweight, intuitive and ultra-responsive CSS framework. Designed to
+    fit your web life."    
+  api_key:
+    secure: ZVrYsGOfa2vrCPnuQUm4Oww1K8s8wUwIROMOf9xDIhBqlwXLLIY4yhQHrSydHJzsO5cgd6ll0b5EGwD286xtk3kKi0WrTMpXnEk3c0o+tro4QsRNdJfosthjgda4qDKpXEdYp9Czv7M31ioncYpRAGEBYx+qVIXhrmvlwAIHPp7tEkuUsOC+Fg0uB36GxG9INJswYDriVJnw+ackfDXftKYw2KrOigNQ2FePXkfV9BiZxxalYfjScHvEYz5vuy6VM1XN3CYgXqjCo6f83wtL17Tw0Jvrxivr2C8heUPiPHty3mymQdKm2j2m9ob/yUPrBG/x/KK43TqNqeafNDCj1ipNlbmtk/Ou/kk8QN0rm7fMG7HDxSTitmmsj84ByC4KO+bywJxXUtvyMHXouSoQfQX/ApgCyr3LakNTK2lucy/hjtbQ6E51mqCHLKaSc3O9qPnn2M2UlvzKq0aDCHmmXhj6kOUdekTEWZKHKPKgHAUYlnL0JRvtsnekW3qILyyfroFGxfihCy2nuKOMezWS/NVfOttJCzumr9cMJJuArW7S2lYlEmQSVOscVVNtYf1C/bHz29+zu5ibGlS3QwKNESaSSAyG+ALmq6d+4KrQ8XyQ3Ne/j7u+FqmSEmCFOa2adyCyzSfxsw9RJpqjd0skTOR7X/u+i+ZALVjCO8afPp0=
   on:
     repo: reedia/skeletonic
-    tags: false
-env:
-  global:
-  - secure: YFrLQXgisc/xmu0L3x2XvRsFzHtaJLfBiCOmO0fhMG02GutVTFelNaVjnl+5H8Wmgijm9qMCWvXMlVjK/NwyY7P+Wbop7/jkXKgl1uYiSH5zXUlEMzTgTS2F/JChegDhiO98MKDmSwY41S1wsLm4rCvWsr3QBHiLN533G4+UAsrX8Rr9JYNkEUwxbjjlT0oYhMkjkDT8JtuUEUAYhW394qNR607Sub0dKRSUdyRU3iyXvUpaaaNSDYQP+NcCIqGnG+g8ftYuz0H23ESwPP3hgCwV0aN48yIPUN1yyOFmiz+LCv9KP4/eYY7ghlnXJPUyqDjqPN4hYmDZQhplvlUBHX5OtX+7EqWF79IJHmOqD/0D5/BjHgLEhMYJH32Txze4EWpsAKB0wBjqhSR7jAdH9UckeYMyiM7OdwSr+Mh4r1pmDLlfQnqwH6qt3pGoeZl2QSZkiLoJBXN/faCN+jQ/dR/JPRGQ6CuaVy1kugxqBunsi3RlRKM4xAcp+WGEF4kIxG9O+0OGJf+FHVSCbpkp7JlGsovaUDxF2CdClNEB1WKIslvJk8w4aYCQ9+AGJAQfiIfVmuIhRzKrFmAzzPGkDt0I6tEQa/fdsIOzof0ES1nA4/xWcc/+npMzpycINs1xx+YKROPoUj/05ENhClmKAU1/aDaX50wiE6s/h2X4YNA=
-  - secure: YQlSshtvGVQ/papcUZLkXxBHhQrFwlmCKgVSyAm/zYCNbYHF56lmEHEOBi8eA5JeES0S8gAunrx4/Bnt8yM+cZDe9ooeafHkSgpiI6w9d79RrljSt1k83UOHVoYERKaquSHJ24DE0emUFr+SRAmheLyffZfFT3pHTJMYdtpo7ekv/XRxA3i69BY7SWj9N84Nr+5up09OigqowhLJ6oFdHv5fUUvLpQSiijP6PfYHQA/DMwR9hia0U7gTUwFTFdcDj17emyzoMZH22xtsg4TN3HitseeP0ZjzoiKHNnj6QtRMbiO/hf//1Ln7SxPe0I6DcXYQejOlxARvmB3/zjzEilkIUMSjK/B2SDwUiXp4BxdgtxI/myEEYpLYRDosR3LJPOFWLyETG/BJEOVch4+oIDBYAlgPBy6c5U7NpwlTu8YeFTRx+hUpOm/ydj0Ogwz/qo5g1A0JzE5ckRnuUSMJwx/FzYI2IRtPmgPk8s7oJGZ8WMuWTrP0pOUCfnqCXmeHPtJjc8dYw16Gh0VUFHuA71VQM/esSWHokel6XH/5wurQ+zsDrSqxajnWWwAbnDwWvRUa9BaOT0sSoow2syHinm5I7uI/vc6zamXuAWBCfDNb60CGAFls8QB4m3P3lK8G67vXqodLKqpiGrgHaNLH4nNk4oZRId+I5rsBQKl2/Z8=
