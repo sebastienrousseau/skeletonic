@@ -38,17 +38,19 @@ deploy:
     name: Skeletonic $GIT_TAG
     body: "<strong>Change Log:</strong><br />Release $GIT_TAG created on $(date +'%d/%m/%Y')
       at $(date +'%T')<br />A sleek, lightweight, intuitive and ultra-responsive CSS
-      framework. Designed to fit your web life."      
+      framework. Designed to fit your web life."
     on:
       repo: reedia/skeletonic
       tags: true
+      all_branches: true
 
   - provider: npm
     email: $NPM_EMAIL
-    api_key: $NPM_TOKEN    
+    api_key: $NPM_TOKEN
     on:
       repo: reedia/skeletonic
       tags: true
-      
+      all_branches: true
+
 before_install:
   - openssl aes-256-cbc -K $encrypted_0da74458a2a7_key -iv $encrypted_0da74458a2a7_iv -in id_rsa.enc -out id_rsa -d
