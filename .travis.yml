@@ -27,12 +27,15 @@ deploy:
   provider: releases
   api_key:
     secure: "H5c4SljeQELCWkJ4ebfbx/hEy2cdro971LtMaemkoqQEVeBY8+4JvDxrz/X7M9sjrWVTk/1IQiRoINqxqU5Mhg/wOz+SxH997oVrCl43iTIMVop1FXpkVaIckmNK79o4bJGKTfAyq/RBwEZP5MA71BeGBX2aytgmC41Rf50sk8xuvHcC8LQWphrqhzcLUQpEahxUKzl2ns6PgrgEXd2aNvAWJZ6skolqJEm0arAGidBTgeCb09ivg0mQ9OHxSEinRbe4WNjbHknpAQNZJizJS4nQ7WqLqgYsmNgzJTQ5dDsyK6HYzJVOEUV3tUrZBLKEJFm6gUhJwaITdUraqT4nHnIy35dol9Fpea/FP5l8ontb9UjQK+hjumT8/VQ5c2efRClYIrZvQ7MkSLzILxkrgZd2jWXps2A7shAD5rr+CokZXiOABFUXk3nfSlp/lByOi/7UxY0BEeQQHjnenxKjXkf1+hNkGxQholHUzw8D4zm77HUfbb3RG41fREsNcWsJdmRVE8Bv6jyzD0wiugnWwvObHNyoQvCWQxt/8qW1Xqkl+gsYaoKCF+y4uuvWHtTtm0UAY2ASV3/bvSVoLQwZO8sdU5jYfQ1OmxhLain0YgljUT+wxLt94hxUpJhoaixxCJaLYItpsekde9BOSAT7g/NgpQPsOldzTrs4pHOBd94="
-  file_glob: true  
+  file_glob: true
   file: dist/*
   skip_cleanup: true
   name: Skeletonic v1.0.$TRAVIS_BUILD_NUMBER
   body: "<strong>Change Log:</strong><br />Release created on $(date +'%d/%m/%Y')
     at $(date +'%T')<br />A sleek, lightweight, intuitive and ultra-responsive CSS
-    framework. Designed to fit your web life."  
+    framework. Designed to fit your web life."
   on:
     repo: reedia/skeletonic
+before_install:
+- openssl aes-256-cbc -K $encrypted_0da74458a2a7_key -iv $encrypted_0da74458a2a7_iv
+  -in id_rsa.pub.enc -out id_rsa.pub -d
