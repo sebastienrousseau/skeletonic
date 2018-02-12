@@ -26,8 +26,10 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: cpUkxouSnQCXtLyFlrPKg1EDRCcI9VoTeVvNK6NlWUS+KOQcdXOc4sWy032ZUK4XbBV2k4AVczHoz1k7UaOJKxOLy6RqeYwiIabJBzck+kWD+6u4tD6ynEfxwSKXBJbIZBn0QCHhHPSsQ5vHSPJTdRw4EqUI3ufe1RPPuTnJMnG/afKQhXRgaXNS6lhqudzXZrMHRonnA2wkF7Yyx0ha+G3c5Eh7WnFduOW+3nPuog4S+641pqCIawal7W4QU+Y60KCKDjKgaAMhs0E0hEr/lmejNlLvCELMIxWashxD7670uqnC6sAJTMfCjnnNv3/2Qx/kaOWNkuIItpkzlVtR+0q3yCYDnd1uKC32xicalt6rPEET5rzLeV8Tc69HOUuVarPnRvSmRPA7gsXBJq629x5P4X8lPXS0WFUitTzEJt+Os1fmEX60ieyGcV6wHhRTFFxg4yzN5IHxDI15FYpY4JMfbq9TNAZ9OzvFvIaprPg8T+WHWEBr0AChL1LVEo99k+6rcYqbdAEncESgXJ13k+IZqZkXnj+iwcoiRoSV8YaAY9VZ1DOLpfsJex3rG3Mqh1sxFNFPMlGGj8J67U0MmOGtS4O5oRPTmoseUkpUvRpBxVbMSkowvSs/JhMd0SMmPrDD2SXZPp/5ShsasJR0nOJnW9+LnrHuJNFPPBWhG5o=
+    secure: "H5c4SljeQELCWkJ4ebfbx/hEy2cdro971LtMaemkoqQEVeBY8+4JvDxrz/X7M9sjrWVTk/1IQiRoINqxqU5Mhg/wOz+SxH997oVrCl43iTIMVop1FXpkVaIckmNK79o4bJGKTfAyq/RBwEZP5MA71BeGBX2aytgmC41Rf50sk8xuvHcC8LQWphrqhzcLUQpEahxUKzl2ns6PgrgEXd2aNvAWJZ6skolqJEm0arAGidBTgeCb09ivg0mQ9OHxSEinRbe4WNjbHknpAQNZJizJS4nQ7WqLqgYsmNgzJTQ5dDsyK6HYzJVOEUV3tUrZBLKEJFm6gUhJwaITdUraqT4nHnIy35dol9Fpea/FP5l8ontb9UjQK+hjumT8/VQ5c2efRClYIrZvQ7MkSLzILxkrgZd2jWXps2A7shAD5rr+CokZXiOABFUXk3nfSlp/lByOi/7UxY0BEeQQHjnenxKjXkf1+hNkGxQholHUzw8D4zm77HUfbb3RG41fREsNcWsJdmRVE8Bv6jyzD0wiugnWwvObHNyoQvCWQxt/8qW1Xqkl+gsYaoKCF+y4uuvWHtTtm0UAY2ASV3/bvSVoLQwZO8sdU5jYfQ1OmxhLain0YgljUT+wxLt94hxUpJhoaixxCJaLYItpsekde9BOSAT7g/NgpQPsOldzTrs4pHOBd94="
+  file_glob: true  
   file: dist/*
+  skip_cleanup: true
   name: Skeletonic v1.0.$TRAVIS_BUILD_NUMBER
   body: "<strong>Change Log:</strong><br />Release created on $(date +'%d/%m/%Y')
     at $(date +'%T')<br />A sleek, lightweight, intuitive and ultra-responsive CSS
