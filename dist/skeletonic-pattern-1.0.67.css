@@ -1,7 +1,7 @@
 /**
- * Name: skeletonic v1.0.63
+ * Name: skeletonic v1.0.67
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.0.63
+ * @version 1.0.67
  * Author: Reedia Limited (https://github.com/reedia)
  * Copyright © Reedia Limited 2018. All rights reserved.
  * https://skeletonic.io
@@ -19,6 +19,7 @@
 
     # Resets
       # Colour Variables
+      # Font Face
       # Base
       # Divider
       # Typography
@@ -61,3 +62,5 @@ body
     -webkit-background-origin: padding-box;
 }
 /* @end */
+
+/*# sourceMappingURL=skeletonic-pattern-1.0.67.css.map */

@@ -1,7 +1,7 @@
 /**
- * Name: skeletonic v1.0.63
+ * Name: skeletonic v1.0.67
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.0.63
+ * @version 1.0.67
  * Author: Reedia Limited (https://github.com/reedia)
  * Copyright © Reedia Limited 2018. All rights reserved.
  * https://skeletonic.io
@@ -19,6 +19,7 @@
 
     # Resets
       # Colour Variables
+      # Font Face
       # Base
       # Divider
       # Typography
@@ -38,139 +39,139 @@
  */
 
 /* @group Media Queries */
-@media (min-width: 320px)
+@media only screen and (max-width: 480px)
 {
     .container
     {
-        max-width: 301.99999999999983rem;
+        width: 320px;
         margin: 0 auto;
     }
 }
-@media (min-width: 480px)
+@media only screen and (max-width: 720px)
 {
     .container
     {
-        max-width: 452.9999999999998rem;
+        width: 480px;
         margin: 0 auto;
     }
 }
-@media (min-width: 576px)
+@media only screen and (max-width: 864px)
 {
     .container
     {
-        max-width: 543.5999999999997rem;
+        width: 576px;
         margin: 0 auto;
     }
 }
-@media (min-width: 640px)
+@media only screen and (max-width: 960px)
 {
     .container
     {
-        max-width: 603.9999999999997rem;
+        width: 640px;
         margin: 0 auto;
     }
 }
-@media (min-width: 720px)
+@media only screen and (max-width: 1080px)
 {
     .container
     {
-        max-width: 679.4999999999997rem;
+        width: 720px;
         margin: 0 auto;
     }
 }
-@media (min-width: 768px)
+@media only screen and (max-width: 1152px)
 {
     .container
     {
-        max-width: 724.7999999999996rem;
+        width: 768px;
         margin: 0 auto;
     }
 }
-@media (min-width: 800px)
+@media only screen and (max-width: 1200px)
 {
     .container
     {
-        max-width: 754.9999999999997rem;
+        width: 800px;
         margin: 0 auto;
     }
 }
-@media (min-width: 960px)
+@media only screen and (max-width: 1440px)
 {
     .container
     {
-        max-width: 905.9999999999995rem;
+        width: 960px;
         margin: 0 auto;
     }
 }
-@media (min-width: 1024px)
+@media only screen and (max-width: 1536px)
 {
     .container
     {
-        max-width: 966.3999999999995rem;
+        width: 1024px;
         margin: 0 auto;
     }
 }
-@media (min-width: 1200px)
+@media only screen and (max-width: 1800px)
 {
     .container
     {
-        max-width: 1132.4999999999995rem;
+        width: 1200px;
         margin: 0 auto;
     }
 }
-@media (min-width: 1280px)
+@media only screen and (max-width: 1920px)
 {
     .container
     {
-        max-width: 1207.9999999999993rem;
+        width: 1280px;
         margin: 0 auto;
     }
 }
-@media (min-width: 1366px)
+@media only screen and (max-width: 2049px)
 {
     .container
     {
-        max-width: 1289.1624999999995rem;
+        width: 1366px;
         margin: 0 auto;
     }
 }
-@media (min-width: 1440px)
+@media only screen and (max-width: 2160px)
 {
     .container
     {
-        max-width: 1358.9999999999993rem;
+        width: 1440px;
         margin: 0 auto;
     }
 }
-@media (min-width: 1536px)
+@media only screen and (max-width: 2304px)
 {
     .container
     {
-        max-width: 1449.5999999999992rem;
+        width: 1536px;
         margin: 0 auto;
     }
 }
-@media (min-width: 1600px)
+@media only screen and (max-width: 2400px)
 {
     .container
     {
-        max-width: 1509.9999999999993rem;
+        width: 1600px;
         margin: 0 auto;
     }
 }
-@media (min-width: 1600px)
+@media only screen and (max-width: 2400px)
 {
     .container
     {
-        max-width: 1509.9999999999993rem;
+        width: 1600px;
         margin: 0 auto;
     }
 }
-@media (min-width: 1920px)
+@media only screen and (max-width: 2880px)
 {
     .container
     {
-        max-width: 1811.999999999999rem;
+        width: 1920px;
         margin: 0 auto;
     }
 }
@@ -320,6 +321,101 @@ hr
 
     border-top: 1px solid #000;
     background-color: #f5f5f5;
+}
+/* @end */
+/* @group Font Face */
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Regular-webfont.woff') format('woff'), url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+}
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-weight: 400;
+    font-style: italic;
+
+    src: url('fonts/OpenSans-Italic-webfont.eot');
+    src: url('fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Italic-webfont.woff') format('woff'), url('fonts/OpenSans-Italic-webfont.ttf') format('truetype'), url('fonts/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
+}
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-style: normal;
+
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Light-webfont.woff') format('woff'), url('fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+}
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-style: italic;
+
+    src: url('fonts/OpenSans-LightItalic-webfont.eot');
+    src: url('fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-LightItalic-webfont.woff') format('woff'), url('fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg');
+}
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-style: normal;
+
+    src: url('fonts/OpenSans-Semibold-webfont.eot');
+    src: url('fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('fonts/OpenSans-Semibold-webfont.ttf') format('truetype'), url('fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+}
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-style: italic;
+
+    src: url('fonts/OpenSans-SemiboldItalic-webfont.eot');
+    src: url('fonts/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-SemiboldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
+}
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-weight: 700;
+    font-style: normal;
+
+    src: url('fonts/OpenSans-Bold-webfont.eot');
+    src: url('fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-Bold-webfont.woff') format('woff'), url('fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+}
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-weight: 700;
+    font-style: italic;
+
+    src: url('fonts/OpenSans-BoldItalic-webfont.eot');
+    src: url('fonts/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-BoldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-BoldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
+}
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-style: normal;
+
+    src: url('fonts/OpenSans-ExtraBold-webfont.eot');
+    src: url('fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-ExtraBold-webfont.woff') format('woff'), url('fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'), url('fonts/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold') format('svg');
+}
+@font-face
+{
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-style: italic;
+
+    src: url('fonts/OpenSans-ExtraBoldItalic-webfont.eot');
+    src: url('fonts/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'), url('fonts/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'), url('fonts/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraboldItalic') format('svg');
 }
 /* @end */
 /* @group Typography */
@@ -1032,3 +1128,5 @@ th
     color: #eee;
 }
 /* @end */
+
+/*# sourceMappingURL=skeletonic-1.0.67.css.map */

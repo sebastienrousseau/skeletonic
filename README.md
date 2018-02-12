@@ -10,11 +10,12 @@
 
 <p align="center">Simply designed to fit your web life.</p>
 
-<p align="center"><a href="https://github.com/reedia/skeletonic/archive/v1.0.63.zip">Download Skeletonic CSS</a></p>
+<p align="center"><a href="https://github.com/reedia/skeletonic/archive/v1.0.67.zip">Download Skeletonic CSS</a></p>
 
+[![NPM](https://nodei.co/npm/skeletonic.png)](https://nodei.co/npm/skeletonic/)
 [![npm version](https://badge.fury.io/js/skeletonic.svg)](https://badge.fury.io/js/skeletonic)
+[![Build Status](https://travis-ci.org/reedia/skeletonic.svg?branch=master)](https://travis-ci.org/reedia/skeletonic)
 [![Packagist](https://img.shields.io/badge/license-MIT-blue.svg)](https://skeletonic.github.io/license)
-[![Github Releases](https://img.shields.io/github/downloads/atom/atom/latest/total.svg)](https://github.com/reedia/skeletonic)
 
 ## Table of contents
 
@@ -33,7 +34,7 @@
 
 A few options are available:
 
--   Download the latest [release](https://github.com/reedia/skeletonic/archive/v1.0.63.zip)
+-   Download the latest [release](https://github.com/reedia/skeletonic/archive/v1.0.67.zip)
 -   Or simply clone the main repo: `git clone https://github.com/reedia/skeletonic.git`
 
 ## What's in the box
@@ -42,12 +43,12 @@ Within the release you'll find the following directory and external style sheets
 
 ```
 Skeletonic/
-├── skeletonic-1.0.63.css
-├── skeletonic.min-1.0.63.css
-├── skeletonic-colours-1.0.63.css
-├── skeletonic-colours.min-1.0.63.css
-├── skeletonic-pattern-1.0.63.css
-├── skeletonic-pattern.min-1.0.63.css
+├── skeletonic-1.0.67.css
+├── skeletonic.min-1.0.67.css
+├── skeletonic-colours-1.0.67.css
+├── skeletonic-colours.min-1.0.67.css
+├── skeletonic-pattern-1.0.67.css
+├── skeletonic-pattern.min-1.0.67.css
 ```
 
 You simply then need to link one of these in your HTML document.
@@ -57,17 +58,17 @@ The link consists of just a simple line of HTML code that you will need to put i
 #### Default CSS
 
 ```
-<link rel="stylesheet" type="text/css" href="skeletonic.min-1.0.63.css" />
+<link rel="stylesheet" type="text/css" href="skeletonic.min-1.0.67.css" />
 ```
 
 #### CSS Responsive Grid-View
 ```
-<link rel="stylesheet" type="text/css" href="skeletonic-pattern.min-1.0.63.css" />
+<link rel="stylesheet" type="text/css" href="skeletonic-pattern.min-1.0.67.css" />
 ```
 
 #### CSS Colours
 ```
-<link rel="stylesheet" type="text/css" href="skeletonic-colours.min-1.0.63.css" />
+<link rel="stylesheet" type="text/css" href="skeletonic-colours.min-1.0.67.css" />
 ```
 
 We offer production-ready versions and use unpkg as our CDN to link to the latest production version
@@ -81,9 +82,9 @@ The following table lists alternate CDNs where Skeletonic is hosted.
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.0.63/dist/skeletonic.min-1.0.63.css | Yes | No |
-|  [jsDelivr](https://www.jsdelivr.com/) | https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min-1.0.63.css  | Yes | Yes |
-| [RawGit](http://rawgit.com/) | https://cdn.rawgit.com/reedia/skeletonic/cd0aca0e/dist/skeletonic.min-1.0.63.css | Yes | No |
+| [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.0.67/dist/skeletonic.min-1.0.67.css | Yes | No |
+| [jsDelivr](https://www.jsdelivr.com/) | https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min-1.0.67.css  | Yes | Yes |
+| [RawGit](http://rawgit.com/) | https://cdn.rawgit.com/reedia/skeletonic/master/dist/skeletonic.min-1.0.67.css | Yes | No |
 
 
 

@@ -28,6 +28,11 @@ after_success:
 before_deploy:
 - echo "Ready to deploy Skeletonic $GIT_TAG"
 
+branches:
+  only:
+   - master
+   - /^v\d+\.\d+\.\d+$/
+
 deploy:
   - provider: releases
     api_key:
