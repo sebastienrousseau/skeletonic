@@ -38,7 +38,7 @@ deploy:
     api_key:
       secure: AB76Q+N+MMmPkDkcf5JGpBAsKqAxRE2+dx1/26i0FlYLk3sCuokKDeiIQf1K5YUeH0XbWrNt4aXENh5bqvZKOrDBvKSPamJLY7G/AsEmE7S3zze+CpFQivu+mE9mZe+MDf8lDjQyuEB2W8c6swkulsh5Pv32310yRNw+5PUMe2qBHcmfHPmr3q4HA865khKVjFF6Y7Gw5xFMKMvAw2RRXOuuAWuMMNe2DoNEr94dX8llzLieclg94nEguBUO3BtlmwE6Cxewx9yhUqYLV3AzDLQWuse0s538Zww9Cb6DYT8Q5WsA7GhOrjGoDbYHLSGBwFMtI2QLwVmAXEDAwQDRWix4SNLjDODCt4Qt1Zy2OMDjVLJ5xkdD/H1jv0waC3g7DeAFFjh9cqVosua6HgnQvlvfJFK6bpRxoNCL4Gb1Yz6AGLK1JK5oQKqqdHLMU4je1OZosNdnaOXUtlgi7E2RVDQG3nQsVYg2UWg2v0XoVxi/7MwvZ+xbPeTDBc63hwP/bqpNn3BV9UGoiG7ENPyYCfBSTRX1h8fMCRXr7I94GhKvuqVL5NCBV5FV2YjLV3QUOhVIYEfngsp5DHhapDvJYJc6NrasngTW2dGMwvCQHewVODoOpspS5GeRF08dmpfts7N9l3BJPoGY5uUGMsNyKCF5BxJTDHmFqOshbfV1/6M=
     file_glob: true
-    file: dist/*
+    file: dist/**/**
     skip_cleanup: true
     name: Skeletonic $GIT_TAG
     body: "<strong>Change Log:</strong><br />Release $GIT_TAG created on $(date +'%d/%m/%Y')
