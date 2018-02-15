@@ -136,6 +136,31 @@ gulp.task('build-colours', function () {
 });
 
 
+gulp.task('build-animations', function () {
+  return gulp.src([
+    './src/animations/*.styl'
+  ])
+    .pipe(concat('skeletonic-animations.styl'))
+    .pipe(sourcemaps.init())
+    .pipe(stylus())
+    .pipe(concat('skeletonic-animations.css', { rebaseUrls: false }))
+    .pipe(size())
+    .pipe(header(comment + '\r\n'))
+    .pipe(size())
+    .pipe(filever())
+    .pipe(csscomb('./csscomb.json'))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./dist/'))
+    .pipe(csslint.formatter('stylish'))
+    .pipe(size())
+    .pipe(clean())
+    .pipe(size({
+      gzip: true
+    }))
+    .pipe(concat('./tmp/skeletonic-animations.min.css'))
+    .pipe(gulp.dest('./dist/'));
+});
+
 gulp.task('csslint', function () {
   return gulp.src(['./dist/*.css'])
     .pipe(csslint())
@@ -189,3 +214,4 @@ gulp.task('watch', function () {
 gulp.task('default', ['build-css']);
 gulp.task('pattern', ['build-pattern']);
 gulp.task('colours', ['build-colours']);
+gulp.task('animations', ['build-animations']);

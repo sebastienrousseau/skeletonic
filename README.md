@@ -4,15 +4,16 @@
 	</a>  
 </p>
 
-<h3 align="center">Introducing Skeletonic v1.0.83</h3>
+<h3 align="center">Introducing Skeletonic v1.0.85</h3>
 
 <p align="center">Skeletonic is a lightweight, intuitive and ultra-responsive CSS framework to speed up your Digital and Mobile Web development needs.</p>
 
 <p align="center">Simply designed to fit your web life.</p>
 
-<p align="center"><a href="https://github.com/reedia/skeletonic/archive/v1.0.83.zip">Download Skeletonic CSS</a></p>
+<p align="center"><a href="https://github.com/reedia/skeletonic/archive/v1.0.85.zip">Download Skeletonic CSS</a></p>
 
 [![NPM](https://nodei.co/npm/skeletonic.png)](https://nodei.co/npm/skeletonic/)
+
 [![npm version](https://badge.fury.io/js/skeletonic.svg)](https://badge.fury.io/js/skeletonic)
 [![Build Status](https://travis-ci.org/reedia/skeletonic.svg?branch=master)](https://travis-ci.org/reedia/skeletonic)
 [![Packagist](https://img.shields.io/badge/license-MIT-blue.svg)](https://skeletonic.github.io/license)
@@ -34,25 +35,34 @@
 
 A few options are available:
 
--   Download the latest [release](https://github.com/reedia/skeletonic/archive/v1.0.83.zip)
--   Or simply clone the main repo: `git clone https://github.com/reedia/skeletonic.git`
+-   Download the latest [release](https://github.com/reedia/skeletonic/archive/v1.0.85.zip)
+-   Install with [Npm](https://www.npmjs.com/package/skeletonic) to get the pre-built CSS and sourcemaps. This is recommended when using Skeletonic for a typical web project: 
+
+```bash
+npm install skeletonic
+```
+
+-   Or simply clone the main repository to get all source files including build scripts: `git clone https://github.com/reedia/skeletonic.git`
 
 ## What's in the box
 
-Within the release you'll find the following directory and external style sheets with both compiled and minified CSS variations:
+The Github project contains all source files which are compiled into the dist folder. Within the release you'll find the following directory and external style sheets with both compiled, minified CSS variations and CSS sourcemaps:
 
 ```
 Skeletonic
 ├── index.html
-├── skeletonic-1.0.83.css
-├── skeletonic-1.0.83.css.map
-├── skeletonic-colours-1.0.83.css
-├── skeletonic-colours-1.0.83.css.map
-├── skeletonic-colours.min-1.0.83.css
-├── skeletonic-pattern-1.0.83.css
-├── skeletonic-pattern-1.0.83.css.map
-├── skeletonic-pattern.min-1.0.83.css
-└── skeletonic.min-1.0.83.css
+├── skeletonic-1.0.85.css
+├── skeletonic-1.0.85.css.map
+├── skeletonic-animations-1.0.85.css
+├── skeletonic-animations-1.0.85.css.map
+├── skeletonic-animations.min-1.0.85.css
+├── skeletonic-colours-1.0.85.css
+├── skeletonic-colours-1.0.85.css.map
+├── skeletonic-colours.min-1.0.85.css
+├── skeletonic-pattern-1.0.85.css
+├── skeletonic-pattern-1.0.85.css.map
+├── skeletonic-pattern.min-1.0.85.css
+└── skeletonic.min-1.0.85.css
 ```
 
 You simply then need to link one of these in your HTML document.
@@ -62,23 +72,28 @@ The link consists of just a simple line of HTML code that you will need to put i
 #### Default CSS
 
 ```
-<link rel="stylesheet" type="text/css" href="skeletonic.min-1.0.83.css" />
+<link rel="stylesheet" type="text/css" href="skeletonic.min-1.0.85.css" />
+```
+
+We also offer production-ready versions and use unpkg as our CDN to link to the latest production version
+
+```
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/skeletonic" />
 ```
 
 #### CSS Responsive Grid-View
 ```
-<link rel="stylesheet" type="text/css" href="skeletonic-pattern.min-1.0.83.css" />
+<link rel="stylesheet" type="text/css" href="skeletonic-pattern.min-1.0.85.css" />
 ```
 
 #### CSS Colours
 ```
-<link rel="stylesheet" type="text/css" href="skeletonic-colours.min-1.0.83.css" />
+<link rel="stylesheet" type="text/css" href="skeletonic-colours.min-1.0.85.css" />
 ```
 
-We offer production-ready versions and use unpkg as our CDN to link to the latest production version
-
+#### CSS Animations
 ```
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/skeletonic" />
+<link rel="stylesheet" type="text/css" href="skeletonic-animations.min-1.0.85.css" />
 ```
 
 ## Alternate CDNs
@@ -86,9 +101,9 @@ The following table lists alternate CDNs where Skeletonic is hosted.
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.0.83/dist/skeletonic.min-1.0.83.css | Yes | No |
-| [jsDelivr](https://www.jsdelivr.com/) | https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min-1.0.83.css  | Yes | Yes |
-| [RawGit](http://rawgit.com/) | https://cdn.rawgit.com/reedia/skeletonic/master/dist/skeletonic.min-1.0.83.css | Yes | No |
+| [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.0.85/dist/skeletonic.min-1.0.85.css | Yes | No |
+| [jsDelivr](https://www.jsdelivr.com/) | https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min-1.0.85.css  | Yes | Yes |
+| [RawGit](http://rawgit.com/) | https://cdn.rawgit.com/reedia/skeletonic/master/dist/skeletonic.min-1.0.85.css | Yes | No |
 
 
 

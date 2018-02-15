@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="skeletonic,skeletonic-1.0.83.css,CSS,lightweight,dead on,responsive,framework,semantic,mobile-first,modern,style-agnostic,front-end,frontend,grid system,typography">
+  <meta name="keywords" content="skeletonic,skeletonic-1.0.85.css,CSS,lightweight,dead on,responsive,framework,semantic,mobile-first,modern,style-agnostic,front-end,frontend,grid system,typography">
   <meta name="description" content="Skeletonic is a lightweight, intuitive and ultra-responsive CSS framework to speed up your Digital and Mobile Web development needs.">
   <meta name="author" content="Reedia Limited">
 
   <title>Skeletonic - a lightweight, intuitive and ultra-responsive CSS framework</title>
 
-  <!-- <link rel="stylesheet" type="text/css" href="./skeletonic-pattern.min-1.0.83.css" /> -->
-  <link rel="stylesheet" type="text/css" href="./skeletonic-colours-1.0.83.css" />
-  <link rel="stylesheet" type="text/css" href="./skeletonic-1.0.83.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="./skeletonic-pattern.min-1.0.85.css" /> -->
+  <link rel="stylesheet" type="text/css" href="./skeletonic-colours-1.0.85.css" />
+  <link rel="stylesheet" type="text/css" href="./skeletonic-animations-1.0.85.css" />
+  <link rel="stylesheet" type="text/css" href="./skeletonic-1.0.85.css" />
 
 </head>
 
@@ -23,8 +24,8 @@
         <h1>Introducing Skeletonic</h1>
         <p>Skeletonic is a lightweight, intuitive and ultra-responsive CSS framework to speed up your Digital and Mobile Web development needs.</p>
         <p>Simply designed to fit your web life.</p>
-        <p><em>Version: 1.0.83</em></p>
-        <p><a href="https://github.com/reedia/skeletonic/archive/v1.0.83.zip" class="button">Download Skeletonic CSS</a></p>
+        <p><em>Version: 1.0.85</em></p>
+        <p><a href="https://github.com/reedia/skeletonic/archive/v1.0.85.zip" class="button">Download Skeletonic CSS</a></p>
       </row>
     </section>
 
@@ -204,7 +205,7 @@
       <row class="flex-10">
         <h3>Background colours</h3>
         <p>
-          <em>You will need to import <b>skeletonic-colours-1.0.83.css</b> to display the colours. The background colours are based on <a href="https://material.io/guidelines/style/color.html">Google's Material Design Colour palette</a>.</em>
+          <em>You will need to import <b>skeletonic-colours-1.0.85.css</b> to display the colours. The background colours are based on <a href="https://material.io/guidelines/style/color.html">Google's Material Design Colour palette</a>.</em>
         </p>
       </row>
       </section>
@@ -239,7 +240,7 @@
       <row class="flex-10">
         <h3>Text colours</h3>
         <p>
-          <em>You will need to import <b>skeletonic-colours-1.0.83.css</b> to display the colours. The colours are based on <a href="https://material.io/guidelines/style/color.html">Google's Material Design Colour palette</a>.</em>
+          <em>You will need to import <b>skeletonic-colours-1.0.85.css</b> to display the colours. The colours are based on <a href="https://material.io/guidelines/style/color.html">Google's Material Design Colour palette</a>.</em>
         </p>
       </row>
       </section>
@@ -362,7 +363,7 @@
       <row class="flex-10">
         <h3>Buttons</h3>
         <p><em>Default buttons style.</em></p>
-        <p><a href="https://github.com/reedia/skeletonic/archive/v1.0.83.zip" target="_blank" class="button">Download skeletonic-1.0.83.css</a></p>
+        <p><a href="https://github.com/reedia/skeletonic/archive/v1.0.85.zip" target="_blank" class="button">Download skeletonic-1.0.85.css</a></p>
         <h4>Button's states</h4>
         <p><em>Multiple buttons states.</em></p>
         <p>
@@ -405,11 +406,11 @@
         <select>
           <option value="">Choose an item...</option>
           <optgroup label="Original CSS">
-            <option value="">skeletonic-1.0.83.css</option>
+            <option value="">skeletonic-1.0.85.css</option>
             <option value="">skeletonic-pattern.css</option>
           </optgroup>
           <optgroup label="Minified CSS">
-            <option value="">skeletonic.min-1.0.83.css</option>
+            <option value="">skeletonic.min-1.0.85.css</option>
             <option value="">skeletonic-pattern.min.css</option>
           </optgroup>
         </select>
@@ -422,7 +423,73 @@
         <hr />
       </row>
     </section>
-
+    <hr />
+    <section class="grid-flex text-left">
+      <row class="flex-10">
+        <h3>Animations</h3>
+      </row>
+    </section>
+    <section class="grid-flex text-left">
+      <row class="showFadeIn card-content flex-2 bg-color-red-a700">
+        <style>
+          .showFadeIn {
+            animation: fade-in 4s linear 1 forwards;
+          }
+        </style>
+        <h4 class="color-white">Fade In animation</h3>
+      </row>
+      <row class="showFadeOut card-content flex-2 bg-color-pink-a700">
+        <style>
+          .showFadeOut {
+            animation: fade-out 4s linear 1 forwards;
+          }
+        </style>
+        <h4 class="color-white">Fade Out Animation</h3>
+      </row>
+      <row class="showFlash card-content flex-2 bg-color-deep-purple-a700">
+        <style>
+          .showFlash {
+            animation: flash 4s linear 1 forwards;
+          }
+        </style>
+        <h4 class="color-white">Flash animation</h4>
+      </row>
+      <row class="showPopIn card-content flex-2 bg-color-blue-a700">
+        <style>
+          .showPopIn {
+            animation: pop-in 4s linear 1 forwards;
+          }
+        </style>
+        <h4 class="color-white">Pop In animation</h4>
+      </row>
+      <row class="showZoomIn card-content flex-2 bg-color-cyan-a700">
+        <style>
+          .showZoomIn {
+            animation: zoom-in 4s linear 1 forwards;
+          }
+        </style>
+        <h4 class="color-white">Zoom In animation</h4>
+      </row>
+    </section>
+    <section class="grid-flex text-left">
+      <row class="showShake card-content flex-2 bg-color-green-a700">
+        <style>
+          .showShake {
+            animation: shake 4s linear 1 forwards;
+          }
+        </style>
+        <h4 class="color-white">Shake animation</h4>
+      </row>
+      <row class="showWobble card-content flex-2 bg-color-lime-a700">
+        <style>
+          .showWobble {
+            animation: wobble 4s linear 1 forwards;
+          }
+        </style>
+        <h4 class="color-white">Shake animation</h4>
+      </row>
+    </section>
+    <hr />
     <section class="grid-flex text-left">
       <row class="flex-10">
         <h3>Table</h3>
@@ -443,12 +510,12 @@
             <tr>
               <td>1</td>
               <td>Original CSS</td>
-              <td>skeletonic-1.0.83.css</td>
+              <td>skeletonic-1.0.85.css</td>
             </tr>
             <tr>
               <td>2</td>
               <td>Minified CSS</td>
-              <td>skeletonic.min-1.0.83.css</td>
+              <td>skeletonic.min-1.0.85.css</td>
             </tr>
           </tbody>
         </table>
@@ -467,12 +534,12 @@
               &lt;tr&gt;
                 &lt;td&gt;1&lt;/td&gt;
                 &lt;td&gt;Original CSS&lt;/td&gt;
-                &lt;td&gt;skeletonic-1.0.83.css&lt;/td&gt;
+                &lt;td&gt;skeletonic-1.0.85.css&lt;/td&gt;
               &lt;/tr&gt;
               &lt;tr&gt;
                 &lt;td&gt;2&lt;/td&gt;
                 &lt;td&gt;Minified CSS&lt;/td&gt;
-                &lt;td&gt;skeletonic.min-1.0.83.css&lt;/td&gt;
+                &lt;td&gt;skeletonic.min-1.0.85.css&lt;/td&gt;
               &lt;/tr&gt;
             &lt;/tbody&gt;
           &lt;/table&gt;
