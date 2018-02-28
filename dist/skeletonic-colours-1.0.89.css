@@ -1,7 +1,7 @@
 /**
- * Name: skeletonic v1.0.85
+ * Name: skeletonic v1.0.89
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.0.85
+ * @version 1.0.89
  * Author: Reedia Limited (https://github.com/reedia)
  * Copyright © Reedia Limited 2018. All rights reserved.
  * https://skeletonic.io
@@ -18,8 +18,6 @@
       # Variables
 
     # Resets
-      # Colour Variables
-      # Font Face
       # Base
       # Divider
       # Typography
@@ -29,11 +27,13 @@
 
     # Components
       # Button
+      # Card
       # Code
       # Form
       # Image
-      # Links
-      # Lists
+      # Link
+      # List
+      # Nav
       # Table
       # Util
  */
@@ -1101,6 +1101,68 @@
 }
 /* @group Colour Variables */
 /* @end */
+/* @group Background Colours */
+/* @end */
+.shading-50
+{
+    background-color: red-50;
+}
+.shading-100
+{
+    background-color: red-100;
+}
+.shading-200
+{
+    background-color: red-200;
+}
+.shading-300
+{
+    background-color: red-300;
+}
+.shading-400
+{
+    background-color: red-400;
+}
+.shading-500
+{
+    background-color: red-500;
+}
+.shading-600
+{
+    background-color: red-600;
+}
+.shading-700
+{
+    background-color: red-700;
+}
+.shading-800
+{
+    background-color: red-800;
+}
+.shading-900
+{
+    background-color: red-900;
+}
+.shading-1000
+{
+    background-color: red-1000;
+}
+.shading-A100
+{
+    background-color: red-A100;
+}
+.shading-A200
+{
+    background-color: red-A200;
+}
+.shading-A400
+{
+    background-color: red-A400;
+}
+.shading-A700
+{
+    background-color: red-A700;
+}
 /* @group Text Colours */
 .color-red-50
 {
@@ -2163,4 +2225,4 @@
     color: rgba(255,255,255,.54);
 }
 
-/*# sourceMappingURL=skeletonic-colours-1.0.85.css.map */
+/*# sourceMappingURL=skeletonic-colours-1.0.89.css.map */

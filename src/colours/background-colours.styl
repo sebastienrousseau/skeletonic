@@ -1,550 +1,106 @@
 /* @group Background Colours */
 
+@import 'colours.styl'
+
+// Material Design Shades
+variant = 50, 100, 200, 300, 400, 500, 600, 700, 800, 900
+shades = 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, a100, a200, a400, a700
+
 // Red
-.bg-color-red-50
-  background-color: #ffebee
-.bg-color-red-100
-  background-color: #ffcdd2
-.bg-color-red-200
-  background-color: #ef9a9a
-.bg-color-red-300
-  background-color: #e57373
-.bg-color-red-400
-  background-color: #ef5350
-.bg-color-red-500
-  background-color: #f44336
-.bg-color-red-600
-  background-color: #e53935
-.bg-color-red-700
-  background-color: #d32f2f
-.bg-color-red-800
-  background-color: #c62828
-.bg-color-red-900
-  background-color: #b71c1c
-.bg-color-red-a100
-  background-color: #ff8a80
-.bg-color-red-a200
-  background-color: #ff5252
-.bg-color-red-a400
-  background-color: #ff1744
-.bg-color-red-a700
-  background-color: #d50000
+  for red-color, i in red-colors
+    .bg-color-red-{shades[i]}
+      background-color: red-color
 
 // Pink
-.bg-color-pink-50
-  background-color: #fce4ec
-.bg-color-pink-100
-  background-color: #f8bbd0
-.bg-color-pink-200
-  background-color: #f48fb1
-.bg-color-pink-300
-  background-color: #f06292
-.bg-color-pink-400
-  background-color: #ec407a
-.bg-color-pink-500
-  background-color: #e91e63
-.bg-color-pink-600
-  background-color: #d81b60
-.bg-color-pink-700
-  background-color: #c2185b
-.bg-color-pink-800
-  background-color: #ad1457
-.bg-color-pink-900
-  background-color: #880e4f
-.bg-color-pink-a100
-  background-color: #ff80ab
-.bg-color-pink-a200
-  background-color: #ff4081
-.bg-color-pink-a400
-  background-color: #f50057
-.bg-color-pink-a700
-  background-color: #c51162
+  for pink-color, i in pink-colors
+    .bg-color-pink-{shades[i]}
+      background-color: pink-color
 
 // Purple
-.bg-color-purple-50
-  background-color: #f3e5f5
-.bg-color-purple-100
-  background-color: #e1bee7
-.bg-color-purple-200
-  background-color: #ce93d8
-.bg-color-purple-300
-  background-color: #ba68c8
-.bg-color-purple-400
-  background-color: #ab47bc
-.bg-color-purple-500
-  background-color: #9c27b0
-.bg-color-purple-600
-  background-color: #8e24aa
-.bg-color-purple-700
-  background-color: #7b1fa2
-.bg-color-purple-800
-  background-color: #6a1b9a
-.bg-color-purple-900
-  background-color: #4a148c
-.bg-color-purple-a100
-  background-color: #ea80fc
-.bg-color-purple-a200
-  background-color: #e040fb
-.bg-color-purple-a400
-  background-color: #d500f9
-.bg-color-purple-a700
-  background-color: #aa00ff
+  for purple-color, i in purple-colors
+    .bg-color-purple-{shades[i]}
+      background-color: purple-color
 
 // Deep Purple
-.bg-color-deep-purple-50
-  background-color: #ede7f6
-.bg-color-deep-purple-100
-  background-color: #d1c4e9
-.bg-color-deep-purple-200
-  background-color: #b39ddb
-.bg-color-deep-purple-300
-  background-color: #9575cd
-.bg-color-deep-purple-400
-  background-color: #7e57c2
-.bg-color-deep-purple-500
-  background-color: #673ab7
-.bg-color-deep-purple-600
-  background-color: #5e35b1
-.bg-color-deep-purple-700
-  background-color: #512da8
-.bg-color-deep-purple-800
-  background-color: #4527a0
-.bg-color-deep-purple-900
-  background-color: #311b92
-.bg-color-deep-purple-a100
-  background-color: #b388ff
-.bg-color-deep-purple-a200
-  background-color: #7c4dff
-.bg-color-deep-purple-a400
-  background-color: #651fff
-.bg-color-deep-purple-a700
-  background-color: #6200ea
+  for deep-purple-color, i in deep-purple-colors
+    .bg-color-deep-purple-{shades[i]}
+      background-color: deep-purple-color
+
 
 // Indigo
-.bg-color-indigo-50
-  background-color: #e8eaf6
-.bg-color-indigo-100
-  background-color: #c5cae9
-.bg-color-indigo-200
-  background-color: #9fa8da
-.bg-color-indigo-300
-  background-color: #7986cb
-.bg-color-indigo-400
-  background-color: #5c6bc0
-.bg-color-indigo-500
-  background-color: #3f51b5
-.bg-color-indigo-600
-  background-color: #3949ab
-.bg-color-indigo-700
-  background-color: #303f9f
-.bg-color-indigo-800
-  background-color: #283593
-.bg-color-indigo-900
-  background-color: #1a237e
-.bg-color-indigo-a100
-  background-color: #8c9eff
-.bg-color-indigo-a200
-  background-color: #536dfe
-.bg-color-indigo-a400
-  background-color: #3d5afe
-.bg-color-indigo-a700
-  background-color: #304ffe
+  for indigo-color, i in indigo-colors
+    .bg-color-indigo-{shades[i]}
+      background-color: indigo-color
 
 // Blue
-.bg-color-blue-50
-  background-color: #e3f2fd
-.bg-color-blue-100
-  background-color: #bbdefb
-.bg-color-blue-200
-  background-color: #90caf9
-.bg-color-blue-300
-  background-color: #64b5f6
-.bg-color-blue-400
-  background-color: #42a5f5
-.bg-color-blue-500
-  background-color: #2196f3
-.bg-color-blue-600
-  background-color: #1e88e5
-.bg-color-blue-700
-  background-color: #1976d2
-.bg-color-blue-800
-  background-color: #1565c0
-.bg-color-blue-900
-  background-color: #0d47a1
-.bg-color-blue-a100
-  background-color: #82b1ff
-.bg-color-blue-a200
-  background-color: #448aff
-.bg-color-blue-a400
-  background-color: #2979ff
-.bg-color-blue-a700
-  background-color: #2962ff
+  for blue-color, i in blue-colors
+    .bg-color-blue-{shades[i]}
+      background-color: blue-color
 
 // Light Blue
-.bg-color-light-blue-50
-  background-color: #e1f5fe
-.bg-color-light-blue-100
-  background-color: #b3e5fc
-.bg-color-light-blue-200
-  background-color: #81d4fa
-.bg-color-light-blue-300
-  background-color: #4fc3f7
-.bg-color-light-blue-400
-  background-color: #29b6f6
-.bg-color-light-blue-500
-  background-color: #03a9f4
-.bg-color-light-blue-600
-  background-color: #039be5
-.bg-color-light-blue-700
-  background-color: #0288d1
-.bg-color-light-blue-800
-  background-color: #0277bd
-.bg-color-light-blue-900
-  background-color: #01579b
-.bg-color-light-blue-a100
-  background-color: #80d8ff
-.bg-color-light-blue-a200
-  background-color: #40c4ff
-.bg-color-light-blue-a400
-  background-color: #00b0ff
-.bg-color-light-blue-a700
-  background-color: #0091ea
+  for light-blue-color, i in light-blue-colors
+    .bg-color-light-blue-{shades[i]}
+      background-color: light-blue-color
 
 // Cyan
-.bg-color-cyan-50
-  background-color: #e0f7fa
-.bg-color-cyan-100
-  background-color: #b2ebf2
-.bg-color-cyan-200
-  background-color: #80deea
-.bg-color-cyan-300
-  background-color: #4dd0e1
-.bg-color-cyan-400
-  background-color: #26c6da
-.bg-color-cyan-500
-  background-color: #00bcd4
-.bg-color-cyan-600
-  background-color: #00acc1
-.bg-color-cyan-700
-  background-color: #0097a7
-.bg-color-cyan-800
-  background-color: #00838f
-.bg-color-cyan-900
-  background-color: #006064
-.bg-color-cyan-a100
-  background-color: #84ffff
-.bg-color-cyan-a200
-  background-color: #18ffff
-.bg-color-cyan-a400
-  background-color: #00e5ff
-.bg-color-cyan-a700
-  background-color: #00b8d4
+  for cyan-color, i in cyan-colors
+    .bg-color-cyan-{shades[i]}
+      background-color: cyan-color
 
 // Teal
-.bg-color-teal-50
-  background-color: #e0f2f1
-.bg-color-teal-100
-  background-color: #b2dfdb
-.bg-color-teal-200
-  background-color: #80cbc4
-.bg-color-teal-300
-  background-color: #4db6ac
-.bg-color-teal-400
-  background-color: #26a69a
-.bg-color-teal-500
-  background-color: #009688
-.bg-color-teal-600
-  background-color: #00897b
-.bg-color-teal-700
-  background-color: #00796b
-.bg-color-teal-800
-  background-color: #00695c
-.bg-color-teal-900
-  background-color: #004d40
-.bg-color-teal-a100
-  background-color: #a7ffeb
-.bg-color-teal-a200
-  background-color: #64ffda
-.bg-color-teal-a400
-  background-color: #1de9b6
-.bg-color-teal-a700
-  background-color: #00bfa5
+  for teal-color, i in teal-colors
+    .bg-color-teal-{shades[i]}
+      background-color: teal-color
 
 // Green
-.bg-color-green-50
-  background-color: #e8f5e9
-.bg-color-green-100
-  background-color: #c8e6c9
-.bg-color-green-200
-  background-color: #a5d6a7
-.bg-color-green-300
-  background-color: #81c784
-.bg-color-green-400
-  background-color: #66bb6a
-.bg-color-green-500
-  background-color: #4caf50
-.bg-color-green-600
-  background-color: #43a047
-.bg-color-green-700
-  background-color: #388e3c
-.bg-color-green-800
-  background-color: #2e7d32
-.bg-color-green-900
-  background-color: #1b5e20
-.bg-color-green-a100
-  background-color: #b9f6ca
-.bg-color-green-a200
-  background-color: #69f0ae
-.bg-color-green-a400
-  background-color: #00e676
-.bg-color-green-a700
-  background-color: #00c853
+  for green-color, i in green-colors
+    .bg-color-green-{shades[i]}
+      background-color: green-color
 
 // Light Green
-.bg-color-light-green-50
-  background-color: #f1f8e9
-.bg-color-light-green-100
-  background-color: #dcedc8
-.bg-color-light-green-200
-  background-color: #c5e1a5
-.bg-color-light-green-300
-  background-color: #aed581
-.bg-color-light-green-400
-  background-color: #9ccc65
-.bg-color-light-green-500
-  background-color: #8bc34a
-.bg-color-light-green-600
-  background-color: #7cb342
-.bg-color-light-green-700
-  background-color: #689f38
-.bg-color-light-green-800
-  background-color: #558b2f
-.bg-color-light-green-900
-  background-color: #33691e
-.bg-color-light-green-a100
-  background-color: #ccff90
-.bg-color-light-green-a200
-  background-color: #b2ff59
-.bg-color-light-green-a400
-  background-color: #76ff03
-.bg-color-light-green-a700
-  background-color: #64dd17
+  for light-green-color, i in light-green-colors
+    .bg-color-light-green-{shades[i]}
+      background-color: light-green-color
 
 // Lime
-.bg-color-lime-50
-  background-color: #f9fbe7
-.bg-color-lime-100
-  background-color: #f0f4c3
-.bg-color-lime-200
-  background-color: #e6ee9c
-.bg-color-lime-300
-  background-color: #dce775
-.bg-color-lime-400
-  background-color: #d4e157
-.bg-color-lime-500
-  background-color: #cddc39
-.bg-color-lime-600
-  background-color: #c0ca33
-.bg-color-lime-700
-  background-color: #afb42b
-.bg-color-lime-800
-  background-color: #9e9d24
-.bg-color-lime-900
-  background-color: #827717
-.bg-color-lime-a100
-  background-color: #f4ff81
-.bg-color-lime-a200
-  background-color: #eeff41
-.bg-color-lime-a400
-  background-color: #c6ff00
-.bg-color-lime-a700
-  background-color: #aeea00
+  for lime-color, i in lime-colors
+    .bg-color-lime-{shades[i]}
+      background-color: lime-color
 
 // Yellow
-.bg-color-yellow-50
-  background-color: #fffde7
-.bg-color-yellow-100
-  background-color: #fff9c4
-.bg-color-yellow-200
-  background-color: #fff59d
-.bg-color-yellow-300
-  background-color: #fff176
-.bg-color-yellow-400
-  background-color: #ffee58
-.bg-color-yellow-500
-  background-color: #ffeb3b
-.bg-color-yellow-600
-  background-color: #fdd835
-.bg-color-yellow-700
-  background-color: #fbc02d
-.bg-color-yellow-800
-  background-color: #f9a825
-.bg-color-yellow-900
-  background-color: #f57f17
-.bg-color-yellow-a100
-  background-color: #ffff8d
-.bg-color-yellow-a200
-  background-color: #ffff00
-.bg-color-yellow-a400
-  background-color: #ffea00
-.bg-color-yellow-a700
-  background-color: #ffd600
+  for yellow-color, i in yellow-colors
+    .bg-color-yellow-{shades[i]}
+      background-color: yellow-color
 
 // Amber
-.bg-color-amber-50
-  background-color: #fff8e1
-.bg-color-amber-100
-  background-color: #ffecb3
-.bg-color-amber-200
-  background-color: #ffe082
-.bg-color-amber-300
-  background-color: #ffd54f
-.bg-color-amber-400
-  background-color: #ffca28
-.bg-color-amber-500
-  background-color: #ffc107
-.bg-color-amber-600
-  background-color: #ffb300
-.bg-color-amber-700
-  background-color: #ffa000
-.bg-color-amber-800
-  background-color: #ff8f00
-.bg-color-amber-900
-  background-color: #ff6f00
-.bg-color-amber-a100
-  background-color: #ffe57f
-.bg-color-amber-a200
-  background-color: #ffd740
-.bg-color-amber-a400
-  background-color: #ffc400
-.bg-color-amber-a700
-  background-color: #ffab00
+  for amber-color, i in amber-colors
+    .bg-color-amber-{shades[i]}
+      background-color: amber-color
 
 // Orange
-.bg-color-orange-50
-  background-color: #fff3e0
-.bg-color-orange-100
-  background-color: #ffe0b2
-.bg-color-orange-200
-  background-color: #ffcc80
-.bg-color-orange-300
-  background-color: #ffb74d
-.bg-color-orange-400
-  background-color: #ffa726
-.bg-color-orange-500
-  background-color: #ff9800
-.bg-color-orange-600
-  background-color: #fb8c00
-.bg-color-orange-700
-  background-color: #f57c00
-.bg-color-orange-800
-  background-color: #ef6c00
-.bg-color-orange-900
-  background-color: #e65100
-.bg-color-orange-a100
-  background-color: #ffd180
-.bg-color-orange-a200
-  background-color: #ffab40
-.bg-color-orange-a400
-  background-color: #ff9100
-.bg-color-orange-a700
-  background-color: #ff6d00
+  for orange-color, i in orange-colors
+    .bg-color-orange-{shades[i]}
+      background-color: orange-color
 
 // Deep Orange
-.bg-color-deep-orange-50
-  background-color: #fbe9e7
-.bg-color-deep-orange-100
-  background-color: #ffccbc
-.bg-color-deep-orange-200
-  background-color: #ffab91
-.bg-color-deep-orange-300
-  background-color: #ff8a65
-.bg-color-deep-orange-400
-  background-color: #ff7043
-.bg-color-deep-orange-500
-  background-color: #ff5722
-.bg-color-deep-orange-600
-  background-color: #f4511e
-.bg-color-deep-orange-700
-  background-color: #e64a19
-.bg-color-deep-orange-800
-  background-color: #d84315
-.bg-color-deep-orange-900
-  background-color: #bf360c
-.bg-color-deep-orange-a100
-  background-color: #ff9e80
-.bg-color-deep-orange-a200
-  background-color: #ff6e40
-.bg-color-deep-orange-a400
-  background-color: #ff3d00
-.bg-color-deep-orange-a700
-  background-color: #dd2c00
+  for deep-orange-color, i in deep-orange-colors
+    .bg-color-deep-orange-{shades[i]}
+      background-color: deep-orange-color
 
 // Brown
-.bg-color-brown-50
-  background-color: #efebe9
-.bg-color-brown-100
-  background-color: #d7ccc8
-.bg-color-brown-200
-  background-color: #bcaaa4
-.bg-color-brown-300
-  background-color: #a1887f
-.bg-color-brown-400
-  background-color: #8d6e63
-.bg-color-brown-500
-  background-color: #795548
-.bg-color-brown-600
-  background-color: #6d4c41
-.bg-color-brown-700
-  background-color: #5d4037
-.bg-color-brown-800
-  background-color: #4e342e
-.bg-color-brown-900
-  background-color: #3e2723
+  for brown-color, j in brown-colors
+    .bg-color-brown-{variant[j]}
+      background-color: brown-color
 
 // Grey
-.bg-color-grey-50
-  background-color: #fafafa
-.bg-color-grey-100
-  background-color: #f5f5f5
-.bg-color-grey-200
-  background-color: #eeeeee
-.bg-color-grey-300
-  background-color: #e0e0e0
-.bg-color-grey-400
-  background-color: #bdbdbd
-.bg-color-grey-500
-  background-color: #9e9e9e
-.bg-color-grey-600
-  background-color: #757575
-.bg-color-grey-700
-  background-color: #616161
-.bg-color-grey-800
-  background-color: #424242
-.bg-color-grey-900
-  background-color: #212121
+  for grey-color, j in grey-colors
+    .bg-color-grey-{variant[j]}
+      background-color: grey-color
 
 // Blue Grey
-.bg-color-blue-grey-50
-  background-color: #eceff1
-.bg-color-blue-grey-100
-  background-color: #cfd8dc
-.bg-color-blue-grey-200
-  background-color: #b0bec5
-.bg-color-blue-grey-300
-  background-color: #90a4ae
-.bg-color-blue-grey-400
-  background-color: #78909c
-.bg-color-blue-grey-500
-  background-color: #607d8b
-.bg-color-blue-grey-600
-  background-color: #546e7a
-.bg-color-blue-grey-700
-  background-color: #455a64
-.bg-color-blue-grey-800
-  background-color: #37474f
-.bg-color-blue-grey-900
-  background-color: #263238
+  for blue-grey-color, j in blue-grey-colors
+    .bg-color-blue-grey-{variant[j]}
+      background-color: blue-grey-color
 
 // Various
 .bg-color-black

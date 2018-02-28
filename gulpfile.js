@@ -1,7 +1,6 @@
 /* jshint esversion: 6 */
 
 const gulp = require('gulp');
-const rename = require('gulp-rename');
 const pkg = require('./package.json');
 const clean = require('gulp-clean-css');
 const concat = require('gulp-concat');
@@ -12,9 +11,9 @@ const csslint = require('gulp-csslint');
 csslint.addFormatter('csslint-stylish');
 const csscomb = require('gulp-csscomb');
 const filever = require('gulp-version-filename');
+const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const del = require('del');
-const vinylPaths = require('vinyl-paths');
 
 const comment = `/**
  * Name: ${pkg.name} v${pkg.version}
@@ -35,8 +34,6 @@ const comment = `/**
       # Variables
 
     # Resets
-      # Colour Variables
-      # Font Face
       # Base
       # Divider
       # Typography
@@ -46,11 +43,13 @@ const comment = `/**
 
     # Components
       # Button
+      # Card
       # Code
       # Form
       # Image
-      # Links
-      # Lists
+      # Link
+      # List
+      # Nav
       # Table
       # Util
  */\r\n`;
@@ -161,6 +160,31 @@ gulp.task('build-animations', function () {
     .pipe(gulp.dest('./dist/'));
 });
 
+gulp.task('build-fonts', function () {
+  return gulp.src([
+    './src/fonts/*.styl'
+  ])
+    .pipe(concat('skeletonic-fonts.styl'))
+    .pipe(sourcemaps.init())
+    .pipe(stylus())
+    .pipe(concat('skeletonic-fonts.css', { rebaseUrls: false }))
+    .pipe(size())
+    .pipe(header(comment + '\r\n'))
+    .pipe(size())
+    .pipe(filever())
+    .pipe(csscomb('./csscomb.json'))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./dist/'))
+    .pipe(csslint.formatter('stylish'))
+    .pipe(size())
+    .pipe(clean())
+    .pipe(size({
+      gzip: true
+    }))
+    .pipe(concat('./tmp/skeletonic-fonts.min.css'))
+    .pipe(gulp.dest('./dist/'));
+});
+
 gulp.task('csslint', function () {
   return gulp.src(['./dist/*.css'])
     .pipe(csslint())
@@ -210,8 +234,11 @@ gulp.task('watch', function () {
   gulp.watch(['dist/*.css'], ['default']);
 });
 
-// Run in order: gulp build-colours && gulp build-css && gulp build-pattern && gulp rename && gulp clean:tmp
+// Run in order:
+// gulp build-colours && gulp build-css && gulp build-pattern && gulp build-animations && gulp build-fonts && gulp rename && gulp clean:tmp
+
 gulp.task('default', ['build-css']);
 gulp.task('pattern', ['build-pattern']);
 gulp.task('colours', ['build-colours']);
 gulp.task('animations', ['build-animations']);
+gulp.task('fonts', ['build-fonts']);
