@@ -142,6 +142,9 @@ We are committed to preserving and fostering a diverse, welcoming community. Ple
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/reedia/skeletonic/blob/master/LICENSE) file for details
 
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Freedia%2Fskeletonic.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Freedia%2Fskeletonic?ref=badge_large)
+
 ## Acknowledgements
 
 [Skeletonic](https://skeletonic.io) is beautifully crafted by these people and a bunch of awesome [contributors](https://github.com/reedia/skeletonic/graphs/contributors)
@@ -158,3 +161,4 @@ Credit also goes to the following source code libraries:
 ## About Reedia
 
 ![Reedia](https://avatars0.githubusercontent.com/u/488747?s=200)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Freedia%2Fskeletonic.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Freedia%2Fskeletonic?ref=badge_shield)
