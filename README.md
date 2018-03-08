@@ -10,12 +10,10 @@
 
 <p align="center">Simply designed to fit your cascading web life.</p>
 
-<p align="center"><strong>Version: 1.0.89</strong></p>
+<p align="center"><strong>Version: 1.0.93</strong></p>
 
 <p align="center">
-  [s](s)
-  
-  <a href="https://github.com/reedia/skeletonic/archive/v1.0.89.zip" class="button primary">Download</a>
+  <a href="https://github.com/reedia/skeletonic/archive/v1.0.93.zip" class="button primary">Download</a>
 </p>
 
 [![NPM](https://nodei.co/npm/skeletonic.png)](https://nodei.co/npm/skeletonic/)
@@ -24,11 +22,13 @@
 [![Build Status](https://travis-ci.org/reedia/skeletonic.svg?branch=master)](https://travis-ci.org/reedia/skeletonic)
 [![Packagist](https://img.shields.io/badge/license-MIT-blue.svg)](https://skeletonic.github.io/license)
 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Freedia%2Fskeletonic.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Freedia%2Fskeletonic?ref=badge_shield)
+
 ## Table of contents
 
 -   [Getting Started](#getting-started)
 -   [What's in the box](#whats-in-the-box)
-- 	[Alternate CDN locations](#alter  nate-cdn-locations)
+- 	[Alternate CDN locations](#alternate-cdn-locations)
 -   [Built With](#built-with)
 -   [Contributing](#contributing)
 -   [Code of Conduct](#code-of-conduct)
@@ -39,13 +39,20 @@
 
 ## Getting Started
 
+Skeletonic is constantly in development. Try it out now!
+
 A few options are available:
 
--   Download the latest [release](https://github.com/reedia/skeletonic/archive/v1.0.89.zip)
+-   Download the latest [release](https://github.com/reedia/skeletonic/archive/v1.0.93.zip)
 -   Install with [Npm](https://www.npmjs.com/package/skeletonic) to get the pre-built CSS and sourcemaps. This is recommended when using Skeletonic for a typical web project: 
 
 ```bash
 npm install skeletonic
+```
+-   Install with [Yarn](https://yarnpkg.com/en/package/skeletonic) to get the pre-built CSS and sourcemaps. This is recommended when using Skeletonic for a typical web project: 
+
+```bash
+yarn add skeletonic
 ```
 
 -   Or simply clone the main repository to get all source files including build scripts: `git clone https://github.com/reedia/skeletonic.git`
@@ -57,21 +64,21 @@ The Github project contains all source files which are compiled into the dist fo
 ```
 Skeletonic
 ├── index.html
-├── skeletonic-1.0.89.css
-├── skeletonic-1.0.89.css.map
-├── skeletonic-animations-1.0.89.css
-├── skeletonic-animations-1.0.89.css.map
-├── skeletonic-animations.min-1.0.89.css
-├── skeletonic-colours-1.0.89.css
-├── skeletonic-colours-1.0.89.css.map
-├── skeletonic-colours.min-1.0.89.css
-├── skeletonic-fonts-1.0.89.css
-├── skeletonic-fonts-1.0.89.css.map
-├── skeletonic-fonts.min-1.0.89.css
-├── skeletonic-pattern-1.0.89.css
-├── skeletonic-pattern-1.0.89.css.map
-├── skeletonic-pattern.min-1.0.89.css
-├── skeletonic.min-1.0.89.css
+├── skeletonic.css
+├── skeletonic.css.map
+├── skeletonic-animations.css
+├── skeletonic-animations.css.map
+├── skeletonic-animations.min.css
+├── skeletonic-colours.css
+├── skeletonic-colours.css.map
+├── skeletonic-colours.min.css
+├── skeletonic-fonts.css
+├── skeletonic-fonts.css.map
+├── skeletonic-fonts.min.css
+├── skeletonic-pattern.css
+├── skeletonic-pattern.css.map
+├── skeletonic-pattern.min.css
+├── skeletonic.min.css
 ```
 
 You simply then need to link one of these in your HTML document.
@@ -81,7 +88,7 @@ The link consists of just a simple line of HTML code that you will need to put i
 #### Default CSS
 
 ```
-<link rel="stylesheet" type="text/css" href="skeletonic.min-1.0.89.css" />
+<link rel="stylesheet" type="text/css" href="skeletonic.min.css" />
 ```
 
 We also offer production-ready versions and use unpkg as our CDN to link to the latest production version
@@ -92,17 +99,17 @@ We also offer production-ready versions and use unpkg as our CDN to link to the 
 
 #### CSS Responsive Grid-View
 ```
-<link rel="stylesheet" type="text/css" href="skeletonic-pattern.min-1.0.89.css" />
+<link rel="stylesheet" type="text/css" href="skeletonic-pattern.min.css" />
 ```
 
 #### CSS Colours
 ```
-<link rel="stylesheet" type="text/css" href="skeletonic-colours.min-1.0.89.css" />
+<link rel="stylesheet" type="text/css" href="skeletonic-colours.min.css" />
 ```
 
 #### CSS Animations
 ```
-<link rel="stylesheet" type="text/css" href="skeletonic-animations.min-1.0.89.css" />
+<link rel="stylesheet" type="text/css" href="skeletonic-animations.min.css" />
 ```
 
 ## Alternate CDN locations
@@ -110,9 +117,9 @@ The following table lists alternate CDN locations where Skeletonic is hosted.
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.0.89/dist/skeletonic.min-1.0.89.css | Yes | No |
-| [jsDelivr](https://www.jsdelivr.com/) | https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min-1.0.89.css  | Yes | Yes |
-| [RawGit](http://rawgit.com/) | https://cdn.rawgit.com/reedia/skeletonic/master/dist/skeletonic.min-1.0.89.css | Yes | No |
+| [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.0.93/dist/skeletonic.min.css | Yes | No |
+| [jsDelivr](https://www.jsdelivr.com/) | https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min.css  | Yes | Yes |
+| [RawGit](http://rawgit.com/) | https://cdn.rawgit.com/reedia/skeletonic/master/dist/skeletonic.min.css | Yes | No |
 
 
 
@@ -161,4 +168,3 @@ Credit also goes to the following source code libraries:
 ## About Reedia
 
 ![Reedia](https://avatars0.githubusercontent.com/u/488747?s=200)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Freedia%2Fskeletonic.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Freedia%2Fskeletonic?ref=badge_shield)

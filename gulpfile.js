@@ -33,7 +33,7 @@ const comment = `/**
       # Media Queries
       # Variables
 
-    # Resets
+    # Base
       # Base
       # Divider
       # Typography
@@ -58,10 +58,9 @@ gulp.task('build-css', function () {
   return gulp.src([
     './src/configurations/*.styl',
     './src/colours/colour-variables.styl',
-    './src/resets/*.styl',
+    './src/base/*.styl',
     './src/core/*.styl',
-    './src/components/*.styl',
-    './src/mixins/*.styl'
+    './src/components/*.styl'
   ])
     .pipe(concat('skeletonic.styl'))
     .pipe(sourcemaps.init())
@@ -70,7 +69,6 @@ gulp.task('build-css', function () {
     .pipe(size())
     .pipe(header(comment + '\r\n'))
     .pipe(size())
-    .pipe(filever())
     .pipe(csscomb('./csscomb.json'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/'))
@@ -95,7 +93,6 @@ gulp.task('build-pattern', function () {
     .pipe(size())
     .pipe(header(comment + '\r\n'))
     .pipe(size())
-    .pipe(filever())
     .pipe(csscomb('./csscomb.json'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/'))
@@ -120,7 +117,6 @@ gulp.task('build-colours', function () {
     .pipe(size())
     .pipe(header(comment + '\r\n'))
     .pipe(size())
-    .pipe(filever())
     .pipe(csscomb('./csscomb.json'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/'))
@@ -146,7 +142,6 @@ gulp.task('build-animations', function () {
     .pipe(size())
     .pipe(header(comment + '\r\n'))
     .pipe(size())
-    .pipe(filever())
     .pipe(csscomb('./csscomb.json'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/'))
@@ -171,7 +166,6 @@ gulp.task('build-fonts', function () {
     .pipe(size())
     .pipe(header(comment + '\r\n'))
     .pipe(size())
-    .pipe(filever())
     .pipe(csscomb('./csscomb.json'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/'))
@@ -217,7 +211,6 @@ gulp.task('rename', function () {
   return gulp.src(['./dist/tmp/*.min.css'])
     .pipe(header(comment + '\r\n'))
     .pipe(size())
-    .pipe(filever())
     .pipe(clean())
     .pipe(size({
       gzip: true

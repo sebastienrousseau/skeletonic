@@ -1,10 +1,9 @@
 {
     "name": "skeletonic",
-    "version": "1.0.89",
+    "version": "1.0.93",
     "description": "A dead on, lightweight, responsive and modern CSS framework.",
     "keywords": [
         "skeletonic",
-        "skeletonic.min-1.0.89.css",
         "CSS",
         "lightweight",
         "dead on",
@@ -19,9 +18,9 @@
         "grid system",
         "typography"
     ],
-    "style": "dist/skeletonic.min-1.0.89.css",
-    "main": "dist/skeletonic.min-1.0.89.css",
-    "filename": "skeletonic.min-1.0.89.css",
+    "style": "dist/skeletonic.min.css",
+    "main": "dist/skeletonic.min.css",
+    "filename": "skeletonic.min.css",
     "scripts": {
         "test": "mocha",
         "build": "gulp"
@@ -37,33 +36,46 @@
     "autoupdate": {
         "source": "git",
         "target": "git://github.com/reedia/skeletonic.git",
-        "basePath": "dist",
-        "files": [
-            "dist/skeletonic.min-1.0.89.css",
-            "dist/skeletonic-1.0.89.css",
-            "dist/skeletonic-colours.min-1.0.89.css",
-            "dist/skeletonic-colours-1.0.89.css",
-            "dist/skeletonic-pattern.min-1.0.89.css",
-            "dist/skeletonic-pattern-1.0.89.css"
+        "fileMap": [
+            {
+                "basePath": "dist",
+                "files": [
+                    "skeletonic-animations.css",
+                    "skeletonic-animations.css.map",
+                    "skeletonic-animations.min.css",
+                    "skeletonic-colours.css",
+                    "skeletonic-colours.css.map",
+                    "skeletonic-colours.min.css",
+                    "skeletonic-fonts.css",
+                    "skeletonic-fonts.css.map",
+                    "skeletonic-fonts.min.css",
+                    "skeletonic-pattern.css",
+                    "skeletonic-pattern.css.map",
+                    "skeletonic-pattern.min.css",
+                    "skeletonic.css",
+                    "skeletonic.css.map",
+                    "skeletonic.min.css"
+                ]
+            }
         ]
     },
     "devDependencies": {
         "csslint-stylish": "^0.0.6",
         "del": "^3.0.0",
-        "gulp": "^3.9.1",
         "gulp-clean-css": "^3.9.2",
         "gulp-cli": "^2.0.1",
         "gulp-concat": "^2.6.1",
         "gulp-csscomb": "^3.0.8",
         "gulp-csslint": "^1.0.1",
         "gulp-git": "^2.5.2",
-        "gulp-header": "^2.0.1",
+        "gulp-header": "^2.0.3",
         "gulp-rename": "^1.2.2",
         "gulp-size": "^3.0.0",
         "gulp-sourcemaps": "^2.6.4",
         "gulp-stylus": "^2.7.0",
         "gulp-version-filename": "^1.0.2",
-        "mocha": "^5.0.1",
+        "gulp": "^3.9.1",
+        "mocha": "^5.0.4",
         "should": "^13.2.1",
         "vinyl-paths": "^2.1.0"
     },

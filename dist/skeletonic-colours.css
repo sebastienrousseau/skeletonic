@@ -1,7 +1,7 @@
 /**
- * Name: skeletonic v1.0.89
+ * Name: skeletonic v1.0.93
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.0.89
+ * @version 1.0.93
  * Author: Reedia Limited (https://github.com/reedia)
  * Copyright © Reedia Limited 2018. All rights reserved.
  * https://skeletonic.io
@@ -17,7 +17,7 @@
       # Media Queries
       # Variables
 
-    # Resets
+    # Base
       # Base
       # Divider
       # Typography
@@ -2225,4 +2225,4 @@
     color: rgba(255,255,255,.54);
 }
 
-/*# sourceMappingURL=skeletonic-colours-1.0.89.css.map */
+/*# sourceMappingURL=skeletonic-colours.css.map */

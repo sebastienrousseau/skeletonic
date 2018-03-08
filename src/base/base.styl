@@ -1,15 +1,25 @@
 /* @group Base */
+
+@charset "UTF-8"
+
 html
-  -webkit-text-size-adjust: 100%
+  -moz-font-feature-settings: 'liga', 'kern'
+  -moz-osx-font-smoothing: grayscale
   -ms-text-size-adjust: 100%
+  -webkit-font-smoothing: antialiased
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  -webkit-text-size-adjust: 100%
   font-family: sans-serif
   font-size: 62.5%
+  overflow-x: hidden
+  overflow-y: scroll
+  text-rendering: optimizeLegibility
 
 body
   color: $black
   font-family: font
-  font-weight: 400;
   font-size: golden-font-size-base rem
+  font-weight: 400;
   line-height: golden-ratio
   margin: 0;
   padding: 0;
@@ -102,10 +112,6 @@ sup
 sub
   font-size: golden-font-size-small rem
   bottom: -0.8em
-
-.hidden,
-[hidden]
-    display: none !important
 
 .color-blue
   color: #3344dd
