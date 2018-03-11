@@ -1,0 +1,16 @@
+/* @group Tachyons Colours */
+
+// Transpiled partials for Tachyons.
+  tachyons-colours = #000,#111,#333,#555,#777,#999,#aaa,#ccc,#eee,#f4f4f4,#fff,transparent,rgba(0,0,0,.9),rgba(0,0,0,.8),rgba(0,0,0,.7),rgba(0,0,0,.6),rgba(0,0,0,.5),rgba(0,0,0,.4),rgba(0,0,0,.3),rgba(0,0,0,.2),rgba(0,0,0,.1),rgba(0,0,0,.05),rgba(0,0,0,.025),rgba(0,0,0,.0125),rgba(255,255,255,.9),rgba(255,255,255,.8),rgba(255,255,255,.7),rgba(255,255,255,.6),rgba(255,255,255,.5),rgba(255,255,255,.4),rgba(255,255,255,.3),rgba(255,255,255,.2),rgba(255,255,255,.1),rgba(255,255,255,.05),rgba(255,255,255,.025),rgba(255,255,255,.0125),#e7040f,#ff4136,#ff725c,#ff6300,#ffb700,#ffd700,#fbf1a9,#5e2ca5,#a463f2,#d5008f,#ff41b4,#ff80cc,#ffa3d7,#137752,#19a974,#9eebcf,#001b44,#00449e,#357edd,#96ccff,#cdecff,#f6fffe,#e8fdf5,#fffceb,#ffdfdf
+  tachyons-names = -black,-near-black,-dark-gray,-mid-gray,-gray,-silver,-light-silver,-moon-gray,-light-gray,-near-white,-white,-transparent,-black-90,-black-80,-black-70,-black-60,-black-50,-black-40,-black-30,-black-20,-black-10,-black-05,-black-025,-black-0125,-white-90,-white-80,-white-70,-white-60,-white-50,-white-40,-white-30,-white-20,-white-10,-white-05,-white-025,-white-0125,-dark-red,-red,-light-red,-orange,-gold,-yellow,-light-yellow,-purple,-light-purple,-dark-pink,-hot-pink,-pink,-light-pink,-dark-green,-green,-light-green,-navy,-dark-blue,-blue,-light-blue,-lightest-blue,-washed-blue,-washed-green,-washed-yellow,-washed-red
+
+  for tachyons-colours, i in tachyons-colours
+    // Web Safe Background Colours
+    .bg{tachyons-names[i]}
+      background-color: tachyons-colours
+
+    // Web Safe Text Colours
+    .colour{tachyons-names[i]}
+      color: tachyons-colours
+
+/* @end */

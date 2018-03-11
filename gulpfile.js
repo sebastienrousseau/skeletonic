@@ -36,7 +36,7 @@ const comment = `/**
     # Base
       # Base
       # Divider
-      # Typography
+      # Headings
 
     # Core
       # Grid

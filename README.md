@@ -10,10 +10,10 @@
 
 <p align="center">Simply designed to fit your cascading web life.</p>
 
-<p align="center"><strong>Version: 1.0.93</strong></p>
+<p align="center"><strong>Version: 1.0.95</strong></p>
 
 <p align="center">
-  <a href="https://github.com/reedia/skeletonic/archive/v1.0.93.zip" class="button primary">Download</a>
+  <a href="https://github.com/reedia/skeletonic/archive/v1.0.95.zip" class="button primary">Download</a>
 </p>
 
 [![NPM](https://nodei.co/npm/skeletonic.png)](https://nodei.co/npm/skeletonic/)
@@ -21,51 +21,43 @@
 [![npm version](https://badge.fury.io/js/skeletonic.svg)](https://badge.fury.io/js/skeletonic)
 [![Build Status](https://travis-ci.org/reedia/skeletonic.svg?branch=master)](https://travis-ci.org/reedia/skeletonic)
 [![Packagist](https://img.shields.io/badge/license-MIT-blue.svg)](https://skeletonic.github.io/license)
-
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Freedia%2Fskeletonic.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Freedia%2Fskeletonic?ref=badge_shield)
 
 ## Table of contents
 
--   [Getting Started](#getting-started)
--   [What's in the box](#whats-in-the-box)
-- 	[Alternate CDN locations](#alternate-cdn-locations)
--   [Built With](#built-with)
--   [Contributing](#contributing)
--   [Code of Conduct](#code-of-conduct)
--   [Our Values](#our-values)
--   [History](#history)
--   [License](#license)
--   [Acknowledgements](#acknowledgements)
+- [Getting Started](#getting-started)
+- [What's included](#whats-included)
+- [Extend](#extend)
+- [Alternate CDN locations](#alternate-cdn-locations)
+- [Versioning](#versioning)
+- [Built With](#built-with)
+- [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
+- [Our Values](#our-values)
+- [History](#history)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ## Getting Started
 
 Skeletonic is constantly in development. Try it out now!
+### Local Setup
 
-A few options are available:
+Several quick start options are available:
 
--   Download the latest [release](https://github.com/reedia/skeletonic/archive/v1.0.93.zip)
--   Install with [Npm](https://www.npmjs.com/package/skeletonic) to get the pre-built CSS and sourcemaps. This is recommended when using Skeletonic for a typical web project: 
+-   [Download the latest release](https://github.com/reedia/skeletonic/archive/v1.0.95.zip)
+-   Install with [Npm](https://www.npmjs.com/package/skeletonic) to get the pre-built CSS and sourcemaps. This is recommended when using Skeletonic for a typical web project: ```npm install skeletonic```
+-   Install with [Yarn](https://yarnpkg.com/en/package/skeletonic) to get the pre-built CSS and sourcemaps. This is recommended when using Skeletonic for a typical web project: ```yarn add skeletonic```
+-   Clone the main repository to get all source files including build scripts: `git clone https://github.com/reedia/skeletonic.git`
 
-```bash
-npm install skeletonic
-```
--   Install with [Yarn](https://yarnpkg.com/en/package/skeletonic) to get the pre-built CSS and sourcemaps. This is recommended when using Skeletonic for a typical web project: 
+## What's included
 
-```bash
-yarn add skeletonic
-```
+Within the download you'll find all the source files, compiled and minified CSS bundles as well as the [CSS sourcemaps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) grouped into the ```dist``` folder. 
 
--   Or simply clone the main repository to get all source files including build scripts: `git clone https://github.com/reedia/skeletonic.git`
-
-## What's in the box
-
-The Github project contains all source files which are compiled into the dist folder. Within the release you'll find the following directory and external style sheets with both compiled, minified CSS variations and CSS sourcemaps:
+You'll see something like this:
 
 ```
-Skeletonic
-├── index.html
-├── skeletonic.css
-├── skeletonic.css.map
+skeletonic-1.0.95
 ├── skeletonic-animations.css
 ├── skeletonic-animations.css.map
 ├── skeletonic-animations.min.css
@@ -78,50 +70,49 @@ Skeletonic
 ├── skeletonic-pattern.css
 ├── skeletonic-pattern.css.map
 ├── skeletonic-pattern.min.css
-├── skeletonic.min.css
+├── skeletonic.css
+├── skeletonic.css.map
+└── skeletonic.min.css
 ```
+Now simply link one of these CSS in your HTML document. In that case, the quickest and easiest way to start using skeletonic is to include a reference to the minified CSS file.
 
-You simply then need to link one of these in your HTML document.
+```<link rel="stylesheet" type="text/css" href="skeletonic.min.css" />```
 
-The link consists of just a simple line of HTML code that you will need to put in the ```<head>```  section of your HTML document:
+The link consists of just a simple line of HTML code that you will need to put in the ```<head>```  section of your HTML document.
 
-#### Default CSS
+We also provide production-ready versions and use **[unpkg](https://unpkg.com/)** as our preferred CDN to link to the latest production version. **[unpkg](https://unpkg.com/)** is a fast, global content delivery network for everything on npm.  
 
-```
-<link rel="stylesheet" type="text/css" href="skeletonic.min.css" />
-```
+Please feel free to grab the latest:
 
-We also offer production-ready versions and use unpkg as our CDN to link to the latest production version
+```<link rel="stylesheet" type="text/css" href="https://unpkg.com/skeletonic/dist/skeletonic.min.css" />```
 
-```
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/skeletonic" />
-```
+You can also specify a specific version as per below. The latest version as of today is 1.0.95.
 
+```<link rel="stylesheet" type="text/css" href="https://unpkg.com/skeletonic@1.0.95/dist/skeletonic.min.css" />```
+
+## Extend
+
+We provide a growing library of extensible CSS module files, utilities, themes and components ready to use as is to fit your web needs.
 #### CSS Responsive Grid-View
-```
-<link rel="stylesheet" type="text/css" href="skeletonic-pattern.min.css" />
-```
+```<link rel="stylesheet" type="text/css" href="skeletonic-pattern.min.css" />```
 
 #### CSS Colours
-```
-<link rel="stylesheet" type="text/css" href="skeletonic-colours.min.css" />
-```
+```<link rel="stylesheet" type="text/css" href="skeletonic-colours.min.css" />```
 
 #### CSS Animations
-```
-<link rel="stylesheet" type="text/css" href="skeletonic-animations.min.css" />
-```
+```<link rel="stylesheet" type="text/css" href="skeletonic-animations.min.css" />```
 
 ## Alternate CDN locations
 The following table lists alternate CDN locations where Skeletonic is hosted.
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.0.93/dist/skeletonic.min.css | Yes | No |
+| [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.0.95/dist/skeletonic.min.css | Yes | No |
 | [jsDelivr](https://www.jsdelivr.com/) | https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min.css  | Yes | Yes |
 | [RawGit](http://rawgit.com/) | https://cdn.rawgit.com/reedia/skeletonic/master/dist/skeletonic.min.css | Yes | No |
 
-
+## Versioning
+For transparency into our release cycle and in striving to maintain backward compatibility, Skeletonic is maintained under the [Semantic Versioning](https://semver.org/) guidelines. 
 
 ## Built With
 -   [Gulp](https://gulpjs.com/) - The streaming build system

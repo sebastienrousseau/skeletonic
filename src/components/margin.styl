@@ -1,0 +1,24 @@
+/* @group Margins */
+
+  range = 0, 0.8129237073, 1.3154105296, 2.1283342369, 3.4439065322, 5.572240769, 9.0165708237, 14.5888115927, 23.6064912503, 38.195302843, 61.804697157, 100
+
+  for length, i in range
+      .margin-auto
+	      margin auto
+
+      .margin-{i}
+        margin: (length)%
+
+      .margin-top-{i}
+        margin-top: (length)%
+
+      .margin-bottom-{i}
+        margin-bottom: (length)%
+
+      .margin-left-{i}
+        margin-left: (length)%
+
+      .margin-right-{i}
+        margin-right: (length)%
+
+/* @end */

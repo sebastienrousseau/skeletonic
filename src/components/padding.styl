@@ -1,0 +1,21 @@
+/* @group Paddings */
+
+  range = 0, 0.8129237073, 1.3154105296, 2.1283342369, 3.4439065322, 5.572240769, 9.0165708237, 14.5888115927, 23.6064912503, 38.195302843, 61.804697157, 100
+
+  for length, i in range
+      .padding-{i}
+        padding: (length)%
+
+      .padding-top-{i}
+        padding-top: (length)%
+
+      .padding-bottom-{i}
+        padding-bottom: (length)%
+
+      .padding-left-{i}
+        padding-left: (length)%
+
+      .padding-right-{i}
+        padding-right: (length)%
+
+/* @end */

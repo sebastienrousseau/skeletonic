@@ -1,6 +1,6 @@
 {
     "name": "skeletonic",
-    "version": "1.0.93",
+    "version": "1.0.95",
     "description": "A dead on, lightweight, responsive and modern CSS framework.",
     "keywords": [
         "skeletonic",
@@ -62,13 +62,13 @@
     "devDependencies": {
         "csslint-stylish": "^0.0.6",
         "del": "^3.0.0",
-        "gulp-clean-css": "^3.9.2",
+        "gulp-clean-css": "^3.9.3",
         "gulp-cli": "^2.0.1",
         "gulp-concat": "^2.6.1",
         "gulp-csscomb": "^3.0.8",
         "gulp-csslint": "^1.0.1",
         "gulp-git": "^2.5.2",
-        "gulp-header": "^2.0.3",
+        "gulp-header": "^2.0.5",
         "gulp-rename": "^1.2.2",
         "gulp-size": "^3.0.0",
         "gulp-sourcemaps": "^2.6.4",

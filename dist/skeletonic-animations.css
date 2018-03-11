@@ -1,7 +1,7 @@
 /**
- * Name: skeletonic v1.0.93
+ * Name: skeletonic v1.0.95
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.0.93
+ * @version 1.0.95
  * Author: Reedia Limited (https://github.com/reedia)
  * Copyright © Reedia Limited 2018. All rights reserved.
  * https://skeletonic.io
@@ -20,7 +20,7 @@
     # Base
       # Base
       # Divider
-      # Typography
+      # Headings
 
     # Core
       # Grid
@@ -38,11 +38,14 @@
       # Util
  */
 
+/* @group Bounce Animation */
 .bounce
 {
     transform-origin: center bottom;
     animation-name: bounce;
 }
+/* @end */
+/* @group Chameleon Animation */
 .chameleon-txt
 {
     animation-name: chameleon;
@@ -53,26 +56,46 @@
     animation-name: chameleon-bg;
     animation-duration: 5s;
 }
+/* @end */
+/* @group Fade-in Animation */
+/* @end */
+/* @group Fade-out Animation */
 .fade-out
 {
     animation-name: fade-out;
 }
+/* @end */
+/* @group Flash Animation */
 .flash
 {
     animation-name: flash;
 }
+/* @end */
+/* @group Pop-in Animation */
 .pop-in
 {
     animation-name: pop-in 2s;
 }
+/* @end */
+/* @group Rotation Animation */
+.rotation
+{
+    animation: rotation 2s linear infinite;
+}
+/* @end */
+/* @group Shake Animation */
 .shake
 {
     animation-name: shake;
 }
+/* @end */
+/* @group Wobble Animation */
 .wobble
 {
     animation-name: wobble;
 }
+/* @end */
+/* @group Zoom-in Animation */
 .zoom-in
 {
     animation: zoom-in 1s;
@@ -81,6 +104,7 @@
 {
     animation: zoom-in 2s linear -1s;
 }
+/* @end */
 @-moz-keyframes bounce
 {
     from,
@@ -1095,6 +1119,50 @@
     100%
     {
         transform: scale(1);
+    }
+}
+@-moz-keyframes rotation
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotation
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes rotation
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotation
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
     }
 }
 @-moz-keyframes shake
