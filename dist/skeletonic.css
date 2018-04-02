@@ -1,7 +1,7 @@
 /**
- * Name: skeletonic v1.0.95
+ * Name: skeletonic v1.0.97
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.0.95
+ * @version 1.0.97
  * Author: Reedia Limited (https://github.com/reedia)
  * Copyright © Reedia Limited 2018. All rights reserved.
  * https://skeletonic.io
@@ -32,6 +32,7 @@
       # Form
       # Image
       # Link
+      # Links
       # List
       # Nav
       # Table
@@ -185,7 +186,7 @@
 html
 {
     font-family: sans-serif;
-    font-size: 62.5%;
+    font-size: 63.204452685542776%;
 
     overflow-x: hidden;
     overflow-y: scroll;
@@ -683,6 +684,44 @@ button.warning:hover,
 
     opacity: .5;
 }
+button.link,
+.button.link,
+[type=submit].link
+{
+    cursor: pointer;
+    transition: all 150ms linear;
+    text-decoration: none;
+
+    color: #34d;
+    border-color: transparent;
+    background: 0 0;
+}
+button.link:visited,
+.button.link:visited,
+[type=submit].link:visited
+{
+    color: #804180;
+}
+button.link:hover,
+.button.link:hover,
+[type=submit].link:hover,
+button.link:active,
+.button.link:active,
+[type=submit].link:active
+{
+    text-decoration: underline;
+
+    color: #b50010;
+}
+button.link:focus,
+.button.link:focus,
+[type=submit].link:focus
+{
+    color: #b50010;
+    outline: thin dotted;
+    outline: 1px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
 .button-group
 {
     letter-spacing: -.31em;
@@ -744,7 +783,7 @@ code
     white-space: pre-wrap;
     word-wrap: break-word;
 
-    background: #fafafa;
+    background: #f5f5f5;
 
     direction: ltr;
 }
@@ -775,8 +814,8 @@ textarea
     display: block;
 
     width: 100%;
-    margin: 0 8.090169943749475 rem;
-    padding: 0 8.090169943749475 rem;
+    margin: 1.618033988749895rem 0;
+    padding: 1.618033988749895rem;
 
     transition: all 150ms linear;
 
@@ -898,6 +937,464 @@ iframe
     vertical-align: bottom;
 }
 /* @end */
+/* @group Link Effects */
+.link-1
+{
+    display: inline-block;
+
+    padding: 10px;
+
+    transition: all .4s ease-out;
+
+    background-color: transparent;
+    box-shadow: none;
+}
+.link-1:hover
+{
+    text-decoration: none;
+}
+.link-2
+{
+    display: inline-block;
+
+    padding: 10px;
+
+    transition: all .4s ease-out;
+
+    background-color: transparent;
+    box-shadow: none;
+}
+.link-2:hover
+{
+    text-decoration: none;
+}
+.link-3
+{
+    display: inline-block;
+
+    padding: 10px;
+
+    transition: all .4s ease-out;
+
+    background-color: transparent;
+    box-shadow: none;
+}
+.link-3:hover
+{
+    text-decoration: none;
+}
+.link-4
+{
+    display: inline-block;
+
+    padding: 10px;
+
+    transition: all .4s ease-out;
+
+    background-color: transparent;
+    box-shadow: none;
+}
+.link-4:hover
+{
+    text-decoration: none;
+}
+.link-5
+{
+    display: inline-block;
+
+    padding: 10px;
+
+    transition: all .4s ease-out;
+
+    background-color: transparent;
+    box-shadow: none;
+}
+.link-5:hover
+{
+    text-decoration: none;
+}
+.link-6
+{
+    display: inline-block;
+
+    padding: 10px;
+
+    transition: all .4s ease-out;
+
+    background-color: transparent;
+    box-shadow: none;
+}
+.link-6:hover
+{
+    text-decoration: none;
+}
+.link-7
+{
+    display: inline-block;
+
+    padding: 10px;
+
+    transition: all .4s ease-out;
+
+    background-color: transparent;
+    box-shadow: none;
+}
+.link-7:hover
+{
+    text-decoration: none;
+}
+.link-8
+{
+    display: inline-block;
+
+    padding: 10px;
+
+    transition: all .4s ease-out;
+
+    background-color: transparent;
+    box-shadow: none;
+}
+.link-8:hover
+{
+    text-decoration: none;
+}
+.link-9
+{
+    display: inline-block;
+
+    padding: 10px;
+
+    transition: all .4s ease-out;
+
+    background-color: transparent;
+    box-shadow: none;
+}
+.link-9:hover
+{
+    text-decoration: none;
+}
+.link-10
+{
+    display: inline-block;
+
+    padding: 10px;
+
+    transition: all .4s ease-out;
+
+    background-color: transparent;
+    box-shadow: none;
+}
+.link-10:hover
+{
+    text-decoration: none;
+}
+.link-11
+{
+    display: inline-block;
+
+    padding: 10px;
+
+    transition: all .4s ease-out;
+
+    background-color: transparent;
+    box-shadow: none;
+}
+.link-11:hover
+{
+    text-decoration: none;
+}
+.link-12
+{
+    display: inline-block;
+
+    padding: 10px;
+
+    transition: all .4s ease-out;
+
+    background-color: transparent;
+    box-shadow: none;
+}
+.link-12:hover
+{
+    text-decoration: none;
+}
+.link-1
+{
+    overflow: hidden;
+}
+.link-1:before
+{
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    transform: translateX(-100%);
+
+    background: #b50010;
+}
+.link-1:hover:before
+{
+    transform: translateX(0);
+}
+.link-2
+{
+    overflow: hidden;
+}
+.link-2:before
+{
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 2px;
+
+    transform: translateX(100%);
+
+    background: #b50010;
+}
+.link-2:hover:before
+{
+    transform: translateX(0);
+}
+.link-3:before
+{
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    transform: scaleX(0);
+
+    background: #b50010;
+}
+.link-3:hover:before
+{
+    transform: scaleX(1);
+}
+.link-4:before
+{
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    transform: scaleX(1);
+
+    background: #b50010;
+}
+.link-4:hover:before
+{
+    transform: scaleX(0);
+}
+.link-5
+{
+    overflow: hidden;
+}
+.link-5:before
+{
+    bottom: 0;
+
+    transform: translateX(-100%);
+}
+.link-5:after
+{
+    top: 0;
+
+    transform: translateX(-100%);
+}
+.link-5:before,
+.link-5:after
+{
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: #b50010;
+}
+.link-5:hover:before,
+.link-5:hover:after
+{
+    transform: translateX(0);
+}
+.link-6
+{
+    overflow: hidden;
+}
+.link-6:before
+{
+    bottom: 0;
+
+    transform: translateX(100%);
+}
+.link-6:after
+{
+    top: 0;
+
+    transform: translateX(100%);
+}
+.link-6:before,
+.link-6:after
+{
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: #b50010;
+}
+.link-6:hover:before,
+.link-6:hover:after
+{
+    transform: translateX(0);
+}
+.link-7
+{
+    overflow: hidden;
+}
+.link-7:before
+{
+    bottom: 0;
+
+    transform: translateX(0) scaleX(0);
+}
+.link-7:after
+{
+    top: 0;
+
+    transform: translateX(0) scaleX(0);
+}
+.link-7:before,
+.link-7:after
+{
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: #b50010;
+}
+.link-7:hover:before
+{
+    bottom: 0;
+
+    transform: translateX(0) scaleX(1);
+}
+.link-7:hover:after
+{
+    top: 0;
+
+    transform: translateX(0) scaleX(1);
+}
+.link-8
+{
+    overflow: hidden;
+}
+.link-8:before
+{
+    bottom: 0;
+
+    transform: translateX(-100%);
+}
+.link-8:after
+{
+    top: 0;
+
+    transform: translateX(100%);
+}
+.link-8:before,
+.link-8:after
+{
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: #b50010;
+}
+.link-8:hover:before,
+.link-8:hover:after
+{
+    transform: translateX(0);
+}
+.link-9:before
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    content: '';
+    transition: opacity .4s, transform .4s;
+    transform: translateY(20px);
+
+    opacity: 0;
+    background: #b50010;
+}
+.link-9:hover:before
+{
+    transform: translateY(0);
+
+    opacity: 1;
+}
+.link-10:before
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    content: '';
+    transition: opacity .4s, transform .4s;
+    transform: translateY(-15px);
+
+    opacity: 0;
+    background: #b50010;
+}
+.link-10:hover:before
+{
+    transform: translateY(0);
+
+    opacity: 1;
+}
+.link-11:hover:before,
+.link-11:hover:after
+{
+    content: '[';
+    transform: translateX(-15px);
+}
+.link-11:hover:after
+{
+    content: ']';
+    transform: translateX(10px);
+}
+.link-12
+{
+    width: 100%;
+    height: 2px;
+}
+.link-12:hover:before,
+.link-12:hover:after
+{
+    content: '[';
+    transform-origin: -20px 50%;
+    animation: main .5s;
+}
+.link-12:hover:after
+{
+    content: ']';
+    transform-origin: 20px 50%;
+    animation: main .5s;
+}
+/* @end */
 /* @group Links */
 a:link
 {
@@ -922,6 +1419,25 @@ a:focus
     outline: thin dotted;
     outline: 1px auto -webkit-focus-ring-color;
     outline-offset: -2px;
+}
+a,
+a > span
+{
+    position: relative;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+a:before,
+a:after,
+a > span:before,
+a > span:after
+{
+    position: absolute;
+
+    content: '';
+    transition: transform .5s ease;
 }
 /* @end */
 /* @group Lists */
@@ -1273,8 +1789,8 @@ ol ul
     padding-top: 10px;
     padding-bottom: 10px;
 
-    flex-wrap: wrap;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .nav .nav-item
@@ -1284,6 +1800,26 @@ ol ul
 .nav .nav-item:last-child
 {
     margin-right: 0;
+}
+.sidebar
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+
+    overflow-y: auto;
+
+    width: 26.18rem;
+    max-height: 100vh;
+}
+.main-content
+{
+    position: relative;
+    z-index: 100;
+    top: 0;
+
+    margin-left: 26.18rem;
 }
 /* @end */
 /* @group Paddings */
@@ -1656,5 +2192,49 @@ th
     color: #804180;
 }
 /* @end */
+@-moz-keyframes main
+{
+    0%
+    {
+        transform: scaleX(0);
+    }
+    100%
+    {
+        transform: scaleX(1);
+    }
+}
+@-webkit-keyframes main
+{
+    0%
+    {
+        transform: scaleX(0);
+    }
+    100%
+    {
+        transform: scaleX(1);
+    }
+}
+@-o-keyframes main
+{
+    0%
+    {
+        transform: scaleX(0);
+    }
+    100%
+    {
+        transform: scaleX(1);
+    }
+}
+@keyframes main
+{
+    0%
+    {
+        transform: scaleX(0);
+    }
+    100%
+    {
+        transform: scaleX(1);
+    }
+}
 
 /*# sourceMappingURL=skeletonic.css.map */

@@ -88,6 +88,23 @@ button, .button, [type=submit]
       opacity: 0.5
       transition: all 150ms linear
       text-decoration: none
+  &.link
+    background: 0 0
+    border-color: transparent
+    color: color-blue
+    cursor: pointer
+    transition: all 150ms linear
+    text-decoration: none
+    &:visited
+      color: color-purple
+    &:hover,&:active
+      color: color-red
+      text-decoration: underline
+    &:focus
+      color: color-red
+      outline: thin dotted
+      outline: 1px auto -webkit-focus-ring-color
+      outline-offset: -2px
 
 .button-group
   *letter-spacing: normal

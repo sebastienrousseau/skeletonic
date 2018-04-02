@@ -1,16 +1,32 @@
 /* @group Navigation */
 .nav
-  position: relative
+  align-items: center
   display: flex
   flex-wrap: wrap
-  align-items: center
   justify-content: space-between
-  padding-top: 10px
   padding-bottom: 10px
+  padding-top: 10px
+  position: relative
 
   .nav-item
     margin-right: 10px
 
     &:last-child
       margin-right: 0
+
+.sidebar
+  left: 0
+  max-height:100vh
+  overflow-y: auto
+  position: fixed
+  top: 0
+  width: round(golden-ratio * 16.18,3)rem
+  z-index: 100
+
+.main-content
+  margin-left: round(golden-ratio * 16.18,3)rem
+  position: relative
+  top: 0
+  z-index: 100
+
 /* @end */

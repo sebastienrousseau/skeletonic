@@ -1,0 +1,215 @@
+/* @group Link Effects */
+
+// Common Link Effects Styles
+for i in (1..12)
+  .link-{i}
+    background-color: transparent
+    box-shadow: none
+    display inline-block
+    padding 10px
+    transition: all 0.4s ease-out
+    &:hover
+        text-decoration: none
+
+// Underline Left to Right
+.link-1
+    overflow hidden
+    &:before
+        background color-red
+        bottom 0
+        height 2px
+        left 0
+        transform translateX(-100%)
+        width 100%
+    &:hover
+        &:before
+            transform translateX(0)
+
+// Underline Right to Left
+.link-2
+    overflow hidden
+    &:before
+        background color-red
+        bottom 0
+        height 2px
+        right 0
+        transform translateX(100%)
+        width 100%
+    &:hover
+        &:before
+            transform translateX(0)
+
+// Underline Grow from Center
+.link-3
+    &:before
+        background color-red
+        bottom 0
+        height 2px
+        left 0
+        transform scaleX(0)
+        width 100%
+    &:hover
+        &:before
+            transform scaleX(1)
+
+// Underline Shrink to Center
+.link-4
+    &:before
+        background color-red
+        bottom 0
+        height 2px
+        left 0
+        transform scaleX(1)
+        width 100%
+    &:hover
+        &:before
+            transform scaleX(0)
+
+// Top/Bottom Left to Right
+.link-5
+    overflow hidden
+    &:before
+        bottom 0
+        transform translateX(-100%)
+    &:after
+        top 0
+        transform translateX(-100%)
+
+.link-5:before, .link-5:after
+    background color-red
+    height 2px
+    left 0
+    width 100%
+
+.link-5:hover:before, .link-5:hover:after
+    transform translateX(0)
+
+// Top/Bottom Right to Left
+.link-6
+    overflow hidden
+    &:before
+        bottom 0
+        transform translateX(100%)
+    &:after
+        top 0
+        transform translateX(100%)
+
+.link-6:before, .link-6:after
+    background color-red
+    height 2px
+    left 0
+    width 100%
+
+.link-6:hover:before, .link-6:hover:after
+    transform translateX(0)
+
+// Top/Bottom Grow from Center
+.link-7
+    overflow hidden
+    &:before
+        bottom 0
+        transform translateX(0) scaleX(0)
+    &:after
+        top 0
+        transform translateX(0) scaleX(0)
+
+.link-7:before, .link-7:after
+    background color-red
+    height 2px
+    left 0
+    width 100%
+
+.link-7
+    &:hover:before
+        bottom 0
+        transform translateX(0) scaleX(1)
+    &:hover:after
+        top 0
+        transform translateX(0) scaleX(1)
+
+// Top/Bottom Opposite Start
+.link-8
+    overflow hidden
+    &:before
+        bottom 0
+        transform translateX(-100%)
+    &:after
+        top 0
+        transform translateX(100%)
+
+.link-8:before, .link-8:after
+    background color-red
+    height 2px
+    left 0
+    width 100%
+
+.link-8:hover:before, .link-8:hover:after
+    transform translateX(0)
+
+// Underline going Up
+.link-9
+    &:before
+      background color-red
+      content ''
+      height 2px
+      left 0
+      opacity 0
+      position absolute
+      top 100%
+      transform translateY(20px)
+      transition opacity 0.4s, transform 0.4s
+      width 100%
+    &:hover
+        &:before
+            opacity 1
+            transform translateY(0)
+
+// Underline going Down
+.link-10
+    &:before
+      background color-red
+      content ''
+      height 2px
+      left 0
+      opacity 0
+      position absolute
+      top 100%
+      transform translateY(-15px)
+      transition opacity 0.4s, transform 0.4s
+      width 100%
+    &:hover
+        &:before
+            opacity 1
+            transform translateY(0)
+
+// Expanding Brackets
+.link-11
+    &:hover:before,
+    &:hover:after
+        content '['
+        transform translateX(-15px)
+    &:hover:after
+        content ']'
+        transform translateX(10px)
+
+// Shrinking Brackets
+.link-12
+    width 100%
+    height 2px
+    &:hover:before,
+    &:hover:after
+        animation main .5s
+        content '['
+        transform-origin -20px 50%
+    &:hover:after
+        animation main .5s
+        content ']'
+        transform-origin 20px 50%
+
+@keyframes main
+    0%
+        transform scaleX(0)
+    100%
+        transform scaleX(1)
+
+/* @end */

@@ -48,6 +48,7 @@ const comment = `/**
       # Form
       # Image
       # Link
+      # Links
       # List
       # Nav
       # Table
