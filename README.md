@@ -154,7 +154,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 Credit also goes to the following source code libraries:
 -   [Normalize.css](http://necolas.github.io/normalize.css/) - A modern, HTML5-ready alternative to CSS resets to fix cross-browser compatibility issues.
 -   [Skeleton](http://www.getskeleton.com) - A Dead Simple, Responsive Boilerplate
--   [Wing](http://usewing.ml/) - A beautiful CSS framework designed for minimalists.
+-   [Wing](https://kbrsh.github.io/wing/) - A beautiful CSS framework designed for minimalists.
 
 ## About Reedia
 
