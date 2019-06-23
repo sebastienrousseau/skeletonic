@@ -42,8 +42,7 @@ deploy:
     skip_cleanup: true
     name: Skeletonic $GIT_TAG
     body: "<strong>Change Log:</strong><br />Release $GIT_TAG created on $(date +'%d/%m/%Y')
-      at $(date +'%T')<br />A sleek, lightweight, intuitive and ultra-responsive CSS
-      framework. Designed to fit your web life."
+      at $(date +'%T')<br />Skeletonic is a lightweight, intuitive and ultra-responsive CSS framework designed for any platform, browser or device."
     on:
       # all_branches: true
       # tags: true
