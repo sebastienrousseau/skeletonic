@@ -1,6 +1,6 @@
 {
     "name": "skeletonic",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "A dead on, lightweight, responsive and modern CSS framework.",
     "keywords": [
         "skeletonic",
@@ -61,23 +61,22 @@
     },
     "devDependencies": {
         "csslint-stylish": "^0.0.6",
-        "del": "^3.0.0",
-        "gulp-clean-css": "^3.9.3",
-        "gulp-cli": "^2.0.1",
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-cli": "^2.3.0",
         "gulp-concat": "^2.6.1",
-        "gulp-csscomb": "^3.0.8",
+        "gulp-csscomb": "^3.1.0",
         "gulp-csslint": "^1.0.1",
-        "gulp-git": "^2.5.2",
-        "gulp-header": "^2.0.5",
-        "gulp-rename": "^1.2.2",
+        "gulp-git": "^2.10.1",
+        "gulp-header": "^2.0.9",
+        "gulp-rename": "^2.0.0",
         "gulp-size": "^3.0.0",
-        "gulp-sourcemaps": "^2.6.4",
+        "gulp-sourcemaps": "^3.0.0",
         "gulp-stylus": "^2.7.0",
-        "gulp-version-filename": "^1.0.2",
-        "gulp": "^3.9.1",
-        "mocha": "^5.0.4",
-        "should": "^13.2.1",
-        "vinyl-paths": "^2.1.0"
-    },
-    "dependencies": {}
+        "gulp-version-filename": "^2.0.0",
+        "mocha": "^8.3.2",
+        "should": "^13.2.3",
+        "vinyl-paths": "3.0.1"
+    }
 }
