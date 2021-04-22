@@ -86,9 +86,9 @@ Please feel free to grab the latest:
 
 ```<link rel="stylesheet" type="text/css" href="https://unpkg.com/skeletonic/dist/skeletonic.min.css" />```
 
-You can also specify a specific version as per below. The latest version as of today is 1.1.0.
+You can also specify a specific version as per below. The latest version as of today is 1.1.1.
 
-```<link rel="stylesheet" type="text/css" href="https://unpkg.com/skeletonic@1.1.0/dist/skeletonic.min.css" />```
+```<link rel="stylesheet" type="text/css" href="https://unpkg.com/skeletonic@1.1.1/dist/skeletonic.min.css" />```
 
 ## Extend
 
@@ -107,7 +107,7 @@ The following table lists alternate CDN locations where Skeletonic is hosted.
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.1.0/dist/skeletonic.min.css | Yes | No |
+| [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.1.1/dist/skeletonic.min.css | Yes | No |
 | [jsDelivr](https://www.jsdelivr.com/) | https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min.css  | Yes | Yes |
 | [RawGit](http://rawgit.com/) | https://cdn.rawgit.com/reedia/skeletonic/master/dist/skeletonic.min.css | Yes | No |
 
