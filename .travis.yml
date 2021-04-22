@@ -4,8 +4,9 @@ cache:
   directories:
   - node_modules
 node_js:
-- 7
+- 'node'
 before_script:
+  - node --version
   - npm install -g gulp-cli
 script: gulp
 notifications:
