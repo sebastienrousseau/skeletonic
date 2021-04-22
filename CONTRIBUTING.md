@@ -16,7 +16,7 @@ If you encounter a bug that hasn't already been filed, please file a bug report.
 
 Warning us of a bug is possibly the single most valuable contribution you can make to Skeletonic.
 
-1) Head [here](https://github.com/reedia/skeletonic/issues/new) to submit a new issue.
+1) Head [here](https://github.com/sebastienrousseau/skeletonic/issues/new) to submit a new issue.
 
 2) Include a descriptive title that is straight to the point.
 

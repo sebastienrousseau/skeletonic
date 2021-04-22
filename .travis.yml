@@ -16,7 +16,7 @@ after_success:
 - echo -n $GIT_TAG > v0.1.$TRAVIS_BUILD_NUMBER
 - git commit -m "Set build VERSION number to "$GIT_TAG
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-- git push --quiet https://$GITHUBKEY@github.com/reedia/skeletonic $GIT_TAG > /dev/null
+- git push --quiet https://$GITHUBKEY@github.com/sebastienrousseau/skeletonic $GIT_TAG > /dev/null
   2>&1
 - echo "${TRAVIS_BRANCH}"
 - echo "${TRAVIS_PULL_REQUEST}"

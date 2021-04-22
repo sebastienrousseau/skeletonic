@@ -1,6 +1,6 @@
 <p align="center">
 	<a href="https://skeletonic.io">
-		<img src="https://github.com/reedia/skeletonic/raw/master/images/skeletonic.png" alt="Skeletonic Logo"  />
+		<img src="https://github.com/sebastienrousseau/skeletonic/raw/master/images/skeletonic.png" alt="Skeletonic Logo"  />
 	</a>  
 </p>
 
@@ -13,21 +13,26 @@
 <p align="center"><strong>Version: 1.1.1</strong></p>
 
 <p align="center">
-  <a href="https://github.com/reedia/skeletonic/archive/v1.1.1.zip" class="button primary">Download</a>
+  <a href="https://github.com/sebastienrousseau/skeletonic/archive/v1.1.1.zip" class="button primary">Download</a>
 </p>
 
 [![NPM](https://nodei.co/npm/skeletonic.png)](https://nodei.co/npm/skeletonic/)
 
 [![npm version](https://badge.fury.io/js/skeletonic.svg)](https://badge.fury.io/js/skeletonic)
-[![Build Status](https://travis-ci.org/reedia/skeletonic.svg?branch=master)](https://travis-ci.org/reedia/skeletonic)
+[![Build Status](https://travis-ci.org/sebastienrousseau/skeletonic.svg?branch=master)](https://travis-ci.org/sebastienrousseau/skeletonic)
 [![Packagist](https://img.shields.io/badge/license-MIT-blue.svg)](https://skeletonic.github.io/license)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Freedia%2Fskeletonic.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Freedia%2Fskeletonic?ref=badge_shield)
 
 ## Table of contents
 
+- [Table of contents](#table-of-contents)
 - [Getting Started](#getting-started)
+  - [Local Setup](#local-setup)
 - [What's included](#whats-included)
 - [Extend](#extend)
+    - [CSS Responsive Grid-View](#css-responsive-grid-view)
+    - [CSS Colours](#css-colours)
+    - [CSS Animations](#css-animations)
 - [Alternate CDN locations](#alternate-cdn-locations)
 - [Versioning](#versioning)
 - [Built With](#built-with)
@@ -45,10 +50,10 @@ Skeletonic is constantly in development. Try it out now!
 
 Several quick start options are available:
 
--   [Download the latest release](https://github.com/reedia/skeletonic/archive/v1.1.1.zip)
+-   [Download the latest release](https://github.com/sebastienrousseau/skeletonic/archive/v1.1.1.zip)
 -   Install with [Npm](https://www.npmjs.com/package/skeletonic) to get the pre-built CSS and sourcemaps. This is recommended when using Skeletonic for a typical web project: ```npm install skeletonic```
 -   Install with [Yarn](https://yarnpkg.com/en/package/skeletonic) to get the pre-built CSS and sourcemaps. This is recommended when using Skeletonic for a typical web project: ```yarn add skeletonic```
--   Clone the main repository to get all source files including build scripts: `git clone https://github.com/reedia/skeletonic.git`
+-   Clone the main repository to get all source files including build scripts: `git clone https://github.com/sebastienrousseau/skeletonic.git`
 
 ## What's included
 
@@ -109,7 +114,7 @@ The following table lists alternate CDN locations where Skeletonic is hosted.
 |---|---|---|---|
 | [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.1.1/dist/skeletonic.min.css | Yes | No |
 | [jsDelivr](https://www.jsdelivr.com/) | https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min.css  | Yes | Yes |
-| [RawGit](http://rawgit.com/) | https://cdn.rawgit.com/reedia/skeletonic/master/dist/skeletonic.min.css | Yes | No |
+| [RawGit](http://rawgit.com/) | https://cdn.rawgit.com/sebastienrousseau/skeletonic/master/dist/skeletonic.min.css | Yes | No |
 
 ## Versioning
 For transparency into our release cycle and in striving to maintain backward compatibility, Skeletonic is maintained under the [Semantic Versioning](https://semver.org/) guidelines. 
@@ -121,10 +126,10 @@ For transparency into our release cycle and in striving to maintain backward com
 
 ## Contributing
 
-Please read carefully through our [Contributing Guidelines](https://github.com/reedia/skeletonic/blob/master/CONTRIBUTING.md) for further details on the process for submitting pull requests to us.
+Please read carefully through our [Contributing Guidelines](https://github.com/sebastienrousseau/skeletonic/blob/master/CONTRIBUTING.md) for further details on the process for submitting pull requests to us.
 
 ## Code of Conduct
-We are committed to preserving and fostering a diverse, welcoming community. Please read our [Code of Conduct](https://github.com/reedia/skeletonic/blob/master/CODE_OF_CONDUCT.md).
+We are committed to preserving and fostering a diverse, welcoming community. Please read our [Code of Conduct](https://github.com/sebastienrousseau/skeletonic/blob/master/CODE_OF_CONDUCT.md).
 
 ## Our Values
 1.  We believe perfection must consider everything.
@@ -133,19 +138,19 @@ We are committed to preserving and fostering a diverse, welcoming community. Ple
 
 ## History
 
-*   See [Skeletonic Release](https://github.com/reedia/skeletonic/releases) list.
+*   See [Skeletonic Release](https://github.com/sebastienrousseau/skeletonic/releases) list.
 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/reedia/skeletonic/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/sebastienrousseau/skeletonic/blob/master/LICENSE) file for details
 
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Freedia%2Fskeletonic.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Freedia%2Fskeletonic?ref=badge_large)
 
 ## Acknowledgements
 
-[Skeletonic](https://skeletonic.io) is beautifully crafted by these people and a bunch of awesome [contributors](https://github.com/reedia/skeletonic/graphs/contributors)
+[Skeletonic](https://skeletonic.io) is beautifully crafted by these people and a bunch of awesome [contributors](https://github.com/sebastienrousseau/skeletonic/graphs/contributors)
 
 [![Sebastien Rousseau](https://avatars0.githubusercontent.com/u/1394998?s=117)](https://sebastienrousseau.co.uk) |
 |:---:
@@ -155,7 +160,3 @@ Credit also goes to the following source code libraries:
 -   [Normalize.css](http://necolas.github.io/normalize.css/) - A modern, HTML5-ready alternative to CSS resets to fix cross-browser compatibility issues.
 -   [Skeleton](http://www.getskeleton.com) - A Dead Simple, Responsive Boilerplate
 -   [Wing](https://kbrsh.github.io/wing/) - A beautiful CSS framework designed for minimalists.
-
-## About Reedia
-
-![Reedia](https://avatars0.githubusercontent.com/u/488747?s=200)
