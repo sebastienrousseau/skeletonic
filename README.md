@@ -10,10 +10,10 @@
 
 <p align="center">Simply designed to fit your cascading web life.</p>
 
-<p align="center"><strong>Version: 1.1.0</strong></p>
+<p align="center"><strong>Version: 1.1.1</strong></p>
 
 <p align="center">
-  <a href="https://github.com/reedia/skeletonic/archive/v1.1.0.zip" class="button primary">Download</a>
+  <a href="https://github.com/reedia/skeletonic/archive/v1.1.1.zip" class="button primary">Download</a>
 </p>
 
 [![NPM](https://nodei.co/npm/skeletonic.png)](https://nodei.co/npm/skeletonic/)
@@ -45,7 +45,7 @@ Skeletonic is constantly in development. Try it out now!
 
 Several quick start options are available:
 
--   [Download the latest release](https://github.com/reedia/skeletonic/archive/v1.1.0.zip)
+-   [Download the latest release](https://github.com/reedia/skeletonic/archive/v1.1.1.zip)
 -   Install with [Npm](https://www.npmjs.com/package/skeletonic) to get the pre-built CSS and sourcemaps. This is recommended when using Skeletonic for a typical web project: ```npm install skeletonic```
 -   Install with [Yarn](https://yarnpkg.com/en/package/skeletonic) to get the pre-built CSS and sourcemaps. This is recommended when using Skeletonic for a typical web project: ```yarn add skeletonic```
 -   Clone the main repository to get all source files including build scripts: `git clone https://github.com/reedia/skeletonic.git`
@@ -57,7 +57,7 @@ Within the download you'll find all the source files, compiled and minified CSS 
 You'll see something like this:
 
 ```
-skeletonic-1.1.0
+skeletonic-1.1.1
 ├── skeletonic-animations.css
 ├── skeletonic-animations.css.map
 ├── skeletonic-animations.min.css
