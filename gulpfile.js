@@ -230,9 +230,17 @@ gulp.task('watch', function () {
 
 // Run in order:
 // gulp build-colours && gulp build-css && gulp build-pattern && gulp build-animations && gulp build-fonts && gulp rename && gulp clean:tmp
+  // gulp build-colours
+  // gulp build-css
+  // gulp build-pattern
+  // gulp build-animations
+  // gulp build-fonts
+  // gulp rename
+  // gulp clean:tmp
 
-gulp.task('default', ['build-css']);
-gulp.task('pattern', ['build-pattern']);
-gulp.task('colours', ['build-colours']);
-gulp.task('animations', ['build-animations']);
-gulp.task('fonts', ['build-fonts']);
+gulp.task('default', gulp.series('build-css'));
+gulp.task('pattern', gulp.series('build-pattern'));
+gulp.task('colours', gulp.series('build-colours'));
+gulp.task('animations', gulp.series('build-animations'));
+gulp.task('fonts', gulp.series('build-fonts'));
+
