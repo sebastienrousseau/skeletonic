@@ -16,7 +16,7 @@ after_success:
 - echo -n $GIT_TAG > v0.1.$TRAVIS_BUILD_NUMBER
 - git commit -m "Set build VERSION number to "$GIT_TAG
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-- git push --quiet https://$GITHUBKEY@github.com/sebastienrousseau/skeletonic $GIT_TAG > /dev/null
+- git push --quiet https://$GITHUBKEY@github.com/reedia/skeletonic $GIT_TAG > /dev/null
   2>&1
 - echo "${TRAVIS_BRANCH}"
 - echo "${TRAVIS_PULL_REQUEST}"
@@ -36,9 +36,8 @@ branches:
 
 deploy:
   - provider: releases
-    # Github security/auth token
-    secure:
-     "lf4UWgL+++4pd1HsLY3dvTX5YRqmPrOV72E7+lcVk8KJRVThd6a36LO30P5EuNWtshHGofHLjE0wonoLwiy2PlDodJk5PpCah1eJzVOpn45ImcEWcBhV9RXMSq1OGcb9yPr4UjJz3mMOTaIv9Xls52g/DxyXcX34nhIQwJ62L7t0lgK7WArAG5BHhGw4GxwhBrVaPnkwqcKF+i/unO4Juyg1D8KEK28XzENaUzt18rlUJ51sN0XNKgo8mHtTKkiwQDQyMxhEKVtT0h8uJbb+gECtvPkug69UQUonCN/fMr0p0u27AHqWL5gSuyLDuS1Ou6xOIJitYEXNqbW4ANbyeIxusI3xSwPTwf/whKCEgvD/FsjmRZ42WONinERwjjGJy9xACBvJD7tcinorog3rx/96qsBcuI4qohNJ51smuVipLdRgRDuxqmgMPu5M6OQ61kPSbY6RS9Dzccli30vZ2TS6NgWO65ngcxgXYsWneTbENydGUx91o42jKvL0vQ4UHY709l432dovA0n0knfXQDw407zY+Xgsk4ci4GXF8YXB9gvp/ipdtH752lStfAoFZy2lZy72T3clXcE1+2QwrTJy2KSrifPESU9LG7WTivh9FIAlARCYyJevJM86cAaa0wBW2AYZOd9bIXbhiWflE03YNKjKX+lzaXekDC6Ardk="
+    api_key:
+      secure: "lf4UWgL+++4pd1HsLY3dvTX5YRqmPrOV72E7+lcVk8KJRVThd6a36LO30P5EuNWtshHGofHLjE0wonoLwiy2PlDodJk5PpCah1eJzVOpn45ImcEWcBhV9RXMSq1OGcb9yPr4UjJz3mMOTaIv9Xls52g/DxyXcX34nhIQwJ62L7t0lgK7WArAG5BHhGw4GxwhBrVaPnkwqcKF+i/unO4Juyg1D8KEK28XzENaUzt18rlUJ51sN0XNKgo8mHtTKkiwQDQyMxhEKVtT0h8uJbb+gECtvPkug69UQUonCN/fMr0p0u27AHqWL5gSuyLDuS1Ou6xOIJitYEXNqbW4ANbyeIxusI3xSwPTwf/whKCEgvD/FsjmRZ42WONinERwjjGJy9xACBvJD7tcinorog3rx/96qsBcuI4qohNJ51smuVipLdRgRDuxqmgMPu5M6OQ61kPSbY6RS9Dzccli30vZ2TS6NgWO65ngcxgXYsWneTbENydGUx91o42jKvL0vQ4UHY709l432dovA0n0knfXQDw407zY+Xgsk4ci4GXF8YXB9gvp/ipdtH752lStfAoFZy2lZy72T3clXcE1+2QwrTJy2KSrifPESU9LG7WTivh9FIAlARCYyJevJM86cAaa0wBW2AYZOd9bIXbhiWflE03YNKjKX+lzaXekDC6Ardk="
     file_glob: true
     file: dist/*
     skip_cleanup: true
