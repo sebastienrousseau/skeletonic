@@ -55,4 +55,9 @@ deploy:
       branch: master
       condition: "$VERSION_CHANGED == 'yes'"
 before_install:
+  # Only deploy if the version number has changed
+  - |
+    if git diff --unified=0 $TRAVIS_COMMIT_RANGE package.json | grep version ; then
+      export VERSION_CHANGED="yes"
+    fi  
   - openssl aes-256-cbc -K $encrypted_0da74458a2a7_key -iv $encrypted_0da74458a2a7_iv -in id_rsa.enc -out id_rsa -d

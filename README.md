@@ -10,10 +10,10 @@
 
 <p align="center">Simply designed to fit your cascading web life.</p>
 
-<p align="center"><strong>Version: 1.1.3</strong></p>
+<p align="center"><strong>Version: 1.1.4</strong></p>
 
 <p align="center">
-  <a href="https://github.com/sebastienrousseau/skeletonic/archive/v1.1.3.zip" class="button primary">Download</a>
+  <a href="https://github.com/sebastienrousseau/skeletonic/archive/v1.1.4.zip" class="button primary">Download</a>
 </p>
 
 [![NPM](https://nodei.co/npm/skeletonic.png)](https://nodei.co/npm/skeletonic/)
@@ -50,7 +50,7 @@ Skeletonic is constantly in development. Try it out now!
 
 Several quick start options are available:
 
--   [Download the latest release](https://github.com/sebastienrousseau/skeletonic/archive/v1.1.3.zip)
+-   [Download the latest release](https://github.com/sebastienrousseau/skeletonic/archive/v1.1.4.zip)
 -   Install with [Npm](https://www.npmjs.com/package/skeletonic) to get the pre-built CSS and sourcemaps. This is recommended when using Skeletonic for a typical web project: ```npm install skeletonic```
 -   Install with [Yarn](https://yarnpkg.com/en/package/skeletonic) to get the pre-built CSS and sourcemaps. This is recommended when using Skeletonic for a typical web project: ```yarn add skeletonic```
 -   Clone the main repository to get all source files including build scripts: `git clone https://github.com/sebastienrousseau/skeletonic.git`
@@ -62,7 +62,7 @@ Within the download you'll find all the source files, compiled and minified CSS 
 You'll see something like this:
 
 ```
-skeletonic-1.1.3
+skeletonic-1.1.4
 ├── skeletonic-animations.css
 ├── skeletonic-animations.css.map
 ├── skeletonic-animations.min.css
@@ -91,9 +91,9 @@ Please feel free to grab the latest:
 
 ```<link rel="stylesheet" type="text/css" href="https://unpkg.com/skeletonic/dist/skeletonic.min.css" />```
 
-You can also specify a specific version as per below. The latest version as of today is 1.1.3.
+You can also specify a specific version as per below. The latest version as of today is 1.1.4.
 
-```<link rel="stylesheet" type="text/css" href="https://unpkg.com/skeletonic@1.1.3/dist/skeletonic.min.css" />```
+```<link rel="stylesheet" type="text/css" href="https://unpkg.com/skeletonic@1.1.4/dist/skeletonic.min.css" />```
 
 ## Extend
 
@@ -112,7 +112,7 @@ The following table lists alternate CDN locations where Skeletonic is hosted.
 
 | CDN | URL | HTTPS | Combo |
 |---|---|---|---|
-| [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.1.3/dist/skeletonic.min.css | Yes | No |
+| [unpkg](https://unpkg.com/) | https://unpkg.com/skeletonic@1.1.4/dist/skeletonic.min.css | Yes | No |
 | [jsDelivr](https://www.jsdelivr.com/) | https://cdn.jsdelivr.net/npm/skeletonic/dist/skeletonic.min.css  | Yes | Yes |
 | [RawGit](http://rawgit.com/) | https://cdn.rawgit.com/sebastienrousseau/skeletonic/master/dist/skeletonic.min.css | Yes | No |
 
