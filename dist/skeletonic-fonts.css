@@ -1,7 +1,7 @@
 /**
- * Name: skeletonic v1.1.4
+ * Name: skeletonic v1.1.5
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.1.4
+ * @version 1.1.5
  * Author: Reedia Limited (https://github.com/reedia)
  * Copyright © Reedia Limited 2018. All rights reserved.
  * https://skeletonic.io
@@ -54,8 +54,8 @@
 @font-face
 {
     font-family: 'Open Sans';
-    font-weight: normal;
     font-weight: 400;
+    font-weight: normal;
     font-style: italic;
 
     src: url('https://open-sans.com/fonts/OpenSans-Italic-webfont.eot');
@@ -105,18 +105,19 @@
 @font-face
 {
     font-family: 'Open Sans';
-    font-weight: bold;
     font-weight: 700;
+    font-weight: bold;
     font-style: normal;
 
     src: url('https://open-sans.com/fonts/OpenSans-Bold-webfont.eot');
     src: url('https://open-sans.com/fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('https://open-sans.com/fonts/OpenSans-Bold-webfont.woff') format('woff'), url('https://open-sans.com/fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('https://open-sans.com/fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-display: swap;
 }
 @font-face
 {
     font-family: 'Open Sans';
-    font-weight: bold;
     font-weight: 700;
+    font-weight: bold;
     font-style: italic;
 
     src: url('https://open-sans.com/fonts/OpenSans-BoldItalic-webfont.eot');

@@ -5,12 +5,28 @@
   tachyons-names = -black,-near-black,-dark-gray,-mid-gray,-gray,-silver,-light-silver,-moon-gray,-light-gray,-near-white,-white,-transparent,-black-90,-black-80,-black-70,-black-60,-black-50,-black-40,-black-30,-black-20,-black-10,-black-05,-black-025,-black-0125,-white-90,-white-80,-white-70,-white-60,-white-50,-white-40,-white-30,-white-20,-white-10,-white-05,-white-025,-white-0125,-dark-red,-red,-light-red,-orange,-gold,-yellow,-light-yellow,-purple,-light-purple,-dark-pink,-hot-pink,-pink,-light-pink,-dark-green,-green,-light-green,-navy,-dark-blue,-blue,-light-blue,-lightest-blue,-washed-blue,-washed-green,-washed-yellow,-washed-red
 
   for tachyons-colours, i in tachyons-colours
-    // Web Safe Background Colours
+    // Tachyons Colours Background Colours
     .bg{tachyons-names[i]}
       background-color: tachyons-colours
 
-    // Web Safe Text Colours
+    // Tachyons Colours Text Colours
     .colour{tachyons-names[i]}
       color: tachyons-colours
+
+    // Tachyons Button Colours
+    .btn-tc-{i+1}
+      background-color: tachyons-colours
+      border-radius: 50%
+      cursor: pointer
+      display: inline-block
+      height: 60px
+      line-height: 60px
+      overflow: hidden
+      padding: 0
+      position: relative
+      transition: background-color .3s
+      vertical-align: middle
+      width: 60px
+      z-index: 1
 
 /* @end */

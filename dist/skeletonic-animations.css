@@ -1,7 +1,7 @@
 /**
- * Name: skeletonic v1.1.4
+ * Name: skeletonic v1.1.5
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.1.4
+ * @version 1.1.5
  * Author: Reedia Limited (https://github.com/reedia)
  * Copyright © Reedia Limited 2018. All rights reserved.
  * https://skeletonic.io
@@ -76,6 +76,33 @@
 .pop-in
 {
     animation-name: pop-in 2s;
+}
+/* @end */
+/* @group Pulse Animation and Button */
+.pulse
+{
+    position: relative;
+
+    overflow: visible;
+}
+.pulse::before
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+    transition: opacity .3s, transform .3s;
+    animation: pulse-animation 1s cubic-bezier(.24, 0, .38, 1) infinite;
+
+    border-radius: inherit;
+    background-color: inherit;
 }
 /* @end */
 /* @group Rotation Animation */
@@ -1132,6 +1159,90 @@
     100%
     {
         transform: scale(1);
+    }
+}
+@-moz-keyframes pulse-animation
+{
+    0%
+    {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+    50%
+    {
+        transform: scale(1.5);
+
+        opacity: 0;
+    }
+    100%
+    {
+        transform: scale(1.5);
+
+        opacity: 0;
+    }
+}
+@-webkit-keyframes pulse-animation
+{
+    0%
+    {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+    50%
+    {
+        transform: scale(1.5);
+
+        opacity: 0;
+    }
+    100%
+    {
+        transform: scale(1.5);
+
+        opacity: 0;
+    }
+}
+@-o-keyframes pulse-animation
+{
+    0%
+    {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+    50%
+    {
+        transform: scale(1.5);
+
+        opacity: 0;
+    }
+    100%
+    {
+        transform: scale(1.5);
+
+        opacity: 0;
+    }
+}
+@keyframes pulse-animation
+{
+    0%
+    {
+        transform: scale(1);
+
+        opacity: 1;
+    }
+    50%
+    {
+        transform: scale(1.5);
+
+        opacity: 0;
+    }
+    100%
+    {
+        transform: scale(1.5);
+
+        opacity: 0;
     }
 }
 @-moz-keyframes rotation
