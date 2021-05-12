@@ -1,7 +1,7 @@
 /**
- * Name: skeletonic v1.1.7
+ * Name: skeletonic v1.1.8
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.1.7
+ * @version 1.1.8
  * Author: Sebastien Rousseau (https://github.com/sebastienrousseau/skeletonic)
  * Copyright © Reedia Limited 2018. All rights reserved.
  * https://skeletonic.io
@@ -6420,7 +6420,7 @@ button.link,
     transition: all 150ms linear;
     text-decoration: none;
 
-    color: color-blue;
+    color: #00f;
     border-color: transparent;
     background: 0 0;
 }
@@ -6428,7 +6428,7 @@ button.link:visited,
 .button.link:visited,
 [type=submit].link:visited
 {
-    color: color-purple;
+    color: #800080;
 }
 button.link:hover,
 .button.link:hover,
@@ -6439,13 +6439,13 @@ button.link:active,
 {
     text-decoration: underline;
 
-    color: color-red;
+    color: #f00;
 }
 button.link:focus,
 .button.link:focus,
 [type=submit].link:focus
 {
-    color: color-red;
+    color: #f00;
     outline: thin dotted;
     outline: 1px auto -webkit-focus-ring-color;
     outline-offset: -2px;
@@ -6938,7 +6938,7 @@ iframe
 
     transform: translateX(-100%);
 
-    background: color-red;
+    background: #f00;
 }
 .link-1:hover:before
 {
@@ -6958,7 +6958,7 @@ iframe
 
     transform: translateX(100%);
 
-    background: color-red;
+    background: #f00;
 }
 .link-2:hover:before
 {
@@ -6974,7 +6974,7 @@ iframe
 
     transform: scaleX(0);
 
-    background: color-red;
+    background: #f00;
 }
 .link-3:hover:before
 {
@@ -6990,7 +6990,7 @@ iframe
 
     transform: scaleX(1);
 
-    background: color-red;
+    background: #f00;
 }
 .link-4:hover:before
 {
@@ -7020,7 +7020,7 @@ iframe
     width: 100%;
     height: 2px;
 
-    background: color-red;
+    background: #f00;
 }
 .link-5:hover:before,
 .link-5:hover:after
@@ -7051,7 +7051,7 @@ iframe
     width: 100%;
     height: 2px;
 
-    background: color-red;
+    background: #f00;
 }
 .link-6:hover:before,
 .link-6:hover:after
@@ -7082,7 +7082,7 @@ iframe
     width: 100%;
     height: 2px;
 
-    background: color-red;
+    background: #f00;
 }
 .link-7:hover:before
 {
@@ -7120,7 +7120,7 @@ iframe
     width: 100%;
     height: 2px;
 
-    background: color-red;
+    background: #f00;
 }
 .link-8:hover:before,
 .link-8:hover:after
@@ -7141,7 +7141,7 @@ iframe
     transform: translateY(20px);
 
     opacity: 0;
-    background: color-red;
+    background: #f00;
 }
 .link-9:hover:before
 {
@@ -7163,7 +7163,7 @@ iframe
     transform: translateY(-15px);
 
     opacity: 0;
-    background: color-red;
+    background: #f00;
 }
 .link-10:hover:before
 {
@@ -7206,22 +7206,22 @@ a:link
 {
     text-decoration: none;
 
-    color: color-blue;
+    color: #00f;
 }
 a:visited
 {
-    color: color-purple;
+    color: #800080;
 }
 a:hover,
 a:active
 {
     text-decoration: underline;
 
-    color: color-red;
+    color: #f00;
 }
 a:focus
 {
-    color: color-red;
+    color: #f00;
     outline: thin dotted;
     outline: 1px auto -webkit-focus-ring-color;
     outline-offset: -2px;
@@ -8171,23 +8171,23 @@ th
 }
 .color-black
 {
-    color: color-black;
+    color: #000;
 }
 .color-grey
 {
-    color: color-grey;
+    color: #808080;
 }
 .color-blue
 {
-    color: color-blue;
+    color: #00f;
 }
 .color-red
 {
-    color: color-red;
+    color: #f00;
 }
 .color-purple
 {
-    color: color-purple;
+    color: #800080;
 }
 /* @end */
 @-moz-keyframes main
