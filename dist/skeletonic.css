@@ -1,7 +1,7 @@
 /**
- * Name: skeletonic v1.1.6
+ * Name: skeletonic v1.1.7
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.1.6
+ * @version 1.1.7
  * Author: Sebastien Rousseau (https://github.com/sebastienrousseau/skeletonic)
  * Copyright © Reedia Limited 2018. All rights reserved.
  * https://skeletonic.io
@@ -6254,7 +6254,7 @@ button,
     color: #000;
     border: 0;
     border-radius: .25rem;
-    background: $grey-200;
+    background: #eee;
     box-shadow: inset 0 1px 0 rgba(255,255,255,.3);
 }
 button:link,
@@ -6265,7 +6265,7 @@ button:visited,
 [type=submit]:visited
 {
     color: #000;
-    background: $grey-200;
+    background: #eee;
 }
 button:active,
 .button:active,
@@ -6279,7 +6279,7 @@ button.active,
 
     opacity: .85;
     color: #000;
-    background: $grey-400;
+    background: #bdbdbd;
 }
 button:hover,
 .button:hover,
@@ -6299,7 +6299,7 @@ button:focus,
 
     opacity: .7;
     color: #000;
-    background: $grey-100;
+    background: #f5f5f5;
 }
 button:disabled,
 .button:disabled,
@@ -6545,8 +6545,8 @@ button.link:focus,
 {
     margin-bottom: 1.618033988749895rem;
 
-    border: 1px solid $grey-300;
-    background: $grey-100;
+    border: 1px solid #e0e0e0;
+    background: #f5f5f5;
 }
 .card a
 {
@@ -6589,7 +6589,7 @@ code
     white-space: pre-wrap;
     word-wrap: break-word;
 
-    background: $grey-100;
+    background: #f5f5f5;
 
     direction: ltr;
 }
@@ -6600,7 +6600,7 @@ hr
     width: 98.3819660112501%;
 
     border-top: 1px solid #000;
-    background-color: $grey-100;
+    background-color: #f5f5f5;
 }
 /* @end */
 /* @group Input */
@@ -6625,7 +6625,7 @@ textarea
 
     transition: all 150ms linear;
 
-    border: 1px solid $grey-500;
+    border: 1px solid #9e9e9e;
     border-radius: 2px;
     outline: none;
     background: #fff;
@@ -6641,7 +6641,7 @@ input[type=url]:hover,
 select:hover,
 textarea:hover
 {
-    border-color: $grey-900;
+    border-color: #212121;
 }
 input[type=text]:focus,
 input[type=password]:focus,
@@ -6654,7 +6654,7 @@ input[type=url]:focus,
 select:focus,
 textarea:focus
 {
-    border-color: $grey-200;
+    border-color: #eee;
     outline: none;
 }
 /* @end */
@@ -7652,7 +7652,7 @@ ol ul
     margin: 0;
     padding: 0;
 
-    border-top: 1px solid $grey-300;
+    border-top: 1px solid #e0e0e0;
 }
 .nav li
 {
@@ -7665,7 +7665,7 @@ ol ul
     text-transform: uppercase;
 
     color: #000;
-    border-bottom: 1px solid $grey-300;
+    border-bottom: 1px solid #e0e0e0;
 }
 .nav li a
 {
@@ -7713,7 +7713,7 @@ ol ul
 }
 .nav li > ul > li:hover
 {
-    background: $grey-300;
+    background: #e0e0e0;
 }
 .nav li > ul > li:hover a
 {
@@ -8071,7 +8071,7 @@ table
     border-spacing: 0;
     border-collapse: collapse;
 
-    border: 1px solid $grey-200;
+    border: 1px solid #eee;
 }
 thead
 {
@@ -8079,7 +8079,7 @@ thead
     vertical-align: bottom;
 
     color: #000;
-    background-color: $grey-50;
+    background-color: #fafafa;
 }
 td,
 th
@@ -8092,7 +8092,7 @@ th
     vertical-align: bottom;
 
     border-width: 0 0 0 1px;
-    border-left: 1px solid $grey-200;
+    border-left: 1px solid #eee;
     background-color: transparent;
 }
 /* @end */
