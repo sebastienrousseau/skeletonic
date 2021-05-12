@@ -44,7 +44,7 @@ button, .button, [type=submit]
     pointer-events: none
     transition: all 150ms linear
   &.primary
-    background: $blue-A700
+    background: $primary
     color: $white
     cursor: pointer
     transition: all 150ms linear
@@ -53,7 +53,7 @@ button, .button, [type=submit]
       transition: all 150ms linear
       text-decoration: none
   &.secondary, &.info
-    background: $light-blue-A700
+    background: $secondary
     color: $white
     cursor: pointer
     transition: all 150ms linear
@@ -62,7 +62,7 @@ button, .button, [type=submit]
       transition: all 150ms linear
       text-decoration: none
   &.success
-    background: $green-A700
+    background: $success
     color: $white
     cursor: pointer
     transition: all 150ms linear
@@ -71,7 +71,7 @@ button, .button, [type=submit]
       transition: all 150ms linear
       text-decoration: none
   &.error
-    background: $red-A700
+    background: $error
     color: $white
     cursor: pointer
     transition: all 150ms linear
@@ -80,7 +80,7 @@ button, .button, [type=submit]
       transition: all 150ms linear
       text-decoration: none
   &.warning
-    background: $yellow-A700
+    background: $warning
     color: $white
     cursor: pointer
     transition: all 150ms linear
@@ -113,5 +113,54 @@ button, .button, [type=submit]
   border-radius: 0
   letter-spacing: -0.31em
   text-rendering: optimizespeed
+
+.btn
+  border-radius: .3rem
+  cursor: pointer
+  display: inline-block
+  font-size: golden-font-size-base rem
+  line-height: 60px
+  min-height: 60px
+  min-width: 60px
+  position: relative
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+  transition: all 150ms linear
+  user-select: none
+  vertical-align: middle
+  white-space: nowrap
+  z-index: 1
+  &:hover
+    opacity: 0.5
+    transition: all 150ms linear
+    text-decoration: none
+  &-round
+    border-radius: 50%
+    &:hover
+      opacity: 0.5
+      transition: all 150ms linear
+      text-decoration: none
+  &-oval
+    border-radius: 61.25rem
+    min-width: 9rem
+    &:hover
+      opacity: 0.5
+      transition: all 150ms linear
+      text-decoration: none
+  &-outline
+    border: 2px solid transparent
+    &:hover
+      opacity: 0.5
+      transition: all 150ms linear
+      text-decoration: none
+
+.block
+  border: none
+  display: block
+  height: 60px
+  padding: .6rem
+  width: 98.7%
+  line-height: 60px
 
 /* @end */

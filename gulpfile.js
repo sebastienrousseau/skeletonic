@@ -10,8 +10,8 @@ const stylus = require('gulp-stylus');
 const csslint = require('gulp-csslint');
 csslint.addFormatter('csslint-stylish');
 const csscomb = require('gulp-csscomb');
-const filever = require('gulp-version-filename');
-const rename = require('gulp-rename');
+//const filever = require('gulp-version-filename');
+//const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const del = require('del');
 
@@ -58,9 +58,10 @@ const comment = `/**
 gulp.task('build-css', function () {
   return gulp.src([
     './src/configurations/*.styl',
-    './src/colours/colour-variables.styl',
+    './src/colours/*.styl',
     './src/base/*.styl',
     './src/core/*.styl',
+    './src/debug/*.styl',
     './src/components/*.styl'
   ])
     .pipe(concat('skeletonic.styl'))
@@ -230,13 +231,13 @@ gulp.task('watch', function () {
 
 // Run in order:
 // gulp build-colours && gulp build-css && gulp build-pattern && gulp build-animations && gulp build-fonts && gulp rename && gulp clean:tmp
-  // gulp build-colours
-  // gulp build-css
-  // gulp build-pattern
-  // gulp build-animations
-  // gulp build-fonts
-  // gulp rename
-  // gulp clean:tmp
+// gulp build-colours
+// gulp build-css
+// gulp build-pattern
+// gulp build-animations
+// gulp build-fonts
+// gulp rename
+// gulp clean:tmp
 
 gulp.task('default', gulp.series('build-css'));
 gulp.task('pattern', gulp.series('build-pattern'));
