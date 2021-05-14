@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://skeletonic.io/sitemap.xml

@@ -1,23 +1,29 @@
 /* @group Lists */
 table
-  border: 1px solid $grey-200
+  border: 1px solid var(--border-color)
   border-collapse: collapse
   border-spacing: 0
   empty-cells: show
   padding-bottom: 25px
 
 thead
-  background-color: $grey-50
-  color: $black
+  background-color: var(--background-color-inverted)
   text-align: left
-  vertical-align: bottom
+  vertical-align: top
 
 td, th
   background-color: transparent
-  border-left: 1px solid $grey-200
+  border-left: 1px solid var(--border-color)
   border-width: 0 0 0 1px
   margin: 0
   overflow: visible
   padding: 6px 12px
-  vertical-align: bottom
+  vertical-align: top
+
+td
+  color: var(--color)
+
+th
+  color: var(--inverted-color)
+
 /* @end */

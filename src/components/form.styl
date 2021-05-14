@@ -1,9 +1,11 @@
 /* @group Input */
 input[type=text], input[type=password], input[type=email], input[type=search], input[type=number], input[type=file], input[type=tel], input[type=url], select, textarea
-  background: $white
-  border: 1px solid $grey-500
+  background: var(--background-color)
+  border: 1px solid var(--border-color-200)
   border-radius: 2px
+  color: var(--color)
   display: block
+  font-family: "Consolas", "Monaco", "Menlo", monospace
   font-size: golden-font-size-large rem
   margin: (golden-ratio)rem  0
   outline: none
@@ -12,9 +14,9 @@ input[type=text], input[type=password], input[type=email], input[type=search], i
   width: 100%
 
   &:hover
-    border-color: $grey-900
+    border-color: var(--border-color-200)
 
   &:focus
-    border-color: $grey-200
+    border-color: var(--border-color)
     outline: none
 /* @end */

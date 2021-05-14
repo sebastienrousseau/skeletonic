@@ -32,7 +32,7 @@
 		vertical-align middle
 
 #sidebar
-	background $white
+	background var(--background-color)
 	height 100%
 	left 0
 	position fixed
@@ -42,27 +42,27 @@
 	z-index 1
 
 .nav
-	border-top 1px solid $grey-300
+	border-top 1px solid var(--border-color)
 	margin 0
 	padding 0
 	li
-		border-bottom 1px solid $grey-300
-		color $black
+		border-bottom 1px solid var(--border-color)
+		color var(--inverted-color)
 		cursor pointer
 		list-style none
 		margin-bottom 0
 		padding 20px
 		text-transform uppercase
 		a
-			color $black
+			color var(--color)
 			cursor pointer
 			padding 20px
 			text-decoration none
 			text-transform uppercase
 		&:hover
-			background $black
+			background var(--background-color-inverted)
 			a
-				color $white
+				color var(--inverted-color)
 			& > ul
 				display block
 		& > ul
@@ -73,14 +73,13 @@
 				border-bottom none
 				a
 					text-transform none
-					color $white
-					color $white
+					color var(--inverted-color)
 					&:hover
-						color $black
+						color var(--color)
 				&:hover
-					background $grey-300
+					background var(--background-color)
 					a
-						color $black
+						color var(--color)
 	ul
 		padding-left golden-ratio rem
 
@@ -107,7 +106,7 @@ input[type=checkbox]
 	z-index 99
 
 .spinner
-	background-color $black
+	background-color var(--background-color-inverted)
 	box-sizing border-box
 	height 3px
 	position absolute

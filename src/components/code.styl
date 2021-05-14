@@ -1,11 +1,26 @@
 /* @group Code */
-pre, code
-  background: $grey-100
-  direction: ltr;
-  display: block
+pre,
+code,
+kbd,
+samp
+  background: var(--background-color-100)
+  color: var(--color)
   font-family: "Consolas", "Monaco", "Menlo", monospace
   font-size: golden-font-size-base rem
+  margin: (golden-ratio)rem  0
+  padding: (golden-ratio)rem
+
+pre
+  margin-bottom: 0
+  overflow: auto
+  -ms-overflow-style: scrollbar
+
+code
   padding: golden-font-size-small rem
+
+pre, code
+  direction: ltr;
+  display: block
   text-align: left;
   white-space: pre-wrap
   word-wrap: break-word

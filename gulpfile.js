@@ -20,7 +20,7 @@ const comment = `/**
  * Description: ${pkg.description}
  * @version ${pkg.version}
  * Author: ${pkg.author}
- * Copyright © Reedia Limited 2018. All rights reserved.
+ * Copyright © Sebastien Rousseau 2021. All rights reserved.
  * ${pkg.homepage}
  * Repository: ${pkg.repository}
  * License: ${pkg.license}
@@ -29,30 +29,63 @@ const comment = `/**
 /**
  * Table Of Content
 
-    # Configurations
-      # Media Queries
-      # Variables
+    # Animations
+      # Bounce
+      # Chameleon
+      # Fade In
+      # Fade Out
+      # Flash
+      # Pop In
+      # Pulse
+      # Rotation
+      # Shake
+      # Vanish In
+      # Vanish Out
+      # Wobble
+      # Zoom In
 
     # Base
       # Base
-      # Divider
-      # Headings
+      # Dark Mode
+      # Helpers
 
-    # Core
-      # Grid
+    # Colours
+      # Colour Variables
+      # Material Design Colours
+      # Tachyons Colours
+      # Web-Safe Colours
 
     # Components
       # Button
       # Card
       # Code
+      # Divider
       # Form
+      # Headings
       # Image
+      # Link effects
       # Link
-      # Links
       # List
+      # Margin
       # Nav
+      # Padding
       # Table
       # Util
+
+    # Configurations
+      # Media Queries
+      # Variables
+
+    # Core
+      # Grid
+
+    # Debugging
+      # CSS Grid Overlay
+      # Grid Images
+
+    # Fonts
+      # Font face
+
  */\r\n`;
 
 gulp.task('build-css', function () {
@@ -61,7 +94,6 @@ gulp.task('build-css', function () {
     './src/colours/*.styl',
     './src/base/*.styl',
     './src/core/*.styl',
-    './src/debug/*.styl',
     './src/components/*.styl'
   ])
     .pipe(concat('skeletonic.styl'))
@@ -73,6 +105,7 @@ gulp.task('build-css', function () {
     .pipe(size())
     .pipe(csscomb('./csscomb.json'))
     .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'))
     .pipe(csslint.formatter('stylish'))
     .pipe(size())
@@ -81,22 +114,24 @@ gulp.task('build-css', function () {
       gzip: true
     }))
     .pipe(concat('./tmp/skeletonic.min.css'))
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('build-pattern', function () {
+gulp.task('build-debug-mode', function () {
   return gulp.src([
-    './src/patterns/pattern.styl'
+    './src/debugging/*.styl'
   ])
-    .pipe(concat('skeletonic-pattern.styl'))
+    .pipe(concat('skeletonic-debug-mode.styl'))
     .pipe(sourcemaps.init())
     .pipe(stylus())
-    .pipe(concat('skeletonic-pattern.css', { rebaseUrls: false }))
+    .pipe(concat('skeletonic-debug-mode.css', { rebaseUrls: false }))
     .pipe(size())
     .pipe(header(comment + '\r\n'))
     .pipe(size())
     .pipe(csscomb('./csscomb.json'))
     .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'))
     .pipe(csslint.formatter('stylish'))
     .pipe(size())
@@ -104,7 +139,8 @@ gulp.task('build-pattern', function () {
     .pipe(size({
       gzip: true
     }))
-    .pipe(concat('./tmp/skeletonic-pattern.min.css'))
+    .pipe(concat('./tmp/skeletonic-debug-mode.min.css'))
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'));
 });
 
@@ -121,6 +157,7 @@ gulp.task('build-colours', function () {
     .pipe(size())
     .pipe(csscomb('./csscomb.json'))
     .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'))
     .pipe(csslint.formatter('stylish'))
     .pipe(size())
@@ -129,6 +166,7 @@ gulp.task('build-colours', function () {
       gzip: true
     }))
     .pipe(concat('./tmp/skeletonic-colours.min.css'))
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'));
 });
 
@@ -146,6 +184,7 @@ gulp.task('build-animations', function () {
     .pipe(size())
     .pipe(csscomb('./csscomb.json'))
     .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'))
     .pipe(csslint.formatter('stylish'))
     .pipe(size())
@@ -154,6 +193,7 @@ gulp.task('build-animations', function () {
       gzip: true
     }))
     .pipe(concat('./tmp/skeletonic-animations.min.css'))
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'));
 });
 
@@ -170,6 +210,7 @@ gulp.task('build-fonts', function () {
     .pipe(size())
     .pipe(csscomb('./csscomb.json'))
     .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'))
     .pipe(csslint.formatter('stylish'))
     .pipe(size())
@@ -178,6 +219,7 @@ gulp.task('build-fonts', function () {
       gzip: true
     }))
     .pipe(concat('./tmp/skeletonic-fonts.min.css'))
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'));
 });
 
@@ -186,6 +228,7 @@ gulp.task('csslint', function () {
     .pipe(csslint())
     .pipe(csslint.formatter())
     .pipe(size())
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'));
 });
 
@@ -194,6 +237,7 @@ gulp.task('csscomb', function () {
     .pipe(csscomb('./csscomb.json'))
     .pipe(header(comment + '\r\n'))
     .pipe(size())
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'));
 });
 
@@ -206,6 +250,7 @@ gulp.task('clean', function () {
     .pipe(header(comment + '\r\n'))
     .pipe(size())
     .pipe(concat('skeletonic.min.css'))
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'));
 });
 
@@ -217,11 +262,12 @@ gulp.task('rename', function () {
     .pipe(size({
       gzip: true
     }))
+    .pipe(gulp.dest('./public/dist/'))
     .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('clean:tmp', function () {
-  return del(['./dist/tmp/']);
+  return del(['./dist/tmp/']), del(['./public/dist/tmp/']);
 });
 
 
@@ -230,17 +276,17 @@ gulp.task('watch', function () {
 });
 
 // Run in order:
-// gulp build-colours && gulp build-css && gulp build-pattern && gulp build-animations && gulp build-fonts && gulp rename && gulp clean:tmp
+// gulp build-colours && gulp build-css && gulp build-debug-mode && gulp build-animations && gulp build-fonts && gulp rename && gulp clean:tmp
 // gulp build-colours
 // gulp build-css
-// gulp build-pattern
+// gulp build-debug-mode
 // gulp build-animations
 // gulp build-fonts
 // gulp rename
 // gulp clean:tmp
 
 gulp.task('default', gulp.series('build-css'));
-gulp.task('pattern', gulp.series('build-pattern'));
+gulp.task('debug-mode', gulp.series('build-debug-mode'));
 gulp.task('colours', gulp.series('build-colours'));
 gulp.task('animations', gulp.series('build-animations'));
 gulp.task('fonts', gulp.series('build-fonts'));

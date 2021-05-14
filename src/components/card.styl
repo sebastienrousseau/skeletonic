@@ -1,11 +1,11 @@
 /* @group Cards */
 .card
-	background: $grey-100
-	border: 1px solid $grey-300
+	background: var(--background-color-100)
+	border: 1px solid var(--border-color-300)
 	margin-bottom: golden-ratio rem
 
 .card a
-	color: $black
+	color: var(--color)
 	text-decoration: none
 
 .card a:hover
@@ -22,4 +22,6 @@
 .card
 	flex: 0 1 (25% - golden-ratio) rem
 
+.card, .card strong
+  color: var(--color)
 /* @end */
