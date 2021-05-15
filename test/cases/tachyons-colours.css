@@ -1,0 +1,549 @@
+.background-color-tachyons-black {
+  background-color: #000;
+}
+.color-tachyons-black {
+  color: #000;
+}
+.border-color-tachyons-black {
+  border-color: #000;
+}
+.background-color-tachyons-near-black {
+  background-color: #111;
+}
+.color-tachyons-near-black {
+  color: #111;
+}
+.border-color-tachyons-near-black {
+  border-color: #111;
+}
+.background-color-tachyons-dark-gray {
+  background-color: #333;
+}
+.color-tachyons-dark-gray {
+  color: #333;
+}
+.border-color-tachyons-dark-gray {
+  border-color: #333;
+}
+.background-color-tachyons-mid-gray {
+  background-color: #555;
+}
+.color-tachyons-mid-gray {
+  color: #555;
+}
+.border-color-tachyons-mid-gray {
+  border-color: #555;
+}
+.background-color-tachyons-gray {
+  background-color: #777;
+}
+.color-tachyons-gray {
+  color: #777;
+}
+.border-color-tachyons-gray {
+  border-color: #777;
+}
+.background-color-tachyons-silver {
+  background-color: #999;
+}
+.color-tachyons-silver {
+  color: #999;
+}
+.border-color-tachyons-silver {
+  border-color: #999;
+}
+.background-color-tachyons-light-silver {
+  background-color: #aaa;
+}
+.color-tachyons-light-silver {
+  color: #aaa;
+}
+.border-color-tachyons-light-silver {
+  border-color: #aaa;
+}
+.background-color-tachyons-moon-gray {
+  background-color: #ccc;
+}
+.color-tachyons-moon-gray {
+  color: #ccc;
+}
+.border-color-tachyons-moon-gray {
+  border-color: #ccc;
+}
+.background-color-tachyons-light-gray {
+  background-color: #eee;
+}
+.color-tachyons-light-gray {
+  color: #eee;
+}
+.border-color-tachyons-light-gray {
+  border-color: #eee;
+}
+.background-color-tachyons-near-white {
+  background-color: #f4f4f4;
+}
+.color-tachyons-near-white {
+  color: #f4f4f4;
+}
+.border-color-tachyons-near-white {
+  border-color: #f4f4f4;
+}
+.background-color-tachyons-white {
+  background-color: #fff;
+}
+.color-tachyons-white {
+  color: #fff;
+}
+.border-color-tachyons-white {
+  border-color: #fff;
+}
+.background-color-tachyons-transparent {
+  background-color: transparent;
+}
+.color-tachyons-transparent {
+  color: transparent;
+}
+.border-color-tachyons-transparent {
+  border-color: transparent;
+}
+.background-color-tachyons-black-90 {
+  background-color: rgba(0,0,0,0.9);
+}
+.color-tachyons-black-90 {
+  color: rgba(0,0,0,0.9);
+}
+.border-color-tachyons-black-90 {
+  border-color: rgba(0,0,0,0.9);
+}
+.background-color-tachyons-black-80 {
+  background-color: rgba(0,0,0,0.8);
+}
+.color-tachyons-black-80 {
+  color: rgba(0,0,0,0.8);
+}
+.border-color-tachyons-black-80 {
+  border-color: rgba(0,0,0,0.8);
+}
+.background-color-tachyons-black-70 {
+  background-color: rgba(0,0,0,0.7);
+}
+.color-tachyons-black-70 {
+  color: rgba(0,0,0,0.7);
+}
+.border-color-tachyons-black-70 {
+  border-color: rgba(0,0,0,0.7);
+}
+.background-color-tachyons-black-60 {
+  background-color: rgba(0,0,0,0.6);
+}
+.color-tachyons-black-60 {
+  color: rgba(0,0,0,0.6);
+}
+.border-color-tachyons-black-60 {
+  border-color: rgba(0,0,0,0.6);
+}
+.background-color-tachyons-black-50 {
+  background-color: rgba(0,0,0,0.5);
+}
+.color-tachyons-black-50 {
+  color: rgba(0,0,0,0.5);
+}
+.border-color-tachyons-black-50 {
+  border-color: rgba(0,0,0,0.5);
+}
+.background-color-tachyons-black-40 {
+  background-color: rgba(0,0,0,0.4);
+}
+.color-tachyons-black-40 {
+  color: rgba(0,0,0,0.4);
+}
+.border-color-tachyons-black-40 {
+  border-color: rgba(0,0,0,0.4);
+}
+.background-color-tachyons-black-30 {
+  background-color: rgba(0,0,0,0.3);
+}
+.color-tachyons-black-30 {
+  color: rgba(0,0,0,0.3);
+}
+.border-color-tachyons-black-30 {
+  border-color: rgba(0,0,0,0.3);
+}
+.background-color-tachyons-black-20 {
+  background-color: rgba(0,0,0,0.2);
+}
+.color-tachyons-black-20 {
+  color: rgba(0,0,0,0.2);
+}
+.border-color-tachyons-black-20 {
+  border-color: rgba(0,0,0,0.2);
+}
+.background-color-tachyons-black-10 {
+  background-color: rgba(0,0,0,0.1);
+}
+.color-tachyons-black-10 {
+  color: rgba(0,0,0,0.1);
+}
+.border-color-tachyons-black-10 {
+  border-color: rgba(0,0,0,0.1);
+}
+.background-color-tachyons-black-05 {
+  background-color: rgba(0,0,0,0.05);
+}
+.color-tachyons-black-05 {
+  color: rgba(0,0,0,0.05);
+}
+.border-color-tachyons-black-05 {
+  border-color: rgba(0,0,0,0.05);
+}
+.background-color-tachyons-black-025 {
+  background-color: rgba(0,0,0,0.025);
+}
+.color-tachyons-black-025 {
+  color: rgba(0,0,0,0.025);
+}
+.border-color-tachyons-black-025 {
+  border-color: rgba(0,0,0,0.025);
+}
+.background-color-tachyons-black-0125 {
+  background-color: rgba(0,0,0,0.013);
+}
+.color-tachyons-black-0125 {
+  color: rgba(0,0,0,0.013);
+}
+.border-color-tachyons-black-0125 {
+  border-color: rgba(0,0,0,0.013);
+}
+.background-color-tachyons-white-90 {
+  background-color: rgba(255,255,255,0.9);
+}
+.color-tachyons-white-90 {
+  color: rgba(255,255,255,0.9);
+}
+.border-color-tachyons-white-90 {
+  border-color: rgba(255,255,255,0.9);
+}
+.background-color-tachyons-white-80 {
+  background-color: rgba(255,255,255,0.8);
+}
+.color-tachyons-white-80 {
+  color: rgba(255,255,255,0.8);
+}
+.border-color-tachyons-white-80 {
+  border-color: rgba(255,255,255,0.8);
+}
+.background-color-tachyons-white-70 {
+  background-color: rgba(255,255,255,0.7);
+}
+.color-tachyons-white-70 {
+  color: rgba(255,255,255,0.7);
+}
+.border-color-tachyons-white-70 {
+  border-color: rgba(255,255,255,0.7);
+}
+.background-color-tachyons-white-60 {
+  background-color: rgba(255,255,255,0.6);
+}
+.color-tachyons-white-60 {
+  color: rgba(255,255,255,0.6);
+}
+.border-color-tachyons-white-60 {
+  border-color: rgba(255,255,255,0.6);
+}
+.background-color-tachyons-white-50 {
+  background-color: rgba(255,255,255,0.5);
+}
+.color-tachyons-white-50 {
+  color: rgba(255,255,255,0.5);
+}
+.border-color-tachyons-white-50 {
+  border-color: rgba(255,255,255,0.5);
+}
+.background-color-tachyons-white-40 {
+  background-color: rgba(255,255,255,0.4);
+}
+.color-tachyons-white-40 {
+  color: rgba(255,255,255,0.4);
+}
+.border-color-tachyons-white-40 {
+  border-color: rgba(255,255,255,0.4);
+}
+.background-color-tachyons-white-30 {
+  background-color: rgba(255,255,255,0.3);
+}
+.color-tachyons-white-30 {
+  color: rgba(255,255,255,0.3);
+}
+.border-color-tachyons-white-30 {
+  border-color: rgba(255,255,255,0.3);
+}
+.background-color-tachyons-white-20 {
+  background-color: rgba(255,255,255,0.2);
+}
+.color-tachyons-white-20 {
+  color: rgba(255,255,255,0.2);
+}
+.border-color-tachyons-white-20 {
+  border-color: rgba(255,255,255,0.2);
+}
+.background-color-tachyons-white-10 {
+  background-color: rgba(255,255,255,0.1);
+}
+.color-tachyons-white-10 {
+  color: rgba(255,255,255,0.1);
+}
+.border-color-tachyons-white-10 {
+  border-color: rgba(255,255,255,0.1);
+}
+.background-color-tachyons-white-05 {
+  background-color: rgba(255,255,255,0.05);
+}
+.color-tachyons-white-05 {
+  color: rgba(255,255,255,0.05);
+}
+.border-color-tachyons-white-05 {
+  border-color: rgba(255,255,255,0.05);
+}
+.background-color-tachyons-white-025 {
+  background-color: rgba(255,255,255,0.025);
+}
+.color-tachyons-white-025 {
+  color: rgba(255,255,255,0.025);
+}
+.border-color-tachyons-white-025 {
+  border-color: rgba(255,255,255,0.025);
+}
+.background-color-tachyons-white-0125 {
+  background-color: rgba(255,255,255,0.013);
+}
+.color-tachyons-white-0125 {
+  color: rgba(255,255,255,0.013);
+}
+.border-color-tachyons-white-0125 {
+  border-color: rgba(255,255,255,0.013);
+}
+.background-color-tachyons-dark-red {
+  background-color: #e7040f;
+}
+.color-tachyons-dark-red {
+  color: #e7040f;
+}
+.border-color-tachyons-dark-red {
+  border-color: #e7040f;
+}
+.background-color-tachyons-red {
+  background-color: #ff4136;
+}
+.color-tachyons-red {
+  color: #ff4136;
+}
+.border-color-tachyons-red {
+  border-color: #ff4136;
+}
+.background-color-tachyons-light-red {
+  background-color: #ff725c;
+}
+.color-tachyons-light-red {
+  color: #ff725c;
+}
+.border-color-tachyons-light-red {
+  border-color: #ff725c;
+}
+.background-color-tachyons-orange {
+  background-color: #ff6300;
+}
+.color-tachyons-orange {
+  color: #ff6300;
+}
+.border-color-tachyons-orange {
+  border-color: #ff6300;
+}
+.background-color-tachyons-gold {
+  background-color: #ffb700;
+}
+.color-tachyons-gold {
+  color: #ffb700;
+}
+.border-color-tachyons-gold {
+  border-color: #ffb700;
+}
+.background-color-tachyons-yellow {
+  background-color: #ffd700;
+}
+.color-tachyons-yellow {
+  color: #ffd700;
+}
+.border-color-tachyons-yellow {
+  border-color: #ffd700;
+}
+.background-color-tachyons-light-yellow {
+  background-color: #fbf1a9;
+}
+.color-tachyons-light-yellow {
+  color: #fbf1a9;
+}
+.border-color-tachyons-light-yellow {
+  border-color: #fbf1a9;
+}
+.background-color-tachyons-purple {
+  background-color: #5e2ca5;
+}
+.color-tachyons-purple {
+  color: #5e2ca5;
+}
+.border-color-tachyons-purple {
+  border-color: #5e2ca5;
+}
+.background-color-tachyons-light-purple {
+  background-color: #a463f2;
+}
+.color-tachyons-light-purple {
+  color: #a463f2;
+}
+.border-color-tachyons-light-purple {
+  border-color: #a463f2;
+}
+.background-color-tachyons-dark-pink {
+  background-color: #d5008f;
+}
+.color-tachyons-dark-pink {
+  color: #d5008f;
+}
+.border-color-tachyons-dark-pink {
+  border-color: #d5008f;
+}
+.background-color-tachyons-hot-pink {
+  background-color: #ff41b4;
+}
+.color-tachyons-hot-pink {
+  color: #ff41b4;
+}
+.border-color-tachyons-hot-pink {
+  border-color: #ff41b4;
+}
+.background-color-tachyons-pink {
+  background-color: #ff80cc;
+}
+.color-tachyons-pink {
+  color: #ff80cc;
+}
+.border-color-tachyons-pink {
+  border-color: #ff80cc;
+}
+.background-color-tachyons-light-pink {
+  background-color: #ffa3d7;
+}
+.color-tachyons-light-pink {
+  color: #ffa3d7;
+}
+.border-color-tachyons-light-pink {
+  border-color: #ffa3d7;
+}
+.background-color-tachyons-dark-green {
+  background-color: #137752;
+}
+.color-tachyons-dark-green {
+  color: #137752;
+}
+.border-color-tachyons-dark-green {
+  border-color: #137752;
+}
+.background-color-tachyons-green {
+  background-color: #19a974;
+}
+.color-tachyons-green {
+  color: #19a974;
+}
+.border-color-tachyons-green {
+  border-color: #19a974;
+}
+.background-color-tachyons-light-green {
+  background-color: #9eebcf;
+}
+.color-tachyons-light-green {
+  color: #9eebcf;
+}
+.border-color-tachyons-light-green {
+  border-color: #9eebcf;
+}
+.background-color-tachyons-navy {
+  background-color: #001b44;
+}
+.color-tachyons-navy {
+  color: #001b44;
+}
+.border-color-tachyons-navy {
+  border-color: #001b44;
+}
+.background-color-tachyons-dark-blue {
+  background-color: #00449e;
+}
+.color-tachyons-dark-blue {
+  color: #00449e;
+}
+.border-color-tachyons-dark-blue {
+  border-color: #00449e;
+}
+.background-color-tachyons-blue {
+  background-color: #357edd;
+}
+.color-tachyons-blue {
+  color: #357edd;
+}
+.border-color-tachyons-blue {
+  border-color: #357edd;
+}
+.background-color-tachyons-light-blue {
+  background-color: #96ccff;
+}
+.color-tachyons-light-blue {
+  color: #96ccff;
+}
+.border-color-tachyons-light-blue {
+  border-color: #96ccff;
+}
+.background-color-tachyons-lightest-blue {
+  background-color: #cdecff;
+}
+.color-tachyons-lightest-blue {
+  color: #cdecff;
+}
+.border-color-tachyons-lightest-blue {
+  border-color: #cdecff;
+}
+.background-color-tachyons-washed-blue {
+  background-color: #f6fffe;
+}
+.color-tachyons-washed-blue {
+  color: #f6fffe;
+}
+.border-color-tachyons-washed-blue {
+  border-color: #f6fffe;
+}
+.background-color-tachyons-washed-green {
+  background-color: #e8fdf5;
+}
+.color-tachyons-washed-green {
+  color: #e8fdf5;
+}
+.border-color-tachyons-washed-green {
+  border-color: #e8fdf5;
+}
+.background-color-tachyons-washed-yellow {
+  background-color: #fffceb;
+}
+.color-tachyons-washed-yellow {
+  color: #fffceb;
+}
+.border-color-tachyons-washed-yellow {
+  border-color: #fffceb;
+}
+.background-color-tachyons-washed-red {
+  background-color: #ffdfdf;
+}
+.color-tachyons-washed-red {
+  color: #ffdfdf;
+}
+.border-color-tachyons-washed-red {
+  border-color: #ffdfdf;
+}

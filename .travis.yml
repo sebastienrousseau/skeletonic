@@ -12,22 +12,47 @@ script: gulp
 notifications:
   email: false
 after_success:
-- export GIT_TAG=v1.0.$TRAVIS_BUILD_NUMBER
-- echo -n $GIT_TAG > v0.1.$TRAVIS_BUILD_NUMBER
+- export GIT_TAG=vPACKAGE_VERSION
+- echo -n $GIT_TAG > vPACKAGE_VERSION
+# - export GIT_TAG=v1.0.$TRAVIS_BUILD_NUMBER
+# - echo -n $GIT_TAG > v0.1.$TRAVIS_BUILD_NUMBER
 - git commit -m "Set build VERSION number to "$GIT_TAG
-- git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-- git push --quiet https://$GITHUBKEY@github.com/reedia/skeletonic $GIT_TAG > /dev/null
+- git tag $GIT_TAG -a -m "Generated tag $GIT_TAG from TravisCI build $TRAVIS_BUILD_NUMBER"
+# - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
+- git push --quiet https://$GITHUBKEY@github.com/sebastienrousseau/skeletonic $GIT_TAG > /dev/null
   2>&1
-- echo "${TRAVIS_BRANCH}"
-- echo "${TRAVIS_PULL_REQUEST}"
-- echo "${TRAVIS_SECURE_ENV_VARS}"
-- echo "${TRAVIS_COMMIT}"
-- echo ${TRAVIS_BUILD_NUMBER}
-- echo ${TRAVIS_REPO_SLUG}
-- echo ${GIT_TAG}
+- echo "TRAVIS_BRANCH = ${TRAVIS_BRANCH}"
+- echo "TRAVIS_PULL_REQUEST = ${TRAVIS_PULL_REQUEST}"
+- echo "TRAVIS_SECURE_ENV_VARS = ${TRAVIS_SECURE_ENV_VARS}"
+- echo "TRAVIS_COMMIT = ${TRAVIS_COMMIT}"
+- echo "TRAVIS_BUILD_NUMBER = ${TRAVIS_BUILD_NUMBER}"
+- echo "PACKAGE_VERSION = ${PACKAGE_VERSION}"
+- echo "TRAVIS_REPO_SLUG = ${TRAVIS_REPO_SLUG}"
+- echo "GIT_TAG = ${GIT_TAG}"
 
 before_deploy:
-- echo "Ready to deploy Skeletonic $GIT_TAG"
+- echo "Ready to deploy a new Skeletonic version $GIT_TAG"
+
+before_install:
+  - npm install -g npm
+
+  # const
+  - export PACKAGE_NAME=$(node -p "require('./package.json').name")
+  - export PACKAGE_VERSION=$(node -p "require('./package.json').version")
+  - export NODE_VERSION=$(node --version)
+  - export NPM_VERSION=$(npm --version)
+
+  # logging
+  - npm --version || echo npm not installed
+  - node --version || echo node not installed
+  - echo "package version $PACKAGE_VERSION"
+
+  # Only deploy if the version number has changed
+  - |
+    if git diff --unified=0 $TRAVIS_COMMIT_RANGE package.json | grep version ; then
+      export VERSION_CHANGED="yes"
+    fi
+  - openssl aes-256-cbc -K $encrypted_0da74458a2a7_key -iv $encrypted_0da74458a2a7_iv -in id_rsa.enc -out id_rsa -d
 
 branches:
   only:
@@ -36,6 +61,7 @@ branches:
 
 deploy:
   - provider: releases
+    tag: latest
     api_key:
       secure: "lf4UWgL+++4pd1HsLY3dvTX5YRqmPrOV72E7+lcVk8KJRVThd6a36LO30P5EuNWtshHGofHLjE0wonoLwiy2PlDodJk5PpCah1eJzVOpn45ImcEWcBhV9RXMSq1OGcb9yPr4UjJz3mMOTaIv9Xls52g/DxyXcX34nhIQwJ62L7t0lgK7WArAG5BHhGw4GxwhBrVaPnkwqcKF+i/unO4Juyg1D8KEK28XzENaUzt18rlUJ51sN0XNKgo8mHtTKkiwQDQyMxhEKVtT0h8uJbb+gECtvPkug69UQUonCN/fMr0p0u27AHqWL5gSuyLDuS1Ou6xOIJitYEXNqbW4ANbyeIxusI3xSwPTwf/whKCEgvD/FsjmRZ42WONinERwjjGJy9xACBvJD7tcinorog3rx/96qsBcuI4qohNJ51smuVipLdRgRDuxqmgMPu5M6OQ61kPSbY6RS9Dzccli30vZ2TS6NgWO65ngcxgXYsWneTbENydGUx91o42jKvL0vQ4UHY709l432dovA0n0knfXQDw407zY+Xgsk4ci4GXF8YXB9gvp/ipdtH752lStfAoFZy2lZy72T3clXcE1+2QwrTJy2KSrifPESU9LG7WTivh9FIAlARCYyJevJM86cAaa0wBW2AYZOd9bIXbhiWflE03YNKjKX+lzaXekDC6Ardk="
     file_glob: true
@@ -43,10 +69,10 @@ deploy:
     skip_cleanup: true
     name: Skeletonic $GIT_TAG
     body: "<strong>Change Log:</strong><br />Release $GIT_TAG created on $(date +'%d/%m/%Y')
-      at $(date +'%T')<br />Skeletonic is a lightweight, intuitive and ultra-responsive CSS framework designed for any platform, browser or device."
+      at $(date +'%T')<br />Skeletonic $GIT_TAG is a lightweight, intuitive and ultra-responsive CSS framework designed for any platform, browser or device."
     on:
       # all_branches: true
-      # tags: true
+      tags: true
       repo: sebastienrousseau/skeletonic
   - provider: npm
     email: $NPM_EMAIL
@@ -54,10 +80,3 @@ deploy:
     on:
       branch: master
       condition: "$VERSION_CHANGED == 'yes'"
-before_install:
-  # Only deploy if the version number has changed
-  - |
-    if git diff --unified=0 $TRAVIS_COMMIT_RANGE package.json | grep version ; then
-      export VERSION_CHANGED="yes"
-    fi  
-  - openssl aes-256-cbc -K $encrypted_0da74458a2a7_key -iv $encrypted_0da74458a2a7_iv -in id_rsa.enc -out id_rsa -d

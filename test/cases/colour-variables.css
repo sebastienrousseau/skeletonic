@@ -1,0 +1,72 @@
+.background-color-full-black {
+  background-color: $full-black;
+}
+.color-full-black {
+  color: $full-black;
+}
+.border-color-full-black {
+  border: 1px solid $full-black;
+}
+.background-color-dark-black {
+  background-color: $dark-black;
+}
+.color-dark-black {
+  color: $dark-black;
+}
+.border-color-dark-black {
+  border: 1px solid $dark-black;
+}
+.background-color-light-black {
+  background-color: $light-black;
+}
+.color-light-black {
+  color: $light-black;
+}
+.border-color-light-black {
+  border: 1px solid $light-black;
+}
+.background-color-min-black {
+  background-color: $min-black;
+}
+.color-min-black {
+  color: $min-black;
+}
+.border-color-min-black {
+  border: 1px solid $min-black;
+}
+.background-color-faint-black {
+  background-color: $faint-black;
+}
+.color-faint-black {
+  color: $faint-black;
+}
+.border-color-faint-black {
+  border: 1px solid $faint-black;
+}
+.background-color-full-white {
+  background-color: $full-white;
+}
+.color-full-white {
+  color: $full-white;
+}
+.border-color-full-white {
+  border: 1px solid $full-white;
+}
+.background-color-dark-white {
+  background-color: $dark-white;
+}
+.color-dark-white {
+  color: $dark-white;
+}
+.border-color-dark-white {
+  border: 1px solid $dark-white;
+}
+.background-color-light-white {
+  background-color: $light-white;
+}
+.color-light-white {
+  color: $light-white;
+}
+.border-color-light-white {
+  border: 1px solid $light-white;
+}

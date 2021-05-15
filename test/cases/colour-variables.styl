@@ -1,0 +1,15 @@
+colour-variables = $full-black ,$dark-black, $light-black,$min-black,$faint-black,$full-white, $dark-white, $light-white
+colour-variables-names = full-black ,dark-black, light-black,min-black,faint-black,full-white, dark-white, light-white
+
+  for colour-variables, i in colour-variables
+    // Colour Variables Background Colours
+    .background-color-{colour-variables-names[i]}
+      background-color: colour-variables
+
+    // Colour Variables Text Colours
+    .color-{colour-variables-names[i]}
+      color: colour-variables
+
+    // Colour Variables Border Colours
+    .border-color-{colour-variables-names[i]}
+      border:1px solid colour-variables

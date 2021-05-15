@@ -1,0 +1,32 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color-900: $grey-900;
+    --background-color-800: $grey-800;
+    --background-color-700: $grey-700;
+    --background-color-600: $grey-600;
+    --background-color-500: $grey-500;
+    --background-color-400: $grey-400;
+    --background-color-300: $grey-300;
+    --background-color-200: $grey-200;
+    --background-color-100: $grey-700;
+    --background-color-inverted: $white;
+    --background-color: $black;
+    --border-color: $white;
+    --border-color-100: $grey-100;
+    --border-color-200: $grey-200;
+    --border-color-300: $grey-300;
+    --border-color-400: $grey-400;
+    --border-color-500: $grey-500;
+    --border-color-600: $grey-600;
+    --border-color-700: $grey-700;
+    --border-color-800: $grey-800;
+    --border-color-900: $grey-900;
+    --button-color: $white;
+    --color: $white;
+    --link-color: color-yellow;
+    --link-color-visited: color-fuchsia;
+    --link-color-hover: color-red;
+    --link-color-focus: color-red;
+    --inverted-color: $black;
+  }
+}

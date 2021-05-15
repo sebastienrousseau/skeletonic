@@ -1,12 +1,12 @@
-.fade-in {
-  animation-name: fade-in 2s;
-}
 @-moz-keyframes fade-in {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+  .fade-in {
+    animation-name: fade-in;
   }
 }
 @-webkit-keyframes fade-in {
@@ -16,6 +16,9 @@
   100% {
     opacity: 1;
   }
+  .fade-in {
+    animation-name: fade-in;
+  }
 }
 @-o-keyframes fade-in {
   0% {
@@ -24,6 +27,9 @@
   100% {
     opacity: 1;
   }
+  .fade-in {
+    animation-name: fade-in;
+  }
 }
 @keyframes fade-in {
   0% {
@@ -31,5 +37,8 @@
   }
   100% {
     opacity: 1;
+  }
+  .fade-in {
+    animation-name: fade-in;
   }
 }

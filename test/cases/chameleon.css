@@ -1,0 +1,528 @@
+.chameleon-txt {
+  animation-name: chameleon;
+  animation-duration: 5s;
+}
+.chameleon-bg {
+  animation-name: chameleon-bg;
+  animation-duration: 5s;
+}
+@-moz-keyframes chameleon {
+  0% {
+    color: #f44336;
+  }
+  5% {
+    color: #e91e63;
+  }
+  10% {
+    color: #9c27b0;
+  }
+  15% {
+    color: #673ab7;
+  }
+  20% {
+    color: #3f51b5;
+  }
+  25% {
+    color: #2196f3;
+  }
+  30% {
+    color: #03a9f4;
+  }
+  35% {
+    color: #00bcd4;
+  }
+  40% {
+    color: #009688;
+  }
+  45% {
+    color: #4caf50;
+  }
+  50% {
+    color: #8bc34a;
+  }
+  55% {
+    color: #cddc39;
+  }
+  60% {
+    color: #ffeb3b;
+  }
+  65% {
+    color: #ffc107;
+  }
+  70% {
+    color: #ff9800;
+  }
+  75% {
+    color: #ff5722;
+  }
+  80% {
+    color: #795548;
+  }
+  85% {
+    color: #9e9e9e;
+  }
+  90% {
+    color: #607d8b;
+  }
+  95% {
+    color: #000;
+  }
+  100% {
+    color: #fff;
+  }
+}
+@-webkit-keyframes chameleon {
+  0% {
+    color: #f44336;
+  }
+  5% {
+    color: #e91e63;
+  }
+  10% {
+    color: #9c27b0;
+  }
+  15% {
+    color: #673ab7;
+  }
+  20% {
+    color: #3f51b5;
+  }
+  25% {
+    color: #2196f3;
+  }
+  30% {
+    color: #03a9f4;
+  }
+  35% {
+    color: #00bcd4;
+  }
+  40% {
+    color: #009688;
+  }
+  45% {
+    color: #4caf50;
+  }
+  50% {
+    color: #8bc34a;
+  }
+  55% {
+    color: #cddc39;
+  }
+  60% {
+    color: #ffeb3b;
+  }
+  65% {
+    color: #ffc107;
+  }
+  70% {
+    color: #ff9800;
+  }
+  75% {
+    color: #ff5722;
+  }
+  80% {
+    color: #795548;
+  }
+  85% {
+    color: #9e9e9e;
+  }
+  90% {
+    color: #607d8b;
+  }
+  95% {
+    color: #000;
+  }
+  100% {
+    color: #fff;
+  }
+}
+@-o-keyframes chameleon {
+  0% {
+    color: #f44336;
+  }
+  5% {
+    color: #e91e63;
+  }
+  10% {
+    color: #9c27b0;
+  }
+  15% {
+    color: #673ab7;
+  }
+  20% {
+    color: #3f51b5;
+  }
+  25% {
+    color: #2196f3;
+  }
+  30% {
+    color: #03a9f4;
+  }
+  35% {
+    color: #00bcd4;
+  }
+  40% {
+    color: #009688;
+  }
+  45% {
+    color: #4caf50;
+  }
+  50% {
+    color: #8bc34a;
+  }
+  55% {
+    color: #cddc39;
+  }
+  60% {
+    color: #ffeb3b;
+  }
+  65% {
+    color: #ffc107;
+  }
+  70% {
+    color: #ff9800;
+  }
+  75% {
+    color: #ff5722;
+  }
+  80% {
+    color: #795548;
+  }
+  85% {
+    color: #9e9e9e;
+  }
+  90% {
+    color: #607d8b;
+  }
+  95% {
+    color: #000;
+  }
+  100% {
+    color: #fff;
+  }
+}
+@keyframes chameleon {
+  0% {
+    color: #f44336;
+  }
+  5% {
+    color: #e91e63;
+  }
+  10% {
+    color: #9c27b0;
+  }
+  15% {
+    color: #673ab7;
+  }
+  20% {
+    color: #3f51b5;
+  }
+  25% {
+    color: #2196f3;
+  }
+  30% {
+    color: #03a9f4;
+  }
+  35% {
+    color: #00bcd4;
+  }
+  40% {
+    color: #009688;
+  }
+  45% {
+    color: #4caf50;
+  }
+  50% {
+    color: #8bc34a;
+  }
+  55% {
+    color: #cddc39;
+  }
+  60% {
+    color: #ffeb3b;
+  }
+  65% {
+    color: #ffc107;
+  }
+  70% {
+    color: #ff9800;
+  }
+  75% {
+    color: #ff5722;
+  }
+  80% {
+    color: #795548;
+  }
+  85% {
+    color: #9e9e9e;
+  }
+  90% {
+    color: #607d8b;
+  }
+  95% {
+    color: #000;
+  }
+  100% {
+    color: #fff;
+  }
+}
+@-moz-keyframes chameleon-bg {
+  0% {
+    background-color: #f44336;
+  }
+  5% {
+    background-color: #e91e63;
+  }
+  10% {
+    background-color: #9c27b0;
+  }
+  15% {
+    background-color: #673ab7;
+  }
+  20% {
+    background-color: #3f51b5;
+  }
+  25% {
+    background-color: #2196f3;
+  }
+  30% {
+    background-color: #03a9f4;
+  }
+  35% {
+    background-color: #00bcd4;
+  }
+  40% {
+    background-color: #009688;
+  }
+  45% {
+    background-color: #4caf50;
+  }
+  50% {
+    background-color: #8bc34a;
+  }
+  55% {
+    background-color: #cddc39;
+  }
+  60% {
+    background-color: #ffeb3b;
+  }
+  65% {
+    background-color: #ffc107;
+  }
+  70% {
+    background-color: #ff9800;
+  }
+  75% {
+    background-color: #ff5722;
+  }
+  80% {
+    background-color: #795548;
+  }
+  85% {
+    background-color: #9e9e9e;
+  }
+  90% {
+    background-color: #607d8b;
+  }
+  95% {
+    color: #000;
+  }
+  100% {
+    color: #fff;
+  }
+}
+@-webkit-keyframes chameleon-bg {
+  0% {
+    background-color: #f44336;
+  }
+  5% {
+    background-color: #e91e63;
+  }
+  10% {
+    background-color: #9c27b0;
+  }
+  15% {
+    background-color: #673ab7;
+  }
+  20% {
+    background-color: #3f51b5;
+  }
+  25% {
+    background-color: #2196f3;
+  }
+  30% {
+    background-color: #03a9f4;
+  }
+  35% {
+    background-color: #00bcd4;
+  }
+  40% {
+    background-color: #009688;
+  }
+  45% {
+    background-color: #4caf50;
+  }
+  50% {
+    background-color: #8bc34a;
+  }
+  55% {
+    background-color: #cddc39;
+  }
+  60% {
+    background-color: #ffeb3b;
+  }
+  65% {
+    background-color: #ffc107;
+  }
+  70% {
+    background-color: #ff9800;
+  }
+  75% {
+    background-color: #ff5722;
+  }
+  80% {
+    background-color: #795548;
+  }
+  85% {
+    background-color: #9e9e9e;
+  }
+  90% {
+    background-color: #607d8b;
+  }
+  95% {
+    color: #000;
+  }
+  100% {
+    color: #fff;
+  }
+}
+@-o-keyframes chameleon-bg {
+  0% {
+    background-color: #f44336;
+  }
+  5% {
+    background-color: #e91e63;
+  }
+  10% {
+    background-color: #9c27b0;
+  }
+  15% {
+    background-color: #673ab7;
+  }
+  20% {
+    background-color: #3f51b5;
+  }
+  25% {
+    background-color: #2196f3;
+  }
+  30% {
+    background-color: #03a9f4;
+  }
+  35% {
+    background-color: #00bcd4;
+  }
+  40% {
+    background-color: #009688;
+  }
+  45% {
+    background-color: #4caf50;
+  }
+  50% {
+    background-color: #8bc34a;
+  }
+  55% {
+    background-color: #cddc39;
+  }
+  60% {
+    background-color: #ffeb3b;
+  }
+  65% {
+    background-color: #ffc107;
+  }
+  70% {
+    background-color: #ff9800;
+  }
+  75% {
+    background-color: #ff5722;
+  }
+  80% {
+    background-color: #795548;
+  }
+  85% {
+    background-color: #9e9e9e;
+  }
+  90% {
+    background-color: #607d8b;
+  }
+  95% {
+    color: #000;
+  }
+  100% {
+    color: #fff;
+  }
+}
+@keyframes chameleon-bg {
+  0% {
+    background-color: #f44336;
+  }
+  5% {
+    background-color: #e91e63;
+  }
+  10% {
+    background-color: #9c27b0;
+  }
+  15% {
+    background-color: #673ab7;
+  }
+  20% {
+    background-color: #3f51b5;
+  }
+  25% {
+    background-color: #2196f3;
+  }
+  30% {
+    background-color: #03a9f4;
+  }
+  35% {
+    background-color: #00bcd4;
+  }
+  40% {
+    background-color: #009688;
+  }
+  45% {
+    background-color: #4caf50;
+  }
+  50% {
+    background-color: #8bc34a;
+  }
+  55% {
+    background-color: #cddc39;
+  }
+  60% {
+    background-color: #ffeb3b;
+  }
+  65% {
+    background-color: #ffc107;
+  }
+  70% {
+    background-color: #ff9800;
+  }
+  75% {
+    background-color: #ff5722;
+  }
+  80% {
+    background-color: #795548;
+  }
+  85% {
+    background-color: #9e9e9e;
+  }
+  90% {
+    background-color: #607d8b;
+  }
+  95% {
+    color: #000;
+  }
+  100% {
+    color: #fff;
+  }
+}

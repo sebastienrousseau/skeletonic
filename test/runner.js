@@ -1,12 +1,14 @@
 /* jshint esversion: 6 */
-
+const pkg = require('../package.json');
+const comment = `${pkg.name} v${pkg.version} `;
 
 var stylus = require( 'stylus' ),
   fs = require('fs'),
+  // eslint-disable-next-line no-unused-vars
   should = require('should'),
   nameSanitise = /[-.]/g;
 
-var cases = fs.readdirSync( 'test/cases' )
+var cases = fs.readdirSync( 'test/cases/' )
   .filter( function ( soFile ) {
     return ~soFile.indexOf( '.styl' );
   } )
@@ -14,7 +16,7 @@ var cases = fs.readdirSync( 'test/cases' )
     return soFile.replace( '.styl', '' );
   } );
 
-describe('Skeletonic\u2019s Test Suite', function () {
+describe(comment + 'test suite', function () {
   cases.forEach( function ( sTest ) {
     var sName = sTest.replace( nameSanitise, ' ' );
 

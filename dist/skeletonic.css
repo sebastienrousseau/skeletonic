@@ -1,9 +1,9 @@
 /**
- * Name: skeletonic v1.1.9
+ * Name: skeletonic v1.2.0
  * Description: A dead on, lightweight, responsive and modern CSS framework.
- * @version 1.1.9
+ * @version 1.2.0
  * Author: Sebastien Rousseau (https://github.com/sebastienrousseau/skeletonic)
- * Copyright © Reedia Limited 2018. All rights reserved.
+ * Copyright © Sebastien Rousseau 2021. All rights reserved.
  * https://skeletonic.io
  * Repository: git+https://github.com/sebastienrousseau/skeletonic.git
  * License: MIT
@@ -7689,7 +7689,7 @@ button.link:focus,
     margin-bottom: 1.618033988749895rem;
 
     border: 1px solid var(--border-color-300);
-    background: var(--background-color-100);
+    background: transparent;
 }
 .card a
 {

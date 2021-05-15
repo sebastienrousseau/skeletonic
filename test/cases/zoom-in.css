@@ -1,25 +1,25 @@
 .zoom-in {
-  animation: zoomIn 1s;
+  animation: zoom-in 1s;
 }
 .zoom-in-half {
-  animation: zoomIn 2s linear -1s;
+  animation: zoom-in 2s linear -1s;
 }
-@-moz-keyframes zoomIn {
+@-moz-keyframes zoom-in {
   from {
     transform: scale(0);
   }
 }
-@-webkit-keyframes zoomIn {
+@-webkit-keyframes zoom-in {
   from {
     transform: scale(0);
   }
 }
-@-o-keyframes zoomIn {
+@-o-keyframes zoom-in {
   from {
     transform: scale(0);
   }
 }
-@keyframes zoomIn {
+@keyframes zoom-in {
   from {
     transform: scale(0);
   }
