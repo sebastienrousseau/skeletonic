@@ -2,7 +2,7 @@
 for size in 220 240 320 375 414 480 576 600 640 648 720 768 800 900 960 1024 1050 1080 1152 1200 1280 1366 1392 1400 1440 1536 1600 1680 1856 1920 2048 2160 2560 3384 3840 4320 6016 7680
   @media only screen and (max-width : size px )
     .container
-      width size px
+      width round((size / 1.06180339887498948482), 3) px
       margin 0 auto
 
   @media (prefers-reduced-motion: no-preference)
