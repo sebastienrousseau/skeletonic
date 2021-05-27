@@ -3,57 +3,83 @@
 @charset "UTF-8"
 
 :root
-  --background-color-900: $grey-900
-  --background-color-800: $grey-800
-  --background-color-700: $grey-700
-  --background-color-600: $grey-600
-  --background-color-500: $grey-500
-  --background-color-400: $grey-400
-  --background-color-300: $grey-300
-  --background-color-200: $grey-200
-  --background-color-100: $grey-100
-  --background-color-inverted: $black
-  --background-color: $white
-  --border-color: $black
-  --border-color-100: $grey-100
-  --border-color-200: $grey-200
-  --border-color-300: $grey-300
-  --border-color-400: $grey-400
-  --border-color-500: $grey-500
-  --border-color-600: $grey-600
-  --border-color-700: $grey-700
-  --border-color-800: $grey-800
-  --border-color-900: $grey-900
-  --button-color: $white
-  --color: $black
-  --link-color: color-blue
-  --link-color-visited: color-purple
-  --link-color-hover: color-red
-  --link-color-focus: color-red
-  --inverted-color: $white
+
+  /// Basic primary colors
+  $primary          = #0047dd
+  $secondary        = #0057a8
+  $tertiary         = #777777
+  $disable          = #F1F3F4
+  $info             = #008196
+  $inverse          = #ffffff
+  $link             = #1b6ec2
+  $danger           = #b2081a
+  $success          = #2e6430
+  $warning          = #993900
+
+  $bg-primary      = #c6cdff
+  $bg-secondary    = #a9d2ff
+  $bg-tertiary     = #777777
+  $bg-disable      = #F1F3F4
+  $bg-info         = #f7ffff
+  $bg-inverse      = #ffffff
+  $bg-link         = #1b6ec2
+  $bg-danger        = #ffc0ad
+  $bg-success      = #a5dfa2
+  $bg-warning      = #ffc286
+
+
+
+  --color-link: 255, 0, 0;
+
+  /// Golden ratio variables
+  --golden-ratio-font-size        golden-font-size-base
+  --golden-ratio-font-size-small  golden-font-size-small
+  --golden-ratio-font-size-large  golden-font-size-large
+  --golden-ratio-line-height      golden-line-height
+
+  --background-color-900          $grey-900
+  --background-color-800          $grey-800
+  --background-color-700          $grey-700
+  --background-color-600          $grey-600
+  --background-color-500          $grey-500
+  --background-color-400          $grey-400
+  --background-color-300          $grey-300
+  --background-color-200          $grey-200
+  --background-color-100          $grey-100
+  --background-color-inverted     $black
+  --background-color              $white
+  --border-color                  $black
+  --border-color-100              $grey-100
+  --border-color-200              $grey-200
+  --border-color-300              $grey-300
+  --border-color-400              $grey-400
+  --border-color-500              $grey-500
+  --border-color-600              $grey-600
+  --border-color-700              $grey-700
+  --border-color-800              $grey-800
+  --border-color-900              $grey-900
+  --button-color                  $white
+  --color                         $black
+  --link-color                    color-blue
+  --link-color-visited            color-purple
+  --link-color-hover              color-red
+  --link-color-focus              color-red
+  --inverted-color                $white
 
 html
-  -moz-font-feature-settings: 'liga', 'kern'
-  -moz-osx-font-smoothing: grayscale
-  -ms-text-size-adjust: 100%
-  -webkit-font-smoothing: antialiased
-  -webkit-tap-highlight-color: var(--background-color)
-  -webkit-text-size-adjust: 100%
-  font-family: sans-serif
-  font-size: 63.204452685542773%
-  overflow-x: hidden
-  overflow-y: scroll
-  text-rendering: optimizeLegibility
+  -webkit-text-size-adjust 100%
+  display block
+  font-family sans-serif
+  font-size 63.204452685542773%
+  text-rendering optimizeLegibility
 
 body
-  color: var(--color)
-  background-color: var(--background-color)
-  font-family: font
-  font-size: golden-font-size-base rem
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  word-wrap: break-word
+  color var(--color)
+  background-color var(--background-color)
+  font-family font
+  font-size var(--golden-ratio-font-size)
+  font-weight 400
+  word-wrap break-word
 
 html,
 body,
@@ -122,25 +148,24 @@ mark,
 audio,
 video,
 a
-  margin-bottom: golden-font-size-base rem
-  box-sizing: border-box
+  box-sizing border-box
 
 strong, b
-  font-weight: 700;
-  color: var(--color)
+  font-weight 700
+  color var(--color)
 
 em, i
-  font-style: italic
+  font-style italic
 
 small
-  font-size: golden-font-size-small rem
+  font-size var(--golden-ratio-font-size-small)
 
 sup
-  font-size: golden-font-size-small rem
-  top: 0.8em
+  font-size var(--golden-ratio-font-size-small)
+  top 0.8em
 
 sub
-  font-size: golden-font-size-small rem
-  bottom: -0.8em
+  font-size var(--golden-ratio-font-size-small)
+  bottom -0.8em
 
 /* @end */
