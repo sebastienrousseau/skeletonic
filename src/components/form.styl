@@ -1,15 +1,15 @@
 /* @group Input */
 input[type=text], input[type=password], input[type=email], input[type=search], input[type=number], input[type=file], input[type=tel], input[type=url], select, textarea
   background: var(--background-color)
-  border: 1px solid var(--border-color-200)
   border-radius: 2px
+  border: 1px solid var(--border-color-200)
   color: var(--color)
   display: block
   font-family: "Consolas", "Monaco", "Menlo", monospace
   font-size: golden-font-size-large rem
   margin: (golden-ratio)rem  0
   outline: none
-  padding: (golden-ratio)rem
+  padding 1.618rem 0 1.618rem 0.618rem
   transition: all 150ms linear
   width: 100%
 
@@ -19,4 +19,83 @@ input[type=text], input[type=password], input[type=email], input[type=search], i
   &:focus
     border-color: var(--border-color)
     outline: none
+
+.input-primary[type=email],
+    .input-primary[type=file],
+    .input-primary[type=number],
+    .input-primary[type=password],
+    .input-primary[type=search],
+    .input-primary[type=tel],
+    .input-primary[type=text],
+    .input-primary[type=url],
+    select.input-primary,
+    textarea.input-primary
+    border-color var(--color-primary)
+    background var(--color-bg-primary)
+
+.input-secondary[type=email],
+    .input-secondary[type=file],
+    .input-secondary[type=number],
+    .input-secondary[type=password],
+    .input-secondary[type=search],
+    .input-secondary[type=tel],
+    .input-secondary[type=text],
+    .input-secondary[type=url],
+    select.input-secondary,
+    textarea.input-secondary
+    border-color var(--color-secondary)
+    background var(--color-bg-secondary)
+
+
+.input-success[type=email],
+    .input-success[type=file],
+    .input-success[type=number],
+    .input-success[type=password],
+    .input-success[type=search],
+    .input-success[type=tel],
+    .input-success[type=text],
+    .input-success[type=url],
+    select.input-success,
+    textarea.input-success
+    border-color var(--color-success)
+    background var(--color-bg-success)
+
+.input-info[type=email],
+    .input-info[type=file],
+    .input-info[type=number],
+    .input-info[type=password],
+    .input-info[type=search],
+    .input-info[type=tel],
+    .input-info[type=text],
+    .input-info[type=url],
+    select.input-info,
+    textarea.input-info
+    border-color var(--color-info)
+    background var(--color-bg-info)
+
+.input-warning[type=email],
+    .input-warning[type=file],
+    .input-warning[type=number],
+    .input-warning[type=password],
+    .input-warning[type=search],
+    .input-warning[type=tel],
+    .input-warning[type=text],
+    .input-warning[type=url],
+    select.input-warning,
+    textarea.input-warning
+    border-color var(--color-warning)
+    background var(--color-bg-warning)
+
+.input-error[type=email],
+    .input-error[type=file],
+    .input-error[type=number],
+    .input-error[type=password],
+    .input-error[type=search],
+    .input-error[type=tel],
+    .input-error[type=text],
+    .input-error[type=url],
+    select.input-error,
+    textarea.input-error
+    border-color var(--color-error)
+    background var(--color-bg-error)
 /* @end */

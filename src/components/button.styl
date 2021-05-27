@@ -8,15 +8,18 @@ button, .button, [type=submit]
   border:0
   color: var(--button-color)
   cursor: pointer
+  display inline-block
   font-size: golden-font-size-base rem
-  padding: (5 * golden-ratio)px (10 * golden-ratio)px
+  margin-bottom: golden-ratio rem
+  padding: golden-ratio rem
   text-align: center
   text-decoration: none
   text-transform: uppercase
   transition: all 150ms linear
   user-select: none
   vertical-align: middle
-  white-space: nowrap
+  white-space nowrap
+      min-width: 27rem
   &:link, &:visited
     background: var(--background-color-700)
     color: var(--button-color)

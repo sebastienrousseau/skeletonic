@@ -1,10 +1,8 @@
 /* @group Cards */
 .card
 	background transparent
-	display flex
-	flex-direction column
+  background: 0 0;
 	margin-bottom golden-ratio rem
-	min-width 0
 	position relative
   border 1px solid var(--border-color-300)
 	a
@@ -13,7 +11,7 @@
 		&:hover
 			text-decoration none
 .card-content
-	padding golden-ratio rem
+	padding 0.01em golden-ratio rem
 .card-body
 	flex 1 1 auto
 	padding golden-ratio rem golden-ratio rem
@@ -35,21 +33,21 @@
 	img
 		margin-bottom 0
 .card.primary
-  background #c6cdff
-  border .0625rem solid #c6cdff
+  background var(--color-bg-primary)
+  border .0625rem solid var(--color-primary)
 .card.secondary
-  background #a9d2ff
-  border .0625rem solid #a9d2ff
+  background var(--color-bg-secondary)
+  border .0625rem solid var(--color-secondary)
 .card.success
-  background #a5dfa2
-  border .0625rem solid #a5dfa2
+  background var(--color-bg-success)
+  border .0625rem solid var(--color-success)
 .card.info
-  background #a9d2ff
-  border .0625rem solid #a9d2ff
+  background var(--color-bg-info)
+  border .0625rem solid var(--color-info)
 .card.warning
-  background #ffc286
-  border .0625rem solid #ffc286
+  background var(--color-bg-warning)
+  border .0625rem solid var(--color-warning)
 .card.error
-  background #ffc0ad
-  border .0625rem solid #ffc0ad
+  background var(--color-bg-error)
+  border .0625rem solid var(--color-error)
 /* @end */
