@@ -2,7 +2,7 @@
 .card
 	background transparent
   background: 0 0;
-	margin-bottom golden-ratio rem
+	margin-bottom (golden-ratio)rem
 	position relative
   border 1px solid var(--border-color-300)
 	a
@@ -11,14 +11,14 @@
 		&:hover
 			text-decoration none
 .card-content
-	padding 0.01em golden-ratio rem
+	padding (golden-ratio - 1)rem (golden-ratio)rem (golden-ratio - 1)rem (golden-ratio)rem
 .card-body
 	flex 1 1 auto
-	padding golden-ratio rem golden-ratio rem
+	padding (golden-ratio)rem (golden-ratio)rem
 .card-title
-	margin-bottom golden-ratio rem
+	margin-bottom (golden-ratio)rem
 .card-subtitle
-	margin-top -(1-golden-ratio) rem
+	margin-top -(1-golden-ratio)rem
 	margin-bottom 0
 .cards
 	display flex
@@ -29,25 +29,32 @@
 .card
 	box-shadow 0 3px 9px 0 var(--background-color-200)
 	transition .30s
-	border-radius 1rem
-	img
-		margin-bottom 0
+	border-radius (golden-ratio)rem
+.card img
+  margin-bottom 0
+  border-radius (golden-ratio)rem
 .card.primary
   background var(--color-bg-primary)
   border .0625rem solid var(--color-primary)
+  color var(--color-primary)
 .card.secondary
   background var(--color-bg-secondary)
   border .0625rem solid var(--color-secondary)
+  color var(--color-secondary)
 .card.success
   background var(--color-bg-success)
   border .0625rem solid var(--color-success)
+  color var(--color-success)
 .card.info
   background var(--color-bg-info)
   border .0625rem solid var(--color-info)
+  color var(--color-info)
 .card.warning
   background var(--color-bg-warning)
   border .0625rem solid var(--color-warning)
+  color var(--color-warning)
 .card.error
-  background var(--color-bg-error)
-  border .0625rem solid var(--color-error)
+  background var(--color-bg-danger)
+  border .0625rem solid var(--color-danger)
+  color var(--color-danger)
 /* @end */

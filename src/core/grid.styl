@@ -1,24 +1,30 @@
 /* @group Grid */
-.container
-  -moz-box-sizing: border-box
-  -webkit-box-sizing: border-box
-  box-sizing: border-box
-  margin: 0 auto
-  padding: 0 (15 * golden-ratio) rem
-  position: relative
-  width: 96%
-
 .grid-flex
     display: -webkit-box
-    align-items: top
     display: flex
     flex-wrap: wrap
-    -ms-flex-wrap: wrap
 
-.row:after
+.row
+  position relative
+  width 100%
+  $:after
     clear: both
     content: ''
     display: table
+  &-wrap
+    padding 0
+  &-top
+    align-items flex-start
+  &-bottom
+    align-items flex-end
+  &-center
+    align-items center
+  &-stretch
+    align-items stretch
+  &-baseline
+    align-items baseline
+  &-no-padding
+    padding 0
 
 for i in (1..12)
   .flex-{i}
