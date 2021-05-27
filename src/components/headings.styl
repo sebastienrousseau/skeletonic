@@ -1,13 +1,13 @@
 /* @group Headings */
-fontSize = (4.6 3.6 2.8 2.2 1.8 1.6)
-lineHeight = (1.2 1.25 1.3 1.35 1.5 1.4)
+fontSize = (4.2 3.3 2.6 2.0 1.6 1.3)
+lineHeight = (6.5 5.2 4.2 3.3 2.7 2.3)
+mgBottom = (4.4 2.7 1.7 1.1 0.7 0.4)
 for index in (0..5)
     h{index+1},
     .h{index+1}
         font-size: fontSize[index]rem
-        font-weight: 300
+        font-weight: 500
         letter-spacing: -.1rem
-        line-height: lineHeight[index]
-        margin-bottom: golden-ratio rem
-        margin-top: 0
+        line-height: lineHeight[index]rem
+        margin-bottom: mgBottom[index]rem
 /* @end */
