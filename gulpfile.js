@@ -8,8 +8,10 @@ const header = require('gulp-header');
 const size = require('gulp-size');
 const stylus = require('gulp-stylus');
 const csslint = require('gulp-csslint');
+const minifycss = require('gulp-clean-css');
 csslint.addFormatter('csslint-stylish');
 const csscomb = require('gulp-csscomb');
+const groupmediaqueries = require('gulp-group-css-media-queries');
 //const filever = require('gulp-version-filename');
 //const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
@@ -91,6 +93,7 @@ const comment = `/**
 gulp.task('build-css', function () {
   return gulp.src([
     './src/configurations/*.styl',
+    './src/layout/*.styl',
     './src/colours/*.styl',
     './src/base/*.styl',
     './src/core/*.styl',
@@ -99,6 +102,8 @@ gulp.task('build-css', function () {
     .pipe(concat('skeletonic.styl'))
     .pipe(sourcemaps.init())
     .pipe(stylus())
+    .pipe(groupmediaqueries())
+    .pipe(minifycss())
     .pipe(concat('skeletonic.css', { rebaseUrls: false }))
     .pipe(size())
     .pipe(header(comment + '\r\n'))
