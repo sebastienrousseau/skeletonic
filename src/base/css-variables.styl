@@ -1,0 +1,32 @@
+/* @group CSS variables */
+
+colors = {
+  primary      : #0047dd
+  secondary    : #0057a8
+  tertiary     : #777777
+  disable      : #F1F3F4
+  info         : #008196
+  inverse      : #ffffff
+  link         : #1b6ec2
+  danger       : #b2081a
+  success      : #2e6430
+  warning      : #993900
+  bg-primary   : #c6cdff
+  bg-secondary : #a9d2ff
+  bg-tertiary  : #d5d5d5
+  bg-disable   : #F1F3F4
+  bg-info      : #f7ffff
+  bg-inverse   : #ffffff
+  bg-link      : #1b6ec2
+  bg-danger    : #ffc0ad
+  bg-success   : #a5dfa2
+  bg-warning   : #ffc286
+
+}
+
+for name, color in colors
+    :root
+        --color-{name}(color)
+        --color-bg-{name}(color)
+
+/* @end */
