@@ -4,14 +4,14 @@
   font = 'Open Sans', sans-serif
 
   // Golden Ratio Variables
-  golden-ratio = 1.6180339887498948482
+  golden-ratio = round((1.6180339887498948482), 3)
   golden-large = round((1 / golden-ratio), 3)
   golden-small = round((1 - golden-large), 3)
 
   // Golden Ratio Font Sizes
-  golden-font-size-base= golden-ratio
-  golden-font-size-large= round(2 * golden-font-size-base * golden-large, 3)
-  golden-font-size-small= round(2 * golden-font-size-base * golden-small, 3)
+  golden-font-size-base = round( golden-ratio * 0.9888543819998318, 3)rem
+  golden-font-size-large= round(2 * golden-font-size-base * golden-large, 3)rem
+  golden-font-size-small= round(2 * golden-font-size-base * golden-small, 3)rem
 
   // Golden Ratio Headers
   golden-h1 = round(golden-font-size-base * (golden-ratio ** 6), 3)
@@ -22,6 +22,7 @@
   golden-h6 = round(golden-font-size-base * (golden-ratio), 3)
 
   // Golden Ratio Line Height
+  golden-line-height    = round(golden-font-size-base * (golden-ratio ** 1), 3)
   golden-line-height-h1 = round(golden-font-size-base * (golden-ratio ** 2), 3)
   golden-line-height-h2 = round(golden-font-size-base * (golden-ratio ** 3), 3)
   golden-line-height-h3 = round(golden-font-size-base * (golden-ratio ** 4), 3)
@@ -30,17 +31,14 @@
   golden-line-height-h6 = round(golden-font-size-base * (golden-ratio ** 7), 3)
 
   // Accessible Color Contrast */
-  $black      = #000000
-  $error      = #b2081a
-  $grey-dark  = #212529
-  $grey-light = #515960
-  $grey       = #495057
-  $info       = #006073
-  $primary    = #0047dd
-  $secondary  = #0057a8
-  $success    = #2e6430
-  $warning    =#993900
-  $white      = #ffffff
+  $black        = #000000
+  $error        = #b2081a
+  $grey-dark    = #212529
+  $grey-light   = #515960
+  $grey         = #495057
+  $info         = #006073
+  $white        = #ffffff
+
 
   // Basic grey colors
   $grey-1000   =#111114

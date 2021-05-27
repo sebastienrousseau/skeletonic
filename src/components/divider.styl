@@ -3,4 +3,105 @@ hr
   background-color: var(--background-color-100)
   border-top: 1px solid var(--border-color-200)
   width: (100% - (golden-ratio))
+
+hr
+	border 0
+	background-color var(--background-color)
+	&.hr-dashed
+		background var(--inverted-color)
+		border 2px dashed var(--border-color-700)
+		position relative
+		&:after
+			content ''
+			position absolute
+			left -1px
+			top -1px
+			right -1px
+			bottom -1px
+			border 1px solid #f4fff3
+			pointer-events none
+	&.hr-dotted
+		border-top 2px dotted var(--border-color-700)
+		background-color transparent
+	&.hr-solid
+		border-top 2px solid var(--border-color-700)
+		background-color transparent
+	&.hr-text
+		background var(--background-color)
+		border 0
+		color var(--color)
+		height 1.5em
+		line-height 1em
+		opacity .5
+		outline 0
+		position relative
+		text-align center
+		&:before
+			background linear-gradient(to right, transparent, var(--border-color), transparent)
+			content ''
+			height 1px
+			left 0
+			position absolute
+			top 50%
+			width 100%
+		&:after
+			background-color var(--background-color)
+			color var(--border-color)
+			content attr(data-content)
+			display inline-block
+			line-height 1.5em
+			padding 0 .5em
+			position relative
+	&.hr-icon
+		position relative
+		height 20px
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22none%22%20stroke%3D%22%23e5e5e5%22%20stroke-width%3D%222%22%20cx%3D%2210%22%20cy%3D%2210%22%20r%3D%227%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+		background-repeat no-repeat
+		background-position 50% 50%
+		&::before
+			right calc(50%+25px)
+			width 100%
+		&::after
+			width 100%
+	&.hr-rounded
+		border-top 8px solid var(--border-color-700)
+		border-radius 5px
+		background-color transparent
+	&.hr-small
+		line-height 0
+		background-color transparent
+		border-style none
+		&::after
+			content ""
+			display inline-block
+			width 100px
+			max-width 100%
+			border-top 1px solid var(--border-color-700)
+			background-color transparent
+			vertical-align top
+	&.hr-vertical
+		width 1px
+		height 100px
+		margin-left auto
+		margin-right auto
+		border-left 1px solid var(--border-color-700)
+		background-color transparent
+	&.hr-doubled
+		border-top double var(--border-color-700) 2px
+		background-color transparent
+	&.hr-blurred
+		border 0
+		height 0
+		box-shadow 0 0 10px 1px var(--color)
+		background-color transparent
+		&:after
+			content "\00a0"
+
+hr.hr-icon::before,
+    hr.hr-icon::after
+	content ""
+	position absolute
+	top 50%
+	border-bottom 1px solid var(--border-color-700)
+
 /* @end */

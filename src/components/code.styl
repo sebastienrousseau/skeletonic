@@ -1,27 +1,100 @@
 /* @group Code */
-pre,
+code.error,
+code.info,
+code.primary,
+code.secondary,
+code.success,
+code.tertiary,
+code.warning
+  border 0
+  margin-top 0
+  position relative
+
 code,
 kbd,
+pre,
 samp
-  background: var(--background-color-100)
-  color: var(--color)
-  font-family: "Consolas", "Monaco", "Menlo", monospace
-  font-size: golden-font-size-base rem
-  margin: (golden-ratio)rem  0
-  padding: (golden-ratio)rem
+  background var(--background-color-100)
+  color var(--color)
+  font-family "Consolas", "Monaco", "Menlo", monospace
+  font-size golden-font-size-base rem
+  margin (golden-ratio)rem  0
+  padding (golden-ratio)rem
 
 pre
-  margin-bottom: 0
-  overflow: auto
-  -ms-overflow-style: scrollbar
-
-code
-  padding: golden-font-size-small rem
+  margin-bottom 0
+  overflow auto
 
 pre, code
-  direction: ltr;
-  display: block
-  text-align: left;
-  white-space: pre-wrap
-  word-wrap: break-word
+  direction ltr
+  display block
+  text-align left
+  page-break-inside avoid
+  white-space pre-wrap
+  word-wrap break-word
+
+code
+  border-bottom 0.01rem solid var(--border-color-300)
+  border-left 0.3rem solid var(--border-color-300)
+  border-right 0.01rem solid var(--border-color-300)
+  border-top 0.01rem solid var(--border-color-300)
+  box-shadow 0 12px 30px -9px var(--background-color-200)
+  &.primary
+      background var(--color-bg-primary)
+      border-bottom 0.01rem solid var(--color-primary)
+      border-left 0.3rem solid var(--color-primary)
+      border-right 0.01rem solid var(--color-primary)
+      border-top 0.01rem solid var(--color-primary)
+      box-shadow 0 12px 30px -9px var(--background-color-200)
+      color var(--color-primary)
+  &.secondary
+      background var(--color-bg-secondary)
+      border-bottom 0.01rem solid var(--color-secondary)
+      border-left 0.3rem solid var(--color-secondary)
+      border-right 0.01rem solid var(--color-secondary)
+      border-top 0.01rem solid var(--color-secondary)
+      box-shadow 0 12px 30px -9px var(--background-color-200)
+      color var(--color-secondary)
+  &.tertiary
+      background var(--color-bg-tertiary)
+      border-bottom 0.01rem solid var(--color-tertiary)
+      border-left 0.3rem solid var(--color-tertiary)
+      border-right 0.01rem solid var(--color-tertiary)
+      border-top 0.01rem solid var(--color-tertiary)
+      box-shadow 0 12px 30px -9px var(--background-color-200)
+      color var(--color-tertiary)
+  &.success
+      background var(--color-bg-success)
+      border-bottom 0.01rem solid var(--color-success)
+      border-color var(--color-success)
+      border-left 0.3rem solid var(--color-success)
+      border-right 0.01rem solid var(--color-success)
+      border-top 0.01rem solid var(--color-success)
+      box-shadow 0 12px 30px -9px var(--background-color-200)
+      color var(--color-success)
+  &.info
+      background var(--color-bg-info)
+      border-bottom 0.01rem solid var(--color-info)
+      border-left 0.3rem solid var(--color-info)
+      border-right 0.01rem solid var(--color-info)
+      border-top 0.01rem solid var(--color-info)
+      box-shadow 0 12px 30px -9px var(--background-color-200)
+      color var(--color-info)
+  &.warning
+      background var(--color-bg-warning)
+      border-bottom 0.01rem solid var(--color-warning)
+      border-left 0.3rem solid var(--color-warning)
+      border-right 0.01rem solid var(--color-warning)
+      border-top 0.01rem solid var(--color-warning)
+      box-shadow 0 12px 30px -9px var(--background-color-200)
+      color var(--color-warning)
+  &.error
+      background var(--color-bg-danger)
+      border-bottom 0.01rem solid var(--color-danger)
+      border-left 0.3rem solid var(--color-danger)
+      border-right 0.01rem solid var(--color-danger)
+      border-top 0.01rem solid var(--color-danger)
+      box-shadow 0 12px 30px -9px var(--background-color-200)
+      color var(--color-error)
+
 /* @end */

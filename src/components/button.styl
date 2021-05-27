@@ -4,7 +4,7 @@
 
 button, .button, [type=submit]
   -highlight()
-  background: var(--background-color-300)
+  background: #F1F3F4
   border:0
   color: var(--button-color)
   cursor: pointer
@@ -28,7 +28,7 @@ button, .button, [type=submit]
     text-decoration: none
     transition: all 150ms linear
   &:hover
-    opacity: 0.5
+    opacity: 0.9
     text-decoration: none
     transition: all 150ms linear
   &:focus
@@ -37,13 +37,13 @@ button, .button, [type=submit]
     text-decoration: none
     transition: all 150ms linear
   &:disabled
-    color: var(--button-color)
-    cursor: default
+    color: var(--background-color-700)
+    cursor: not-allowed
     opacity: .5
     pointer-events: none
     transition: all 150ms linear
   &.primary
-    background: $primary
+    background: var(--color-primary)
     color: var(--button-color)
     cursor: pointer
     transition: all 150ms linear
@@ -51,8 +51,17 @@ button, .button, [type=submit]
       opacity: 0.5
       text-decoration: none
       transition: all 150ms linear
-  &.secondary, &.info
-    background: $secondary
+  &.secondary
+    background: var(--color-secondary)
+    color: var(--button-color)
+    cursor: pointer
+    transition: all 150ms linear
+    &:hover
+      opacity: 0.5
+      text-decoration: none
+      transition: all 150ms linear
+  &.info
+    background: var(--color-info)
     color: var(--button-color)
     cursor: pointer
     transition: all 150ms linear
@@ -61,7 +70,7 @@ button, .button, [type=submit]
       text-decoration: none
       transition: all 150ms linear
   &.success
-    background: $success
+    background: var(--color-success)
     color: var(--button-color)
     cursor: pointer
     transition: all 150ms linear
@@ -70,7 +79,7 @@ button, .button, [type=submit]
       text-decoration: none
       transition: all 150ms linear
   &.error
-    background: $error
+    background: var(--color-error)
     color: var(--button-color)
     cursor: pointer
     transition: all 150ms linear
@@ -79,7 +88,7 @@ button, .button, [type=submit]
       transition: all 150ms linear
       text-decoration: none
   &.warning
-    background: $warning
+    background: var(--color-warning)
     color: var(--button-color)
     cursor: pointer
     transition: all 150ms linear
@@ -162,5 +171,77 @@ button, .button, [type=submit]
   padding: .6rem
   width: 98.7%
   line-height: 60px
+
+button.primary-outline,
+    .button.primary-outline,
+    [type=submit].primary-outline
+	color #0047dd
+	background-color #fff
+	border 1px solid #0047dd
+button.primary-outline:hover,
+    .button.primary-outline:hover,
+    [type=submit].primary-outline:hover
+	background-color #0047dd
+	color #fff
+	transition all 150ms linear
+	text-decoration none
+	opacity 1
+button.secondary-outline,
+    .button.secondary-outline,
+    [type=submit].secondary-outline
+	color #0057a8
+	background-color #fff
+	border 1px solid #0057a8
+button.secondary-outline:hover,
+    .button.secondary-outline:hover,
+    [type=submit].secondary-outline:hover
+	background-color #0057a8
+	color #fff
+	transition all 150ms linear
+	text-decoration none
+	opacity 1
+button.success-outline,
+    .button.success-outline,
+    [type=submit].success-outline
+	color #2e6430
+	background-color #fff
+	border 1px solid #2e6430
+button.success-outline:hover,
+    .button.success-outline:hover,
+    [type=submit].success-outline:hover
+	background-color #2e6430
+	color #fff
+	transition all 150ms linear
+	text-decoration none
+	opacity 1
+button.error-outline,
+    .button.error-outline,
+    [type=submit].error-outline
+	color #b2081a
+	background-color #fff
+	border 1px solid #b2081a
+button.error-outline:hover,
+    .button.error-outline:hover,
+    [type=submit].error-outline:hover
+	background-color #b2081a
+	color #fff
+	transition all 150ms linear
+	text-decoration none
+	opacity 1
+button.warning-outline,
+    .button.warning-outline,
+    [type=submit].warning-outline
+	color #993900
+	background-color #fff
+	border 1px solid #993900
+button.warning-outline:hover,
+    .button.warning-outline:hover,
+    [type=submit].warning-outline:hover
+	background-color #993900
+	color #fff
+	transition all 150ms linear
+	text-decoration none
+	opacity 1
+
 
 /* @end */

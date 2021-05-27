@@ -1,27 +1,55 @@
 /* @group Cards */
 .card
-	background: transparent
-	border: 1px solid var(--border-color-300)
-	margin-bottom: golden-ratio rem
-
-.card a
-	color: var(--color)
-	text-decoration: none
-
-.card a:hover
-	text-decoration: none
-
+	background transparent
+	display flex
+	flex-direction column
+	margin-bottom golden-ratio rem
+	min-width 0
+	position relative
+  border 1px solid var(--border-color-300)
+	a
+		color var(--color)
+		text-decoration none
+		&:hover
+			text-decoration none
 .card-content
-	padding: golden-ratio rem
-
+	padding golden-ratio rem
+.card-body
+	flex 1 1 auto
+	padding golden-ratio rem golden-ratio rem
+.card-title
+	margin-bottom golden-ratio rem
+.card-subtitle
+	margin-top -(1-golden-ratio) rem
+	margin-bottom 0
 .cards
-   display: flex
-   flex-wrap: wrap
-   justify-content: space-between
-
-.card
-	flex: 0 1 (25% - golden-ratio) rem
-
+	display flex
+	flex-wrap wrap
+	justify-content space-between
 .card, .card strong
-  color: var(--color)
+	color var(--color)
+.card
+	box-shadow 0 3px 9px 0 var(--background-color-200)
+	transition .30s
+	border-radius 1rem
+	img
+		margin-bottom 0
+.card.primary
+  background #c6cdff
+  border .0625rem solid #c6cdff
+.card.secondary
+  background #a9d2ff
+  border .0625rem solid #a9d2ff
+.card.success
+  background #a5dfa2
+  border .0625rem solid #a5dfa2
+.card.info
+  background #a9d2ff
+  border .0625rem solid #a9d2ff
+.card.warning
+  background #ffc286
+  border .0625rem solid #ffc286
+.card.error
+  background #ffc0ad
+  border .0625rem solid #ffc0ad
 /* @end */
