@@ -1,0 +1,18 @@
+/* @group Primary Colours */
+
+colors = primary,secondary,tertiary,disable,info,inverse,link,danger,success,warning
+
+for color, i in colors
+    .{colors[i]}
+      color: '$%s' % ((colors[i]))
+
+    .color-{colors[i]}
+      color: '$%s' % ((colors[i]))
+
+    .background-color-{colors[i]}
+     background-color: '$%s' % ((colors[i]))
+
+    .border-color-{colors[i]}
+     border: 1px solid '$%s' % ((colors[i]))
+
+/* @end */
