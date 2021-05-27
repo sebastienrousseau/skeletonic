@@ -1,0 +1,14 @@
+/* @group Container */
+.container
+  box-sizing border-box
+  margin 0 auto
+
+.container:after,.container:before
+    display table
+    content ""
+
+.container
+    &:after
+        clear both
+
+/* @end */
